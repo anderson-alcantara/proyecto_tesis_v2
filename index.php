@@ -43,8 +43,13 @@ console.log(cadena);
 						success:function(r){
 							console.log(r)
 							if(r==1){
-								window.location="home3.php";
-							}else{
+								window.location="home_Estudiante.php";
+							}else if(r==2){
+								window.location="home_Egresado.php";
+							}else if(r==3){
+								window.location="home_Docente.php";
+							}
+							else{
 								alertify.alert('Usuario o clave incorrectos').setHeader('<em>  </em> '); ;
 							}
 						}
