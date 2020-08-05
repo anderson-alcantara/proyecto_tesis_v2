@@ -47,35 +47,25 @@
       <!-- END LOADER -->
       <div class="wrapper">
       <nav id="sidebar">
-        
+
+
+      <li><a>Inicio</a><li>
+      <li><a href="#">Sobre CEIDEUL</a></li>
          <ul class="nav__list">
             <li>
               <input id="group-1" type="checkbox" hidden />
-              <label for="group-1"><span class="fa fa-angle-right"></span>Inicio</label>
+              <label for="group-1"><span class="fa fa-angle-right"></span>Mi perfil</label>
               <ul class="group-list">
-                <li><a href="#">1st level item</a></li>
+                <li style="background-color:#353535;"><a href="#">Editar Perfil</a></li>
+                <li><a href="#" style="background-color:#353535;">Cerrar sesión</a></li>
                 <li>
-                  <input id="sub-group-1" type="checkbox" hidden />
-                  <label for="sub-group-1"><span class="fa fa-angle-right"></span> Cátedra de emprendimiento</label>
-                  <ul class="sub-group-list">
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li>
-                      <input id="sub-sub-group-1" type="checkbox" hidden />
-                      <label for="sub-sub-group-1"><span class="fa fa-angle-right"></span>Elevator Pitch</label>
-                      <ul class="sub-sub-group-list">
-                        <li><a href="#">3rd level nav item</a></li>
-                        <li><a href="#">3rd level nav item</a></li>
-                        <li><a href="#">3rd level nav item</a></li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </li>
 
-             <li>
+
+             
+            
   
             <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
             <ul class="group-list">

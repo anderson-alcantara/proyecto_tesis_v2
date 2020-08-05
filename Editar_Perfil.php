@@ -24,7 +24,8 @@
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="css/responsive.css" />
       <!-- Custom CSS -->
-      <link rel="stylesheet" href="css/custom.css" />
+      <link rel="stylesheet" href="css/custom.css"/>
+      
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -47,36 +48,26 @@
       <!-- END LOADER -->
       <div class="wrapper">
       <nav id="sidebar">
-        
+
+
+      <li><a>Inicio</a><li>
+      <li><a href="#">Sobre CEIDEUL</a></li>
          <ul class="nav__list">
             <li>
               <input id="group-1" type="checkbox" hidden />
-              <label for="group-1"><span class="fa fa-angle-right"></span>Inicio</label>
+              <label for="group-1"><span class="fa fa-angle-right"></span>Mi perfil</label>
               <ul class="group-list">
-                <li><a href="#">1st level item</a></li>
+                <li style="background-color:#353535;"><a href="#">Editar Perfil</a></li>
+                <li><a href="#" style="background-color:#353535;">Cerrar sesión</a></li>
                 <li>
-                  <input id="sub-group-1" type="checkbox" hidden />
-                  <label for="sub-group-1"><span class="fa fa-angle-right"></span> Cátedra de emprendimiento</label>
-                  <ul class="sub-group-list">
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li>
-                      <input id="sub-sub-group-1" type="checkbox" hidden />
-                      <label for="sub-sub-group-1"><span class="fa fa-angle-right"></span>Elevator Pitch</label>
-                      <ul class="sub-sub-group-list">
-                        <li><a href="#">3rd level nav item</a></li>
-                        <li><a href="#">3rd level nav item</a></li>
-                        <li><a href="#">3rd level nav item</a></li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </li>
 
- 
 
+             
+            
+  
             <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
             <ul class="group-list">
               <li>
@@ -173,9 +164,57 @@
                 
 
 
-               
+                <input id="sub-group-3" type="checkbox" hidden onclick="onhandleformularios('sub-group-3')" />
+                <label for="sub-group-3" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Opción de Grado</label>
+                <ul class="sub-group-list">
 
-               
+                  <li>
+                     
+                    <input id="sub-sub-group-4" type="checkbox" hidden />
+                    <label for="sub-sub-group-4"><span class="fa fa-angle-right"></span>Opciones De Grado CEIDEUL</label>
+                    <ul class="sub-sub-group-list" style="font-size: 12px;">
+                      <li><a href="#">Formato De Inscripción Para Opción De Grado Creación De Empresa</a></li>
+                      <li><a href="#">Formato De Recurso Estudiante / Externo</a></li>
+       
+                    </ul>
+                    <input id="sub-sub-group-5" type="checkbox" hidden />
+                    <label for="sub-sub-group-5"><span class="fa fa-angle-right"></span>Opciones De Grado Creación De Empresa</label>
+                    <ul class="sub-sub-group-list" style="font-size: 12px;">
+                      <li><a href="#">Formato De Asignación De Tutor Para Proyecto De Grado</a></li>
+                      <li><a href="#">Formato De Evaluación Proyecto De Grado “creación De Empresa”</a></li>
+
+                    </ul>
+                  </li>
+                </ul>
+
+
+                <input id="sub-group-6" type="checkbox" hidden onclick="onhandleformularios('sub-group-6')" />
+                <label for="sub-group-6" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Cátedra De emprendimiento</label>
+                <ul class="sub-group-list">
+                  <li style="margin-bottom: 10px;"><a href="#">Formato De Compromiso a La Catedra De Emprendimiento</a></li>
+
+                  
+
+
+
+                  
+                  <input id="sub-sub-group-8" type="checkbox" hidden />
+                  <label for="sub-sub-group-8"><span class="fa fa-angle-right"></span>Ideas De Negocio</label>
+                  <ul class="sub-sub-group-list" style="font-size: 12px;">
+                    <li><a href="#">Formato Cátedra De Emprendimiento- Ideas De Negocio</a></li>
+                  </ul>
+                     
+                  <input id="sub-sub-group-7" type="checkbox" hidden />
+                  <label for="sub-sub-group-7"><span class="fa fa-angle-right"></span>Elevator Pitch</label>
+                  <ul class="sub-sub-group-list" style="font-size: 12px;">
+                    <li><a href="#">Formato De Banco De Ideas De Negocio</a></li>
+                  </ul>
+
+                </ul>
+
+                
+
+
 
                 <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
                 <label for="sub-group-8" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Feria Empresarial</label>
@@ -196,7 +235,17 @@
 
 
 
-           
+                <input id="sub-group-10" type="checkbox" hidden onclick="onhandleformularios('sub-group-10')"/>
+                <label for="sub-group-10" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Práctica Empresarial</label>
+                <ul class="sub-group-list">
+                  <li><a href="#">Formato De Inicio De Practica Empresarial</a></li>
+                  <li><a href="#">Formato De Concepto Docente Experto Disciplinar Práctica Empresarial</a></li>
+                  <li><a href="#">Formato De Entrega Final De Trabajo De Práctica Empresarial</a></li>
+                  <li><a href="#">Formato De Evaluación Entrega Final Practica Empresarial</a></li>
+
+                </ul>
+
+
 
 
 
@@ -276,197 +325,30 @@
          </div>
          <!-- End Banner -->
          <!-- section -->
-         <!-- <div class="section about_section layout_padding dash_bg">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center">
-                           <h2>What We Do</h2>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_1.png" alt="#" />
-                            <img class="default-none" src="images/icon_1w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>Link Building</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_2.png" alt="#" />
-                            <img class="default-none" src="images/icon_2w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>Monthly SEO Task</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_3.png" alt="#" />
-                            <img class="default-none" src="images/icon_3w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>On Page SEO</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_4.png" alt="#" />
-                            <img class="default-none" src="images/icon_4w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>Online marketing</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
-         <!-- end section -->
-         <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
             <div class="container">
                <div class="row">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center">
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full">
-                        <div class="heading_small">
-                          <h4>¿QUIÉNES SOMOS?</h4>
-                        </div>
-                        <p style="text-align: justify;
-                        text-justify: inter-word;">CEIDEUL es el Centro de Emprendimiento, Innovación y Desarrollo Empresarial de la Universidad Libre. Este órgano, se encarga de acompañar, fomentar y asesorar el intraemprendimiento en la comunidad unilibrista, estudiantes, egresados y comunidad en general con miras a apoyar proyectos creativos e innovadores, generando ideas y modelos de negocio, con el fin de implementar recursos que permitan patrocinar los proyectos de emprendimiento e innovación por medio de la incubadora de empresa, spin off, capital semilla, capital de riesgo o ángel inversionista</p>
-                      </div>
-
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full text_align_center">
-                        <img style="margin-top:90px;" class="img-responsive" src="images/Docentes CEIDEUL.png" alt="#" />   
-                      </div>
-                  </div>
-               </div>
-
-               
-            </div>
-         </div>
-      
-         <!-- OTRA SECCION-->
-         <div class="section about_section layout_padding padding_top_0">
-            <div class="container">
-               <div class="row" style="margin-bottom: -150px;">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center">
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full">
-  
-                        <img style=" border-radius: 100px; margin-top: 130px;" class="img-responsive" src="images/vision.jpg" alt="#" />   
-                      </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full">
-                        <div class="heading_small" style="right: 90px;">
-                          <h4 style="margin-bottom: 100px; text-align: right;">VISIÓN</h4>
-                        </div>
-                     <div class="full text_align_center">
-                        <p style="text-align: justify;
-                        text-justify: inter-word;
-                        margin-top: -40px;">Ser un Centro de proyección económica y 
-	social, en el que participa la comunidad de 
-	la Universidad Libre en el emprendimiento 
-	y el empresarismo, con el fin de desarrollar 
-	proyectos tecnológicos e innovadores, así 
-	como asesorar las mipymes del país, 
-	extendiendo sus servicios dentro de su 
-	entorno, promoviendo la creación de 
-	Empresa y Proyectos sustentables con la 
-	comunidad, que respondan a las 
-	necesidades de la población con miras a 
-	mejorar la calidad de vida.</p>
-                      </div>
-                     
-                      </div>
-                  </div>
-               </div>
-
-               
-           
-         </div>
-      </div>
-         <!-- end section -->
-         <!-- section -->
-         <div class="section about_section layout_padding padding_top_0">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>MISIÓN</h2>
-                        </div>
-                     </div>
-                  </div>
                   <div class="col-lg-10 offset-lg-1">
                      <div class="full text_align_center">
-                         <p style="text-align: justify;
-                         text-justify: inter-word;">Ser un Centro de proyección económica y 
-                           social, en el que participa la comunidad de 
-                           la Universidad Libre en el emprendimiento 
-                           y el empresarismo, con el fin de desarrollar 
-                           proyectos tecnológicos e innovadores, así 
-                           como asesorar las mipymes del país, 
-                           extendiendo sus servicios dentro de su 
-                           entorno, promoviendo la creación de 
-                           Empresa y Proyectos sustentables con la 
-                           comunidad, que respondan a las 
-                           necesidades de la población con miras a 
-                           mejorar la calidad de vida.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="full text_align_center">
-                       <img class="img-responsive" style="border-radius: 40px;" src="images/mision.png" alt="#" />
-                     </div>
+                     <div class="form">
+              <form class="login-form" id="form1">
+			  <input type="text" placeholder="Nombres" id="nombres" required/>
+			  <input type="text" placeholder="Apellidos" id="apellidos" required/>
+                <input type="text" placeholder="E-mail" id="correo_electronico" required/>
+                <input type="password" placeholder="Clave" id="password" required/>
+                <input type="password" placeholder="Repetir clave" id="password2" required/>
+                <select name="tipousuario" id="selectTipo" class="select-css"
+                style="border-bottom: 100px;" autocomplete="off">
+                  <option value="value1" selected>Tipo de Usuario</option>
+                  <option value="value2">Estudiante</option>
+				  <option value="value3">Egresado</option>
+				  <option value="value3">Docente</option>
 
+                </select>
+                <button type="button" style="margin-top: 20px;" id="registrarNuevo"  >Ingresar</button> 
+              </form>
+            </div>
+                     </div>
                   </div>
                </div>
             </div>
