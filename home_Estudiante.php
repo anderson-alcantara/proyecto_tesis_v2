@@ -132,9 +132,9 @@
                     <input id="sub-sub-group-2" type="checkbox" hidden />
                     <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span>asesoría y consultoría empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a >Formato De Diagnostico Para Asesoría Empresarial</a></li>
+                      <li><a href="forms/f_diagAsesoria.html">Formato De Diagnostico Para Asesoría Empresarial</a></li>
                       <li><a href="forms/f_inicioAsesoriaEmp.html" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
-                      <li><a href="#">Formato De Entrega De Asesoría</a></li>
+                      <li><a href="forms/f_EntregaAsesoria.html">Formato De Entrega De Asesoría</a></li>
                     </ul>
                   </li>
                   <li>
@@ -142,13 +142,13 @@
                      <input id="sub-sub-group-3" type="checkbox" hidden />
                      <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span>herramientas para la asesoría y consultoría empresarial</label>
                   <ul class="sub-sub-group-list" style="font-size: 12px;">
-                       <li><a href="#">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
-                       <li><a href="#">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
-                       <li><a href="#">Formato De Perfilación De Puestos De Trabajo</a></li>
-                       <li><a href="#">Formato De análisis Del Entorno</a></li>
-                       <li><a href="#">Formato De Balance Scorecard</a></li>
-                       <li><a href="#">Formato De Identificación De Mercado</a></li>
-                       <li><a href="#">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
+                       <li><a href="forms/f_DiagAppOfimatica.html">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
+                       <li><a href="forms/f_AnalisisDisePtrabajo.html">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
+                       <li><a href="forms/f_perfilacion.html">Formato De Perfilación De Puestos De Trabajo</a></li>
+                       <li><a href="forms/f_analisis">Formato De análisis Del Entorno</a></li>
+                       <li><a href="forms/f_balance.html">Formato De Balance Scorecard</a></li>
+                       <li><a href="">Formato De Identificación De Mercado</a></li>
+                       <li><a href="forms/f_ishikawa.html">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
                        <li><a href="#">Formato De Caracterización De Procesos</a></li>
                        <li><a href="#">Formato De Evaluación De Marco Estratégico</a></li>
                        <li><a href="#">Formato De Diagnostico Interno</a></li>
@@ -190,7 +190,7 @@
                 <input id="sub-group-6" type="checkbox" hidden onclick="onhandleformularios('sub-group-6')" />
                 <label for="sub-group-6" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Cátedra De emprendimiento</label>
                 <ul class="sub-group-list">
-                  <li style="margin-bottom: 10px;"><a href="#">Formato De Compromiso a La Catedra De Emprendimiento</a></li>
+                  <li style="margin-bottom: 10px;"><a href="forms/f_compromiso">Formato De Compromiso a La Catedra De Emprendimiento</a></li>
 
                   
 
