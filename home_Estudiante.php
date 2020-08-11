@@ -52,12 +52,12 @@
       <li><a>Inicio</a><li>
       <li><a href="#">Sobre CEIDEUL</a></li>
          <ul class="nav__list">
-            <li>
+         <li>
               <input id="group-1" type="checkbox" hidden />
               <label for="group-1"><span class="fa fa-angle-right"></span>Mi perfil</label>
               <ul class="group-list">
-                <li style="background-color:#353535;"><a href="#">Editar Perfil</a></li>
-                <li><a href="#" style="background-color:#353535;">Cerrar sesión</a></li>
+              <li style="background-color:#353535;"><a href="Editar_Perfil.php">Editar Perfil</a></li>
+                <li><a href="index.php" style="background-color:#353535;">Cerrar sesión</a></li>
                 <li>
                 </li>
               </ul>
@@ -764,7 +764,16 @@
       </script>
 <script>
 document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-
+function volverinicio(){
+   var tipo='<?php echo $_SESSION['tipo_usuario']?>';
+   if(tipo=="Estudiante"){
+      window.location="home_Estudiante.php";
+   }else if(tipo=="Egresado"){
+      window.location="home_Egresado.php";
+   }else if(tipo=="Docente"){
+      window.location="home_Docente.php";
+   }      
+}
  </script>  
    </body>
 </html>

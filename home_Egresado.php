@@ -49,33 +49,19 @@
       <nav id="sidebar">
         
          <ul class="nav__list">
-            <li>
+         <li><a>Inicio</a><li>
+      <li><a href="#">Sobre CEIDEUL</a></li>
+         <ul class="nav__list">
+         <li>
               <input id="group-1" type="checkbox" hidden />
-              <label for="group-1"><span class="fa fa-angle-right"></span>Inicio</label>
+              <label for="group-1"><span class="fa fa-angle-right"></span>Mi perfil</label>
               <ul class="group-list">
-                <li><a href="#">1st level item</a></li>
+              <li style="background-color:#353535;"><a href="Editar_Perfil.php">Editar Perfil</a></li>
+                <li><a href="index.php" style="background-color:#353535;">Cerrar sesión</a></li>
                 <li>
-                  <input id="sub-group-1" type="checkbox" hidden />
-                  <label for="sub-group-1"><span class="fa fa-angle-right"></span> Cátedra de emprendimiento</label>
-                  <ul class="sub-group-list">
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li><a href="#">2nd level nav item</a></li>
-                    <li>
-                      <input id="sub-sub-group-1" type="checkbox" hidden />
-                      <label for="sub-sub-group-1"><span class="fa fa-angle-right"></span>Elevator Pitch</label>
-                      <ul class="sub-sub-group-list">
-                        <li><a href="#">3rd level nav item</a></li>
-                        <li><a href="#">3rd level nav item</a></li>
-                        <li><a href="#">3rd level nav item</a></li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </li>
-
-             <li>
   
             <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
             <ul class="group-list">
@@ -708,6 +694,19 @@
       </script>
 <script>
 document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+
+function volverinicio(){
+   var tipo='<?php echo $_SESSION['tipo_usuario']?>';
+   if(tipo=="Estudiante"){
+      window.location="home_Estudiante.php";
+   }else if(tipo=="Egresado"){
+      window.location="home_Egresado.php";
+   }else if(tipo=="Docente"){
+      window.location="home_Docente.php";
+   }      
+}
+
+
 
  </script>  
    </body>

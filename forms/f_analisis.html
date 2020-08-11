@@ -195,9 +195,21 @@
   
   <!--botón enviar-->
   <div class="form__item">
-    <button class="form__btn__green" type="submit">Enviar</button>
+    <button class="form__btn__green" type="button" onclick="Ongeneratepdf()">Enviar</button>
   </div>
 
 </form>
 </body>
+<script>
+ 
+function Ongeneratepdf(){
+  var doc = new jsPDF()
+  doc.addHTML(document.body,function() {
+    doc.save('html.pdf');
+});
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="../js/jspdf.debug.js"></script>
 </html>
