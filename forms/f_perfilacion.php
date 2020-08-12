@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -10,7 +13,7 @@
 <form class="form" id="form1" action="./" method="POST">
 <div id="pag1">
   <!--Titulo princiapl-->
-<div class="form__title">FORMATO DE PERFILACIÓN DE PUESTOS DE TRABAJO</div>
+<div class="form__title"><a id="nombre_form">FORMATO DE PERFILACIÓN DE PUESTOS DE TRABAJO</a></div>
 <p style="color: red;">FOR-AC-006</p>
 <hr>
 
@@ -376,18 +379,6 @@ input.removeAttr('hidden');
  } 
 });
 }
-
-
-
-
-
-
-
-
-
-
-
- 
   function Ongeneratepdf(){
     addrespuesta();
 invisibleradio();
@@ -404,14 +395,35 @@ doc.fromHTML(elementHTML, 15, 15, {
 });
 
 // Save the PDF
-doc.save('sample-document.pdf');
-
-
-
-
+var pdf =doc.output();
+var nombres='<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+var correo='<?php echo $_SESSION['user']?>'
+var tipousuario='<?php echo $_SESSION['tipo_usuario']?>';
+var nombreform="f-perfilacion";
+var nombreform_completo=$("#nombre_form").text();
+var d=new Date();
+var mes=d.getMonth()+1
+var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
+var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
+cadena="pdf=" + pdf +
+					"&nombres=" + nombres +
+					"&correo=" + correo+
+					"&tipousuario=" +tipousuario+
+          "&nombreform=" +nombreform+
+          "&nombreform_completo=" +nombreform_completo+
+          "&nombrearchivo=" +nombrearchivo+
+					"&fecha=" +fecha;
+debugger
+$.ajax({
+						type:"POST",
+						url:"../php/subir_form.php",
+						data:cadena,
+						success:function(r){
+                
+            }						
+					});
     
-//     window.scrollTo(0,0); 
-    
+//     window.scrollTo(0,0);     
 // html2canvas(document.getElementById("pag1")).then(function(canvas){
 //   var imgData = canvas.toDataURL('image/png');
 //    var imgWidth = 210; 
@@ -421,11 +433,6 @@ doc.save('sample-document.pdf');
 //   doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
 //   doc.save( 'file.pdf');
 // })
-  
-
-
-
-
 //     var container = document.body; // full page 
 // 			html2canvas(container).then(function(canvas) {
 //         var imgData = canvas.toDataURL('image/png');

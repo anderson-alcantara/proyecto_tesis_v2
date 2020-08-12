@@ -144,7 +144,7 @@
                   <ul class="sub-sub-group-list" style="font-size: 12px;">
                        <li><a href="forms/f_DiagAppOfimatica.html" target="_blank">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
                        <li><a href="forms/f_AnalisisDisePtrabajo.html" target="_blank">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
-                       <li><a href="forms/f_perfilacion.html" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
+                       <li><a href="forms/f_perfilacion.php" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
                        <li><a href="forms/f_analisis" target="_blank">Formato De análisis Del Entorno</a></li>
                        <li><a href="forms/f_balance.html" target="_blank">Formato De Balance Scorecard</a></li>
                        <li><a href="">Formato De Identificación De Mercado</a></li>
