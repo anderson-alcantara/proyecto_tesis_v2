@@ -2,17 +2,17 @@
 session_start();
 require_once "conexion.php";
 $pdf =$_POST['pdf'];
-$nombres=utf8_decode($_POST['nombres']);
-$correo=utf8_decode($_POST['correo']);
+$nombres=($_POST['nombres']);
+$correo=($_POST['correo']);
 $tipousuario=$_POST['tipousuario'];
-$nombreform=utf8_decode($_POST['nombreform']);
-$nombreform_completo=utf8_decode($_POST['nombreform_completo']);
-$nombrearchivo=utf8_decode($_POST['nombrearchivo']);
+$nombreform=($_POST['nombreform']);
+$nombreform_completo=($_POST['nombreform_completo']);
+$nombrearchivo=($_POST['nombrearchivo']);
 $fecha=$_POST['fecha'];
    if(!empty($_POST['pdf'])){
     $conexion=conexion();
     $fname =$nombrearchivo.".pdf"; // name the file
-    $ruta="../formularios_registrados/" .$fname;
+    $ruta="formularios_registrados/" .$fname;
     $sql="INSERT into tb_formularios (archivo,nombre,tipo_usuario,formulario,fecha,correo)
     values ('$ruta','$nombres','$tipousuario','$nombreform_completo','$fecha','$correo')";
 echo $result=mysqli_query($conexion,$sql);

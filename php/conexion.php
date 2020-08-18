@@ -3,7 +3,12 @@
 <?php 
 	function conexion()
 	{
-		return $conexion=mysqli_connect("localhost","root","","ceideul");
+		 $link= mysqli_connect("localhost","root","","ceideul");
+		
+
+		mysqli_set_charset($link, "utf8");
+
+		return $link;
 	}
 
  ?>

@@ -379,6 +379,30 @@ input.removeAttr('hidden');
  } 
 });
 }
+
+  function generateword(){
+    addrespuesta();
+invisibleradio();
+       var header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' "+
+            "xmlns:w='urn:schemas-microsoft-com:office:word' "+
+            "xmlns='http://www.w3.org/TR/REC-html40'>"+
+            "<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScript</title></head><body>";
+       var footer = "</body></html>";
+       var sourceHTML = header+document.body.innerHTML+footer;
+       
+       var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+       var fileDownload = document.createElement("a");
+       document.body.appendChild(fileDownload);
+       fileDownload.href = source;
+       fileDownload.download = 'document.doc';
+       fileDownload.click();
+       document.body.removeChild(fileDownload);
+    }
+
+
+
+
+
   function Ongeneratepdf(){
     addrespuesta();
 invisibleradio();
@@ -413,7 +437,6 @@ cadena="pdf=" + pdf +
           "&nombreform_completo=" +nombreform_completo+
           "&nombrearchivo=" +nombrearchivo+
 					"&fecha=" +fecha;
-debugger
 $.ajax({
 						type:"POST",
 						url:"../php/subir_form.php",
@@ -495,5 +518,7 @@ $.ajax({
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="../js/html2canvas.min.js"></script>
   <script src="../js/jspdf.debug.js"></script>
+  <script src="../js/docx.js"></script>
+
   <script src="../js/canvas2image.min.js"></script>
 </html>
