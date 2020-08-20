@@ -44,7 +44,6 @@
 	 header("Location:index.php");
 	 exit(); 
  }
-
 ?>
    <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
       <!-- LOADER -->
@@ -156,12 +155,60 @@
          <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
             <div class="container" style="width:100%; margin-top:200px;">
-            <h2>Añadir Comentario</h2>
-            <h4 id="txtpara"></h4>
-            <h4 id="textformulario">Formualrio</h4>
-            <textarea class="form-control" id="txtcomentario" rows="3" style="white-space: pre-wrap;"></textarea>
-            <!-- <input type="file" class="form-control" id="exampleFormControlFile1"> -->
-            <button type="button" onclick="sendcomentario()" class="btn btn-success">Enviar</button>
+         
+            <table id="myTable" class="table table-bordered table-dark" style="width=100%;">  
+        <thead class="thead-dark">  
+          <tr>  
+          <th hidden>id</th>  
+          <th>fecha de envío</th>  
+            <th data-order='desc'>nombreformato</th>  
+            <th>ruta</th>
+            <th>enviado por</th>  
+            <th>comentario</th>  
+           
+            <th hidden>ruta</th>  
+          </tr>  
+        </thead>  
+        <tbody id="mytbody">  
+
+        <?php
+   require_once "php/conexion.php";
+   $conexion=conexion();
+   $usuario=$_SESSION['user'];
+   $sql="SELECT * from tb_comentarios 
+            where correo='$usuario'";
+            
+
+
+            $result=mysqli_query($conexion,$sql);
+           
+
+            while($row = $result->fetch_assoc()){
+               $fecha=str_replace(" ", "/", $row['fecha']);
+
+            ?>
+            <script></script>
+            <tr>
+            <td class="tdnombre" hidden><?php echo ($row['id']); ?></td>
+            <td class="tdfecha"><?php echo ($fecha); ?></td>   
+            <td class="tdnombre"><?php echo ($row['nombreformato']); ?></td>
+               <td class="tdarchivo"><a target="_blank"href="<?php echo ($row['ruta'])?>">Abrir</a></td> 
+                <td class="tdfecha"><?php echo ($row['nombre_comentador']); ?></td>
+                <td class="tdcomentario"><a class="vercomentario" style="cursor:pointer;">Ver</a></td>
+                <td class="tdcomentario2" style="white-space: pre-wrap;" hidden><?php echo ($row['comentario']); ?></td>
+                             
+
+                
+            </tr>
+                
+          <?php  } ?>
+
+        
+        
+        </tbody>  
+      </table>  
+
+
             </div>
                      </div>
                   </div>
@@ -257,78 +304,20 @@
 
               if(value!==idformulario){
                $("#"+value).prop("checked", false);
-               
+               debugger
               }  
             
             });
 
            
          }
-         
       </script>
 <script>
-var arreglo=[];
-if(document.location.toString().indexOf('?') !== -1) {
-    var query = document.location
-                   .toString()
-                   // get the query string
-                   .replace(/^.*?\?/, '')
-                   // and remove any existing hash string (thanks, @vrijdenker)
-                   .replace(/#.*$/, '')
-                   .split('&');
-
-    for(var i=0, l=query.length; i<l; i++) {
-       var aux = decodeURIComponent(query[i]).split('=');
-      arreglo.push(aux);
-    }
-}
-
-var nombreformato=arreglo[0][1];
-var nombre_remit=arreglo[1][1];
-var ruta=arreglo[2][1];
-var correo=arreglo[3][1];
-var nombre_comentador='<?php echo $_SESSION['nombres'].' '. $_SESSION['apellidos']; ?>'
-
-var d=new Date();
-var mes=d.getMonth()+1
-var fecha=d.getDate()+" "+mes+" "+d.getFullYear();
-
-console.log(comentario);
-
-$("#txtpara").text("Para: "+ nombre_remit);
-
-$("#textformulario").text("Formato: "+ nombreformato);
-
-
-function sendcomentario(){
-   
-   var comentario = $('#txtcomentario').val();
-   cadena="nombreformato=" + nombreformato+ 
-					"&nombre_remit=" + nombre_remit+
-               "&ruta=" + ruta+
-               "&correo=" + correo+
-               "&nombre_comentador=" + nombre_comentador+
-               "&fecha=" + fecha+
-               "&comentario=" + comentario;
-   $.ajax({
-						type:"POST",
-						url:"php/send_comentario.php",
-						data:cadena,
-						success:function(r){
-                     if(r==1){
-                        alertify.alert('Comenatario enviado').set('onok', function(closeEvent){ window.location="home_Docente.php";
-									<?php
- ?>} ).setHeader('<em>  </em> '); 
-                     }
-
-						}
-					});
-
-}
-
-
-
-
+document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
+document.getElementById("txtnombreperfil").value = '<?php echo $_SESSION['nombres']?>';
+document.getElementById("txtapellidosperfil").value = '<?php echo $_SESSION['apellidos']?>';
+document.getElementById("txtpass1").value = '<?php echo $_SESSION['clave']?>';
 $(document).ready(function(){
 		$('#btn_confirm').click(function(){
 			if($('#txtnombreperfil').val()==""){
@@ -383,6 +372,9 @@ console.log(cadena);
       window.location="home_Docente.php";
    }      
 }
+
+
+
  </script>  
  <script>
    var data;
@@ -393,9 +385,33 @@ console.log(cadena);
       "order": [[ 0, "desc" ]]
     });
 
-  
+      
 
 });
+
+
+$(".vercomentario").click(function() {
+   var row = $(this).closest("tr"); 
+   var comentario = row.find(".tdcomentario2").text();
+   alertify.alert(comentario).setHeader('<em> Comentario </em> '); ;
+   //  var row = $(this).closest("tr");    // Find the row
+   //  var correo = row.find(".tdcorreo").text(); 
+   //  var fecha = row.find(".tdfecha").text();// Find the text
+   //  var tipo_usuario=row.find(".tipo_usuario").text();
+   //  var tdnombre=row.find(".tdnombre").text(); 
+   //  var tdformulario=row.find(".tdformulario").text(); 
+   //  var tdarchivo=row.find(".tdruta").text(); 
+   //  location.href="agregar_comentario.php?variable="+tdformulario+"&variable2="+tdnombre+"&variable3="+tdarchivo+"&variable4="+correo;
+ 
+})
+
+
+
+
+
+
+
+
 $(".miboton").click(function() {
     var row = $(this).closest("tr");    // Find the row
     var correo = row.find(".tdcorreo").text(); 
@@ -404,7 +420,22 @@ $(".miboton").click(function() {
     var tdnombre=row.find(".tdnombre").text(); 
     var tdformulario=row.find(".tdformulario").text(); 
     var tdarchivo=row.find(".tdruta").text(); 
+    location.href="agregar_comentario.php?variable="+tdformulario+"&variable2="+tdnombre+"&variable3="+tdarchivo+"&variable4="+correo;
+   //  cadena="correo_electronico=" + correo + 
+   //             "&fecha=" + fecha+
+   //             "&tipo_usuario=" + tipo_usuario+
+   //             "&nombre=" + tdnombre+
+   //             "&formulario=" + tdformulario+
+   //             "&archivo=" + tdarchivo;
 
+					// $.ajax({
+					// 	type:"POST",
+					// 	url:"agregar_comentario.php",
+					// 	data:cadena,
+					// 	success:function(r){
+               //          window.location="agregar_comentario.php";
+					// 	}
+					// });
 });
  </script>
 

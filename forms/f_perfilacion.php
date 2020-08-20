@@ -4,6 +4,10 @@ session_start();
 ?>
 <html lang="es">
 <head>
+
+<link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/themes/default.css">
+<link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
+<script src="../js/alertifyjs/alertify.js"></script>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/styleform.css">
   <title>Document</title>
@@ -442,7 +446,15 @@ $.ajax({
 						url:"../php/subir_form.php",
 						data:cadena,
 						success:function(r){
-                
+                if(r==1){
+                  alertify.alert('Formulario enviado con éxito').set('onok', function(closeEvent){ 
+                    window.close();
+
+									} ).setHeader('<em>  </em> '); 
+
+                }else{
+                  alert("error");
+                }
             }						
 					});
     

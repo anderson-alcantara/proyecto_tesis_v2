@@ -51,6 +51,7 @@
          <ul class="nav__list">
          <li><a>Inicio</a><li>
       <li><a href="#">Sobre CEIDEUL</a></li>
+      <li><a href="Admin_forms.php">Ver registros</a></li>
          <ul class="nav__list">
          <li>
               <input id="group-1" type="checkbox" hidden />

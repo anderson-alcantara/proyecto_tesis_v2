@@ -401,7 +401,7 @@ $(".miboton").click(function() {
     var tdformulario=row.find(".tdformulario").text(); 
     var tdarchivo=row.find(".tdruta").text(); 
 
-    location.href="agregar_comentario.php?variable="+tdformulario+"&variable2="+fecha+"";
+    location.href="agregar_comentario.php?variable="+tdformulario+"&variable2="+tdnombre+"&variable3="+tdarchivo+"&variable4="+correo;
    //  cadena="correo_electronico=" + correo + 
    //             "&fecha=" + fecha+
    //             "&tipo_usuario=" + tipo_usuario+
@@ -417,7 +417,6 @@ $(".miboton").click(function() {
                //          window.location="agregar_comentario.php";
 					// 	}
 					// });
-
 });
  </script>
 

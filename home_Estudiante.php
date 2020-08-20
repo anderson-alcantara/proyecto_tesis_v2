@@ -51,6 +51,7 @@
 
       <li><a>Inicio</a><li>
       <li><a href="#">Sobre CEIDEUL</a></li>
+      <li><a href="ver_comentarios.php">Notificaciones</a></li>
          <ul class="nav__list">
          <li>
               <input id="group-1" type="checkbox" hidden />
