@@ -24,13 +24,7 @@
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="css/responsive.css" />
       <!-- Custom CSS -->
-      <link rel="stylesheet" href="css/custom.css"/>
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" type="text/css" href="js/alertifyjs/css/themes/default.css">
-<link rel="stylesheet" type="text/css" href="js/alertifyjs/css/alertify.css">
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/alertifyjs/alertify.js"></script>
+      <link rel="stylesheet" href="css/custom.css" />
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -53,76 +47,23 @@
       <!-- END LOADER -->
       <div class="wrapper">
       <nav id="sidebar">
-      <li><a onclick="volverinicio()" style="cursor:pointer;">Inicio</a></li>
-      <li><a href="#">Sobre CEIDEUL</a></li>
+        
          <ul class="nav__list">
-            <li>
-              <input id="group-1" type="checkbox" hidden />
-              <label for="group-1"><span class="fa fa-angle-right"></span>Mi perfil</label>
-              <ul class="group-list">
-                <li style="background-color:#353535;"><a href="Editar_Perfil.php">Editar Perfil</a></li>
-                <li><a href="index.php" style="background-color:#353535;">Cerrar sesión</a></li>
-                <li>
-                </li>
-              </ul>
-            </li>
+         <li><a>Inicio</a><li>
+      <li><a href="#">Sobre CEIDEUL</a></li>
+      <li><a href="agregar_docente.php">Agregar Docente</a></li>
+      <li><a href="index_Admin.php" style="background-color:#353535;">Cerrar sesión</a></li>
+      
+           
 
 
-             
-            
-  
-            <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
-            <ul class="group-list">
-              <li>
-              <li><a href="#">1st level item</a></li>
-              <li><a href="#">1st level item</a></li>
-              <input id="sub-group-3" type="checkbox" hidden />
-              <label for="sub-group-3"><span class="fa fa-angle-right"></span> Second level</label>
-              <ul class="sub-group-list">
-                <li><a href="#">2nd level nav item</a></li>
-                <li><a href="#">2nd level nav item</a></li>
-                <li><a href="#">2nd level nav item</a></li>
-                <li>
-                  <input id="sub-sub-group-3" type="checkbox" hidden />
-                  <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span> Third level</label>
-                  <ul class="sub-sub-group-list">
-                    <li><a href="#">3rd level nav item</a></li>
-                    <li><a href="#">3rd level nav item</a></li>
-                    <li><a href="#">3rd level nav item</a></li>
-                  </ul>
-                </li>
-              </ul>
+
+
+
+
               </li>
             </ul>
-            </li>
-            <li>
-            <input id="group-4" type="checkbox" hidden />
-            <label for="group-4"><span class="fa fa-angle-right"></span> Elevator Pitch</label>
-            <ul class="group-list">
-              <li>
-              <li><a href="#">1st level item</a></li>
-              <input id="sub-group-4" type="checkbox" hidden />
-              <label for="sub-group-4"><span class="fa fa-angle-right"></span> Second level</label>
-              <ul class="sub-group-list">
-                <li><a href="#">2nd level nav item</a></li>
-                <li><a href="#">2nd level nav item</a></li>
-              </ul>
-              </li>
-            </ul>
-            </li>
-            <ul class="group-list">
-               <li>
-               <li><a href="#">1st level item</a></li>
-               <input id="sub-group-4" type="checkbox" hidden />
-               <label for="sub-group-4"><span class="fa fa-angle-right"></span> Second level</label>
-               <ul class="sub-group-list">
-                 <li><a href="#">2nd level nav item</a></li>
-                 <li><a href="#">2nd level nav item</a></li>
-               </ul>
-               </li>
-             </ul>
-          </ul> -->
-         
+          </li>
 
       </nav>
       <div id="content">
@@ -150,28 +91,240 @@
             </div>
          </header>
          <!-- End header -->
-        
+         <!-- Start Banner -->
+         <div class="ulockd-home-slider">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="pogoSlider" id="js-main-slider">
+                     <div class="pogoSlider-slide" style="background-image:url(images/slider_4.png);">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="slide_text" style="margin-top: 200px;" >
+                                    <h6 style="font-size: 20px; color: #aa1a1a;" >Centro de Emprendimiento, Innovación y Desarrollo Empresarial</h6>
+                                    <h3 style="color: #aa1a1a;">CEIDEUL</h3>
+                                    <h4 style="color: #aa1a1a;">Universidad Libre</h4>
+                                    <br>
+                                    <a class="readmore_btred" href="http://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/1759-gaceta-empresarial" target="_blank">Gaceta Empresarial</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="pogoSlider-slide" style="background-image:url(images/slider_5.png);">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="slide_text" style="margin-top: 200px;" >
+                                    <h6 style="font-size: 20px; color: #aa1a1a;" >Centro de Emprendimiento, Innovación y Desarrollo Empresarial</h6>
+                                    <h3 style="color: #aa1a1a;">CEIDEUL</h3>
+                                    <h4 style="color: #aa1a1a;">Universidad Libre</h4>
+                                    <br>
+                                    <a class="readmore_btred" href="http://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/1759-gaceta-empresarial" target="_blank">Gaceta Empresarial</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                  </div>
+                  <!-- .pogoSlider -->
+               </div>
+            </div>
+         </div>
          <!-- End Banner -->
          <!-- section -->
-         <div class="section about_section layout_padding padding_top_0">
-            <div class="container" style="width:100%; margin-top:200px;">
-            <form class="w3-container w3-card-4 w3-light-grey">
-            <h2>Editar Perfil</h2>
-  <p><label>Nombres</label>
-  <input class="w3-input w3-border" name="first" id="txtnombreperfil" type="text"></p>
-
-  <p><label>Apellidos</label>
-  <input class="w3-input w3-border" name="last" id="txtapellidosperfil" type="text"></p>
-
-  <p><label>Contraseña</label>
-  <input class="w3-input w3-border" name="last" id="txtpass1" type="password"></p>
-
-  <p><label>Repetir Contraseña</label>
-  <input class="w3-input w3-border" name="last" id="txtpass2" type="password"></p>
-  <button class="w3-btn w3-red" type="button" id="btn_confirm">Guardar Cambios</button></p>
-</form>
-            </div>
+         <!-- <div class="section about_section layout_padding dash_bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center">
+                           <h2>What We Do</h2>
+                        </div>
                      </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                     <div class="full feature_box">
+                         <div class="full icon">
+                            <img class="default-block" src="images/icon_1.png" alt="#" />
+                            <img class="default-none" src="images/icon_1w.png" alt="#" />
+                         </div>
+                         <div class="full">
+                            <h4>Link Building</h4>
+                         </div>
+                         <div class="full">
+                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                     <div class="full feature_box">
+                         <div class="full icon">
+                            <img class="default-block" src="images/icon_2.png" alt="#" />
+                            <img class="default-none" src="images/icon_2w.png" alt="#" />
+                         </div>
+                         <div class="full">
+                            <h4>Monthly SEO Task</h4>
+                         </div>
+                         <div class="full">
+                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                     <div class="full feature_box">
+                         <div class="full icon">
+                            <img class="default-block" src="images/icon_3.png" alt="#" />
+                            <img class="default-none" src="images/icon_3w.png" alt="#" />
+                         </div>
+                         <div class="full">
+                            <h4>On Page SEO</h4>
+                         </div>
+                         <div class="full">
+                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                     <div class="full feature_box">
+                         <div class="full icon">
+                            <img class="default-block" src="images/icon_4.png" alt="#" />
+                            <img class="default-none" src="images/icon_4w.png" alt="#" />
+                         </div>
+                         <div class="full">
+                            <h4>Online marketing</h4>
+                         </div>
+                         <div class="full">
+                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+         <!-- end section -->
+         <!-- section -->
+         <div class="section about_section layout_padding padding_top_0">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                     <div class="full">
+                        <div class="heading_small">
+                          <h4>¿QUIÉNES SOMOS?</h4>
+                        </div>
+                        <p style="text-align: justify;
+                        text-justify: inter-word;">CEIDEUL es el Centro de Emprendimiento, Innovación y Desarrollo Empresarial de la Universidad Libre. Este órgano, se encarga de acompañar, fomentar y asesorar el intraemprendimiento en la comunidad unilibrista, estudiantes, egresados y comunidad en general con miras a apoyar proyectos creativos e innovadores, generando ideas y modelos de negocio, con el fin de implementar recursos que permitan patrocinar los proyectos de emprendimiento e innovación por medio de la incubadora de empresa, spin off, capital semilla, capital de riesgo o ángel inversionista</p>
+                      </div>
+
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                     <div class="full text_align_center">
+                        <img style="margin-top:90px;" class="img-responsive" src="images/Docentes CEIDEUL.png" alt="#" />   
+                      </div>
+                  </div>
+               </div>
+
+               
+            </div>
+         </div>
+      
+         <!-- OTRA SECCION-->
+         <div class="section about_section layout_padding padding_top_0">
+            <div class="container">
+               <div class="row" style="margin-bottom: -150px;">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                     <div class="full">
+  
+                        <img style=" border-radius: 100px; margin-top: 130px;" class="img-responsive" src="images/vision.jpg" alt="#" />   
+                      </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                     <div class="full">
+                        <div class="heading_small" style="right: 90px;">
+                          <h4 style="margin-bottom: 100px; text-align: right;">VISIÓN</h4>
+                        </div>
+                     <div class="full text_align_center">
+                        <p style="text-align: justify;
+                        text-justify: inter-word;
+                        margin-top: -40px;">Ser un Centro de proyección económica y 
+	social, en el que participa la comunidad de 
+	la Universidad Libre en el emprendimiento 
+	y el empresarismo, con el fin de desarrollar 
+	proyectos tecnológicos e innovadores, así 
+	como asesorar las mipymes del país, 
+	extendiendo sus servicios dentro de su 
+	entorno, promoviendo la creación de 
+	Empresa y Proyectos sustentables con la 
+	comunidad, que respondan a las 
+	necesidades de la población con miras a 
+	mejorar la calidad de vida.</p>
+                      </div>
+                     
+                      </div>
+                  </div>
+               </div>
+
+               
+           
+         </div>
+      </div>
+         <!-- end section -->
+         <!-- section -->
+         <div class="section about_section layout_padding padding_top_0">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center margin-bottom_30">
+                           <h2><br>MISIÓN</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-10 offset-lg-1">
+                     <div class="full text_align_center">
+                         <p style="text-align: justify;
+                         text-justify: inter-word;">Ser un Centro de proyección económica y 
+                           social, en el que participa la comunidad de 
+                           la Universidad Libre en el emprendimiento 
+                           y el empresarismo, con el fin de desarrollar 
+                           proyectos tecnológicos e innovadores, así 
+                           como asesorar las mipymes del país, 
+                           extendiendo sus servicios dentro de su 
+                           entorno, promoviendo la creación de 
+                           Empresa y Proyectos sustentables con la 
+                           comunidad, que respondan a las 
+                           necesidades de la población con miras a 
+                           mejorar la calidad de vida.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full text_align_center">
+                       <img class="img-responsive" style="border-radius: 40px;" src="images/mision.png" alt="#" />
+                     </div>
+
                   </div>
                </div>
             </div>
@@ -421,55 +574,7 @@
       </script>
 <script>
 document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-document.getElementById("txtnombreperfil").value = '<?php echo $_SESSION['nombres']?>';
-document.getElementById("txtapellidosperfil").value = '<?php echo $_SESSION['apellidos']?>';
-document.getElementById("txtpass1").value = '<?php echo $_SESSION['clave']?>';
-$(document).ready(function(){
-		$('#btn_confirm').click(function(){
-			if($('#txtnombreperfil').val()==""){
-				alertify.alert("Debes agregar tu nombre").setHeader('<em>  </em> '); 
-				return false;
-			}else if($('#txtapellidosperfil').val()==""){
-				alertify.alert("Debes agregar tus apellidos").setHeader('<em>  </em> '); 
-				return false;
-			}
-		else if($('#txtpass1').val()==""){
-				alertify.alert("Debes agregar una contraseña").setHeader('<em>  </em> '); 
-				return false;
-			}
-			else if(($('#txtpass1').val()!==$('#txtpass2').val()) &&($("#lblpass2").css("visibility")!=='hidden')){
-				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
-				return false;
-			}
-alert("hola");
-			var cadena="correo_electronico=" + '<?php echo $_SESSION['user']; ?>' + 
-					"&nombres=" + $('#txtnombreperfil').val()+"&apellidos="
-					+ $('#txtapellidosperfil').val()+"&clave="+ $('#txtpass1').val();
-
-console.log(cadena);
-					$.ajax({
-						type:"POST",
-						url:"php/editarperfil.php",
-						data:cadena,
-						success:function(r){
-							console.log(r)
-							if(r==1){
-						
-
-								alertify.alert('Usuario modificado con éxito').set('onok', function(closeEvent){ window.location="index.php";
-									<?php
- ?>} ).setHeader('<em>  </em> '); 
-							}else{
-								alertify.alert('error al modificar').setHeader('<em>  </em> '); ;
-							}
-						}
-					});
-		});	
-	});
-
-
-   function volverinicio(){
+function volverinicio(){
    var tipo='<?php echo $_SESSION['tipo_usuario']?>';
    if(tipo=="Estudiante"){
       window.location="home_Estudiante.php";
@@ -478,13 +583,7 @@ console.log(cadena);
    }else if(tipo=="Docente"){
       window.location="home_Docente.php";
    }      
-   else if(tipo=="Externo"){
-      window.location="home_Externo.php";
-   }     
 }
-
-
-
  </script>  
    </body>
 </html>

@@ -178,8 +178,6 @@
    $sql="SELECT * from tb_comentarios 
             where correo='$usuario'";
             
-
-
             $result=mysqli_query($conexion,$sql);
            
 
@@ -371,6 +369,9 @@ console.log(cadena);
    }else if(tipo=="Docente"){
       window.location="home_Docente.php";
    }      
+   else if(tipo=="Externo"){
+      window.location="home_Externo.php";
+   }    
 }
 
 
@@ -385,11 +386,7 @@ console.log(cadena);
       "order": [[ 0, "desc" ]]
     });
 
-      
-
 });
-
-
 $(".vercomentario").click(function() {
    var row = $(this).closest("tr"); 
    var comentario = row.find(".tdcomentario2").text();
@@ -402,13 +399,8 @@ $(".vercomentario").click(function() {
    //  var tdformulario=row.find(".tdformulario").text(); 
    //  var tdarchivo=row.find(".tdruta").text(); 
    //  location.href="agregar_comentario.php?variable="+tdformulario+"&variable2="+tdnombre+"&variable3="+tdarchivo+"&variable4="+correo;
- 
+
 })
-
-
-
-
-
 
 
 

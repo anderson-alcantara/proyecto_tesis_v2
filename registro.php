@@ -17,8 +17,10 @@
               <form class="login-form" id="form1">
 			  <input type="text" placeholder="Nombres" id="nombres" required/>
 			  <input type="text" placeholder="Apellidos" id="apellidos" required/>
-                <input type="text" placeholder="E-mail" id="correo_electronico" required/>
-                <input type="password" placeholder="Clave" id="password" required/>
+			  <input type="text" placeholder="Número de documento" id="documento" required/>
+				<input type="text" placeholder="E-mail" id="correo_electronico" required/>
+
+                <input type="password" placeholder="Clave" style="border-top:50px;" id="password" required/>
                 <input type="password" placeholder="Repetir clave" id="password2" required/>
                 <select name="tipousuario" id="selectTipo" class="select-css"
                 style="border-bottom: 100px;" autocomplete="off">
@@ -26,6 +28,20 @@
                   <option value="value2">Estudiante</option>
 				  <option value="value3">Egresado</option>
 				  <option value="value3">Docente</option>
+				  <option value="value3">Externo</option>
+
+				</select>
+</br>
+				<select name="tipousuario" id="selectSeccional" class="select-css"
+                style="border-bottom: 100px;" autocomplete="off">
+                  <option value="value1" selected>Seccional</option>
+				  <option>Bogotá</option>
+	<option>Cali</option>
+	<option>Barranquilla</option>
+	<option>Cartagena</option>
+	<option>Socorro</option>
+	<option>Cúcuta</option>
+	<option>Pereira</option>
 
                 </select>
                 <button type="button" style="margin-top: 20px;" id="registrarNuevo"  >Ingresar</button> 
@@ -49,18 +65,36 @@
 				alertify.alert("Debes agregar el apellido").setHeader('<em>  </em> '); 
 				return false;
 			}
+
+			else if($('#documento').val()==""){
+				alertify.alert("Debes agregar el documento").setHeader('<em>  </em> '); 
+				return false;
+			}
+
+
+
 			else if(validateEmail($('#correo_electronico').val())==false){
 				alertify.alert("email incorrecto").setHeader('<em>  </em> '); 
 				return false;
-			}else if($('#password').val()==""){
+			
+			}
+
+			
+			else if($('#password').val()==""){
 				alertify.alert("Debes agregar la contraseña").setHeader('<em>  </em> '); 
 				return false;
 			}else if($('#password').val()!==$('#password2').val()){
 				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
 				return false;
 			}
+
+
 			else if($("#selectTipo option:selected" ).text()=="Tipo de Usuario"){
 				alertify.alert("Debes agregar el tipo de usuario").setHeader('<em>  </em> '); 
+				return false;
+			}
+			else if($("#selectSeccional option:selected" ).text()=="Seccional"){
+				alertify.alert("Debes agregar la seccional").setHeader('<em>  </em> '); 
 				return false;
 			}
 			
@@ -69,6 +103,8 @@
 					"&password=" + $('#password').val() +
 					"&tipousuario=" + $("#selectTipo option:selected").text()+
 					"&nombres=" + $('#nombres').val()+
+					"&documento=" + $('#documento').val()+
+					"&seccional=" + $("#selectSeccional option:selected").text()+
 					"&apellidos=" + $('#apellidos').val();
 				console.log(cadena);
 					$.ajax({

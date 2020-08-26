@@ -7,12 +7,14 @@
 		$password=$_POST['password'];
 		$nombres=$_POST['nombres'];
 		$apellidos=$_POST['apellidos'];
+		$documento=$_POST['documento'];
+		$seccional=$_POST['seccional'];
 
 		if(buscaRepetido($usuario,$password,$conexion)==1){
 			echo 2;
 		}else{
-			$sql="INSERT into tb_usuarios (correo_electronico,clave,tipo_usuario,nombres,apellidos)
-				values ('$usuario','$password','$tipousuario','$nombres','$apellidos')";
+			$sql="INSERT into tb_usuarios (correo_electronico,clave,tipo_usuario,nombres,apellidos,seccional,documento)
+				values ('$usuario','$password','$tipousuario','$nombres','$apellidos','$seccional','$documento')";
 			echo $result=mysqli_query($conexion,$sql);
 		}
 

@@ -13,7 +13,10 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
       <!-- Pogo Slider CSS -->
       <link rel="stylesheet" href="css/pogo-slider.min.css" />
       <!-- Site CSS -->
@@ -22,16 +25,11 @@
       <link rel="stylesheet" href="css/responsive.css" />
       <!-- Custom CSS -->
       <link rel="stylesheet" href="css/custom.css"/>
-
-      <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
-<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="js/datatable.js"></script>
-<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" type="text/css" href="js/alertifyjs/css/themes/default.css">
-      
 <link rel="stylesheet" type="text/css" href="js/alertifyjs/css/alertify.css">
+
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/alertifyjs/alertify.js"></script>
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -44,7 +42,6 @@
 	 header("Location:index.php");
 	 exit(); 
  }
-
 ?>
    <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
       <!-- LOADER -->
@@ -56,7 +53,7 @@
       <!-- END LOADER -->
       <div class="wrapper">
       <nav id="sidebar">
-      <li><a onclick="volverinicio()" style="cursor:pointer;">Inicio</a></li>
+      <li><a href="home_Admin.php"  style="cursor:pointer;">Inicio</a></li>
       <li><a href="#">Sobre CEIDEUL</a></li>
          <ul class="nav__list">
             <li>
@@ -130,6 +127,8 @@
       </nav>
       <div id="content">
 
+
+         <iframe src="forms/form_inicio.html" id="frameforms" width="100%" height="100%" hidden></iframe>
          <!-- Start header -->
          <header class="top-header" style="background-color: white;">
             <div class="container">
@@ -156,19 +155,192 @@
          <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
             <div class="container" style="width:100%; margin-top:200px;">
-            <h2>Añadir Comentario</h2>
-            <h4 id="txtpara"></h4>
-            <h4 id="textformulario">Formualrio</h4>
-            <textarea class="form-control" id="txtcomentario" rows="3" style="white-space: pre-wrap;"></textarea>
-            <!-- <input type="file" class="form-control" id="exampleFormControlFile1"> -->
-            <button type="button" onclick="sendcomentario()" class="btn btn-success">Enviar</button>
+            <form class="w3-container w3-card-4 w3-light-grey" id="form1">
+            <h2>Agregar Docente</h2>
+  <p><label>Nombres</label>
+  <input class="w3-input w3-border" name="first" id="txtnombreperfil" type="text"></p>
+
+  <p><label>Apellidos</label>
+  <input class="w3-input w3-border" name="last" id="txtapellidosperfil" type="text"></p>
+
+
+  <p><label>correo</label>
+  <input class="w3-input w3-border" name="last" id="txtcorreo" type="text"></p>
+
+  <p><label>Número de cédula</label>
+  <input class="w3-input w3-border" name="last" id="txtcedula" type="text"></p>
+
+  <label for="exampleFormControlSelect1">Seccional</label>
+    <select class="form-control" id="txtseccional">
+    <option> </option>
+    <option>Bogotá</option>
+    
+      <option>Cali</option>
+      <option>Barranquilla</option>
+      <option>Cartagena</option>
+      <option>Socorro</option>
+      <option>Cúcuta</option>
+      <option>Pereira</option>
+    </select>
+
+  <p><label>Contraseña</label>
+  <input class="w3-input w3-border" name="last" id="txtpass1" type="password"></p>
+
+  <p><label>Repetir Contraseña</label>
+  <input class="w3-input w3-border" name="last" id="txtpass2" type="password"></p>
+  <button class="btn btn-primary" type="button" id="btn_confirm">Guardar Cambios</button></p>
+</form>
             </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
- 
+         <!-- end section -->
+         <!-- section -->
+         <!-- <div class="section dark_blue_layout white_fonts layout_padding">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-lg-4">
+                     <div class="full">
+                        <div class="heading_main text_align_left" style="margin-bottom: 0;">
+                           <h2><strong class="small">Get your  free quote</strong><br>Today</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-lg-8">
+                     <div class="full">
+                         <div class="form_section">
+                            <form class="news_submit_form">
+                              <fieldset>
+                                 <div class="field">
+                                    <input type="email" placeholder="Enter url" name="#" required />
+                                    <button>Submit</button>
+                                 </div>
+                              </fieldset>
+                            </form>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+         <!-- end section -->
+         <!-- section -->
+         <!-- <div class="section about_section layout_padding">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center margin-bottom_30">
+                           <h2><strong class="small theme_color">We’ve done lot’s of work, Let’s</strong><br>Check some from here</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+              <div class="row">
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                   <div class="work_blog margin-top_30">
+                      <img class="img-responsive" src="images/blog1.jpg" alt="#" />
+                      <div class="hover_workblog">
+                          <img src="images/search_icon.png" alt="#" />
+                      </div>
+                   </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                   <div class="work_blog margin-top_30">
+                      <img class="img-responsive" src="images/blog2.jpg" alt="#" />
+                      <div class="hover_workblog">
+                          <img src="images/search_icon.png" alt="#" />
+                      </div>
+                   </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                   <div class="work_blog margin-top_30">
+                      <img class="img-responsive" src="images/blog3.jpg" alt="#" />
+                      <div class="hover_workblog">
+                          <img src="images/search_icon.png" alt="#" />
+                      </div>
+                   </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                   <div class="work_blog margin-top_30">
+                      <img class="img-responsive" src="images/blog4.jpg" alt="#" />
+                      <div class="hover_workblog">
+                          <img src="images/search_icon.png" alt="#" />
+                      </div>
+                   </div>
+                </div>
+
+              </div>
+            </div>
+         </div> -->
+         <!-- end section -->
+         <!-- section -->
+         <!-- <div class="section about_section layout_padding padding_top_0">
+            <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center margin-bottom_30">
+                           <h2>Get in touch</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div> -->
+         <!-- section -->
+         <!-- <div class="section contact_section">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6 theme_color_bg fc3726 padding_0">
+                     <div class="full">
+                        <div class="row">
+                           <div class="col-sm-12 col-md-10 offset-lg-1">
+                              <div class="full contact_form">
+                                 <form class="contact_form_inner" action="#">
+                                    <fieldset>
+                                       <div class="field">
+                                          <input type="text" name="name" placeholder="Your name" />
+                                       </div>
+                                       <div class="field">
+                                          <input type="email" name="email" placeholder="Email" />
+                                       </div>
+                                       <div class="field">
+                                          <input type="text" name="phone_no" placeholder="Phone number" />
+                                       </div>
+                                       <div class="field">
+                                          <textarea placeholder="Message"></textarea>
+                                       </div>
+                                       <div class="field center">
+                                          <button class="margin-top_30">SEND</button>
+                                       </div>
+                                    </fieldset>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 padding_0">
+                     <div class="full">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <div class="full map_section">
+                                 <div id="map">
+                                    <div id="googleMap" style="width:100%;height:440px;"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
          <!-- end section -->
          <!-- Start Footer -->
          <footer class="footer-box" >
@@ -227,7 +399,9 @@
       </div>
       <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
       <!-- ALL JS FILES -->
-
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
       <!-- ALL PLUGINS -->
       <script src="js/jquery.magnific-popup.min.js"></script>
       <script src="js/jquery.pogo-slider.min.js"></script>
@@ -257,77 +431,15 @@
 
               if(value!==idformulario){
                $("#"+value).prop("checked", false);
-               
+               debugger
               }  
             
             });
 
            
          }
-         
       </script>
 <script>
-var arreglo=[];
-if(document.location.toString().indexOf('?') !== -1) {
-    var query = document.location
-                   .toString()
-                   // get the query string
-                   .replace(/^.*?\?/, '')
-                   // and remove any existing hash string (thanks, @vrijdenker)
-                   .replace(/#.*$/, '')
-                   .split('&');
-
-    for(var i=0, l=query.length; i<l; i++) {
-       var aux = decodeURIComponent(query[i]).split('=');
-      arreglo.push(aux);
-    }
-}
-
-var nombreformato=arreglo[0][1];
-var nombre_remit=arreglo[1][1];
-var ruta=arreglo[2][1];
-var correo=arreglo[3][1];
-var nombre_comentador='<?php echo $_SESSION['nombres'].' '. $_SESSION['apellidos']; ?>'
-
-var d=new Date();
-var mes=d.getMonth()+1
-var fecha=d.getDate()+" "+mes+" "+d.getFullYear();
-
-console.log(comentario);
-
-$("#txtpara").text("Para: "+ nombre_remit);
-
-$("#textformulario").text("Formato: "+ nombreformato);
-
-
-function sendcomentario(){
-   
-   var comentario = $('#txtcomentario').val();
-   cadena="nombreformato=" + nombreformato+ 
-					"&nombre_remit=" + nombre_remit+
-               "&ruta=" + ruta+
-               "&correo=" + correo+
-               "&nombre_comentador=" + nombre_comentador+
-               "&fecha=" + fecha+
-               "&comentario=" + comentario;
-   $.ajax({
-						type:"POST",
-						url:"php/send_comentario.php",
-						data:cadena,
-						success:function(r){
-                     if(r==1){
-                        alertify.alert('Comenatario enviado').set('onok', function(closeEvent){ window.location="home_Docente.php";
-									<?php
- ?>} ).setHeader('<em>  </em> '); 
-                     }
-
-						}
-					});
-
-}
-
-
-
 
 $(document).ready(function(){
 		$('#btn_confirm').click(function(){
@@ -338,6 +450,22 @@ $(document).ready(function(){
 				alertify.alert("Debes agregar tus apellidos").setHeader('<em>  </em> '); 
 				return false;
 			}
+
+         else if($('#txtcorreo').val()==""){
+				alertify.alert("Debes agregar el correo").setHeader('<em>  </em> '); 
+				return false;
+			}
+
+
+         else if($('#txtcedula').val()==""){
+				alertify.alert("Debes agregar la cédula").setHeader('<em>  </em> '); 
+				return false;
+			}
+			else if($("#txtseccional option:selected" ).text()==" "){
+				alertify.alert("Debes agregar la seccional").setHeader('<em>  </em> '); 
+				return false;
+			}
+         
 		else if($('#txtpass1').val()==""){
 				alertify.alert("Debes agregar una contraseña").setHeader('<em>  </em> '); 
 				return false;
@@ -346,69 +474,43 @@ $(document).ready(function(){
 				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
 				return false;
 			}
-alert("hola");
-			var cadena="correo_electronico=" + '<?php echo $_SESSION['user']; ?>' + 
-					"&nombres=" + $('#txtnombreperfil').val()+"&apellidos="
-					+ $('#txtapellidosperfil').val()+"&clave="+ $('#txtpass1').val();
 
-console.log(cadena);
+			cadena="correo_electronico=" + $('#txtcorreo').val() +
+					"&password=" + $('#txtpass1').val() +
+					"&tipousuario=" + 'Docente'+
+					"&nombres=" + $('#txtnombreperfil').val()+
+					"&documento=" + $('#txtcedula').val()+
+					"&seccional=" + $("#txtseccional option:selected").text()+
+					"&apellidos=" + $('#txtapellidosperfil').val();
+				console.log(cadena);
 					$.ajax({
 						type:"POST",
-						url:"php/editarperfil.php",
+						url:"php/registro.php",
 						data:cadena,
 						success:function(r){
 							console.log(r)
-							if(r==1){
-						
-
-								alertify.alert('Usuario modificado con éxito').set('onok', function(closeEvent){ window.location="index.php";
-									<?php
- ?>} ).setHeader('<em>  </em> '); 
+							if(r==2){
+								alertify.alert("Este usuario ya existe, prueba con otro").setHeader('<em>  </em> ');
+								$('#form1')[0].reset();
+							}
+							else if(r==1){
+								alertify.alert('Usuario creado con éxito').set('onok', function(closeEvent){ window.location="index_Admin.php";} ).setHeader('<em>  </em> '); 
+								
+								
+								
 							}else{
-								alertify.alert('error al modificar').setHeader('<em>  </em> '); ;
+								alertify.error("Fallo al agregar");
 							}
 						}
 					});
+
+
 		});	
 	});
 
 
-   function volverinicio(){
-   var tipo='<?php echo $_SESSION['tipo_usuario']?>';
-   if(tipo=="Estudiante"){
-      window.location="home_Estudiante.php";
-   }else if(tipo=="Egresado"){
-      window.location="home_Egresado.php";
-   }else if(tipo=="Docente"){
-      window.location="home_Docente.php";
-   }         else if(tipo=="Externo"){
-      window.location="home_Externo.php";
-   }    
-}
+
+
  </script>  
- <script>
-   var data;
-  $(document).ready(function(){
-     
-    var table= $('#myTable').DataTable({
-
-      "order": [[ 0, "desc" ]]
-    });
-
-  
-
-});
-$(".miboton").click(function() {
-    var row = $(this).closest("tr");    // Find the row
-    var correo = row.find(".tdcorreo").text(); 
-    var fecha = row.find(".tdfecha").text();// Find the text
-    var tipo_usuario=row.find(".tipo_usuario").text();
-    var tdnombre=row.find(".tdnombre").text(); 
-    var tdformulario=row.find(".tdformulario").text(); 
-    var tdarchivo=row.find(".tdruta").text(); 
-
-});
- </script>
-
    </body>
 </html>

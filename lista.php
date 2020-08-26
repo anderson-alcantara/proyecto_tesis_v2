@@ -296,6 +296,9 @@ console.log(cadena);
    }else if(tipo=="Docente"){
       window.location="home_Docente.php";
    }      
+   else if(tipo=="Externo"){
+      window.location="home_Externo.php";
+   }    
 }
 
 
