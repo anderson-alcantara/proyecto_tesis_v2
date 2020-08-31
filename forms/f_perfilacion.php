@@ -1,283 +1,224 @@
 <!DOCTYPE html>
 <?php
-session_start();
+ session_start();
+ if(!isset($_SESSION['user'])){
+	 header("Location:../index.php");
+	 exit(); 
+ }
 ?>
 <html lang="es">
 <head>
 
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/themes/default.css">
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
+<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
 <script src="../js/alertifyjs/alertify.js"></script>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/styleform.css">
+  <link rel="stylesheet" href="../css/styleform2.css">
   <title>Document</title>
 </head>
 <body>
-
+<p></p>
 <form class="form" id="form1" action="./" method="POST">
 <div id="pag1">
   <!--Titulo princiapl-->
-<div class="form__title"><a id="nombre_form">FORMATO DE PERFILACIÓN DE PUESTOS DE TRABAJO</a></div>
+  <div style="">
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE PERFILACIÓN DE PUESTOS DE TRABAJO</a></div>
 <p style="color: red;">FOR-AC-006</p>
-<hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-  <label for="givennames" class="form__label">Dirección de correo electrónico </label>
-  <input type="email" class="form__input" name="" value="sdefsdf" id="" placeholder="tu dirección de correo electrónico" autocomplete="off">
-  <br>
 </div>
+<hr style="color:red; background-color:red;">
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="txtnombre">Nombre</label>
+      <input type="text" class="form-control" id="txtnombre" placeholder="Email" required disabled>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="txtcorreo">Email</label>
+      <input type="text" class="form-control" id="txtcorreo" placeholder="" required disabled>
+    </div>
+  </div>
+
+<hr>
+  <!--label&textarea-->
+  <div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4">Fecha</label>
+      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">RAZÓN SOCIAL DE LA EMPRESA</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
 <hr>
 
-<!--label&input-date-->
-<div class="form__item">
-  <label for="" class="form__label">FECHA </label>
-  <input type="date" class="form__input form__input--small" name="" id="" placeholder="tu respuesta">
 
-  
-  <br>
-</div>
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">DIRECCIÓN EMPRESA</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
 <hr>
 
-<!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">RAZÓN SOCIAL DE LA EMPRESA </label>
-    <input type="text" class="form__input" name="" id="razonsocial" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4">LOCALIDAD - BARRIO</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">TELÉFONO DE CONTACTO</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
   </div>
-  <hr>
 
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">DIRECCIÓN EMPRESA </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">LOCALIDAD - BARRIO </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">TELÉFONO DE CONTACTO </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">No. DE CONTRATO DE LA ASESORÍA </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-  
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">PUESTO DE TRABAJO </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-  <div class="form__item">
-    <label for="givennames" class="form__label">DENOMINACIÓN DEL PUESTO DE TRABAJO</label>
-    <hr style="height:0px; visibility:hidden;"/>
-    <div class="grupordbuttons">
-    <input type="radio" autocomplete="off" 
-    name="puesto" value="DIRECTIVO">DIRECTIVO
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="puesto" value="JURIDICO">JURIDICO
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="puesto" value="PROFESIONAL">PROFESIONAL
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="puesto" value="TÉCNICO">TÉCNICO
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="puesto" value="ASISTENCIAL">ASISTENCIAL
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="puesto" value="OPERARIO">OPERARIO
-
-    <hr style="height:0px; visibility:hidden;"/>
-
-  </div> 
-
-  </div>
 <hr>
 
-<!--label&radio-->
-<div class="form__item">
-    <label for="givennames" class="form__label">FUNCIONES DEL PUESTO DE TRABAJO </label>
-    <hr style="height:0px; visibility:hidden;"/>
-    <div class="grupordbuttons">
-    <input type="radio" autocomplete="off" 
-    name="fpuesto" value="ADMINISTRACIÓN">ADMINISTRACIÓN
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="COMERCIAL / SERVICIO AL CLIENTE">COMERCIAL / SERVICIO AL CLIENTE
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="CALIDAD">CALIDAD
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="LOGÍSTICA">LOGÍSTICA
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="PRODUCCIÓN">PRODUCCIÓN
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="MERCADEO">MERCADEO
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="CONTABILIDAD">CONTABILIDAD
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="RRHH">RRHH
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="MANTENIMIENTO">MANTENIMIENTO
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="COMPRAS">COMPRAS
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="TECNOLOGÍA">TECNOLOGÍA
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="radio" autocomplete="off"
-    name="fpuesto" value="Otro:">Otro:
-    <hr style="height:0px; visibility:hidden;"/>
-    <input type="text" class="form__input" name="givennames" id="givennames" placeholder="tu respuesta" autocomplete="off">
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4">No. DE CONTRATO DE LA ASESORÍA</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">PUESTO DE TRABAJO</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="exampleFormControlSelect1">DENOMINACIÓN DEL PUESTO DE TRABAJO</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+      <option></option>
+      <option>DIRECTIVO</option>
+      <option>JURIDICO</option>
+      <option>PROFESIONAL</option>
+      <option>TÉCNICO</option>
+      <option>ASISTENCIAL</option>
+      <option>OPERARIO</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="selectconotro1">FUNCIONES DEL PUESTO DE TRABAJO</label>
+      <select class="form-control" id="selectconotro1" required>
+      <option></option>
+      <option>ADMINISTRACIÓN</option>
+      <option>COMERCIAL / SERVICIO AL CLIENTE</option>
+      <option>CALIDAD</option>
+      <option>LOGÍSTICA</option>
+      <option>PRODUCCIÓN</option>
+      <option>MERCADEO</option>
+      <option>CONTABILIDAD</option>
+      <option>RRHH</option>
+      <option>MANTENIMIENTO</option>
+      <option>COMPRAS</option>
+      <option>TECNOLOGÍA</option>
+      <option>Otro:</option>
+      
+      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+    </div>
+  </div>
+
+<hr>
+
+
+
+
+
+
+<div class="form-row">
+<div class="form-group col-md-6">
+    <label for="exampleFormControlSelect1">ENUMERE LAS RESPONSABILIDADES DEL PUESTO DE TRABAJO</label>
+    <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+    <label></label>
+
+    </div>
+  </div>
+
+<hr>
+
+<h3 style="text-align:center;">POSICIÓN DEL PUESTO EN EL ORGANIGRAMA</h3>
+
+<hr>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">SUBORDINACIÓN (Indique si este puesto de trabajo tiene subordinados y cuáles)</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">SUPERVISIÓN (Indique si este puesto esta bajo supervisión y de qué cargos)</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
+<hr>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">COMUNICACIONES COLATERALES (Indique los pares con los cuales debe manejar comunicación directa)</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
 
-    <br><br>
-  </div>
-<hr>
-
-
-<!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">ENUMERE LAS RESPONSABILIDADES DEL PUESTO DE TRABAJO</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label-->
-<div class="form__item">
-    <label for="givennames" class="form__label2">POSICIÓN DEL PUESTO EN EL ORGANIGRAMA</label>
-    <br>
-</div>
-<hr>
-
-<!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">SUBORDINACIÓN (Indique si este puesto de trabajo tiene subordinados y cuáles) </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-<!--label&textarea-->
-  <div class="form__item">
-    <label for="givennames" class="form__label">SUPERVISIÓN (Indique si este puesto esta bajo supervisión y de qué cargos) </label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">COMUNICACIONES COLATERALES (Indique los pares con los cuales debe manejar comunicación directa)</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">APTItu respuesta</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label-->
-<div class="form__item">
-    <label for="givennames" class="form__label2">CONDICIONALES DEL PUESTO</label>
-    <br>
-</div>
-<hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">HORAS MENSUALES</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">HORAS SEMANALES</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-  <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">HORAS DIARIAS</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
-  </div>
-  <hr>
-
-    <!--label&textarea-->
-<div class="form__item">
-    <label for="givennames" class="form__label">HORARIO LABORAL</label>
-    <input type="text" class="form__input" name="" id="" placeholder="tu respuesta" autocomplete="off">
-
-    <br>
+    <div class="form-group col-md-6">
+<label></label>
     </div>
+
+
+  </div>
+<hr>
+
+<hr>
+
+<h3 style="text-align:center;">CONDICIONALES DEL PUESTO</h3>
+
+<hr>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">HORAS MENSUALES</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">HORAS SEMANALES</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+<hr>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">HORAS DIARIAS</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">HORARIO LABORAL</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+<hr>
+
+
+
+
+
 
 
   <!--botón enviar-->
   <div class="form__item">
-    <button class="form__btn__green" type="button" onclick="Ongeneratepdf()">Enviar</button>
+    <button class="btn btn-success" type="button" id="botonenviar">Enviar</button>
   </div>
 </form>
 
@@ -292,125 +233,137 @@ session_start();
 });
  }
 
-function addrespuesta(){
 
-  $(".form__item").each(function(){
-    var elem2 = document.createElement('label');
-    elem2.style.color="red";
 
-    var that=$(this);
-    var children=that.children();
-$.each(children,function(index,value){
+ function verificarvacio(){
 
-if($(this).get(0).tagName=="DIV"){
+var retorno=true;
+  $(".form-row").each(function(){
 
-  var hijosrdbutton=$(this).children();
+var dentrorow=$(this).children();
+$.each(dentrorow,function(index,value){
 
-$.each(hijosrdbutton,function(index,value){
-  if($(this).get(0).tagName=="INPUT"){
-    var tipo=($(this).prop('type'));
-    console.log(tipo);
-    switch(tipo){
-      case "radio":
-      if($(this).is(':checked')){
-        var valor=$(this).val();
-        debugger
-        if(valor=="Otro:"){
-          $.each(hijosrdbutton,function(index,value){
+  if($(this).get(0).tagName=="DIV"){
+    var columna=$(this).children();
+    $.each(columna,function(index,value){
+     
 
-            if($(this).get(0).tagName=="INPUT"){
-              var tipo=($(this).prop('type'));
-              if(tipo=="text"){
-                valor=$(this).val();
-                console.log(valor);
-                elem2.innerHTML = valor; 
+    var tipocontrol=$(this).get(0).tagName;
+  
+   
+switch(tipocontrol){
+case "INPUT":
+case "SELECT":
 
-              }
-            }
+var valor=$(this).val();
+if(valor=="" && $(this).is(":visible") && $(this).prop('required')){
+  $(this).css({"border": "2px solid red", "border-radius": "4px"});
+  retorno= false;
+}else{
 
-          })
-        }
-elem2.innerHTML = valor; 
-      that.append(elem2);
-      
-      }
-      break;
-    }
+  $(this).css({"border": "", "border-radius": ""});
+}
+break;
+}
+    })
+
 
 
 
   }
   
+})
+
+
 });
+return retorno;
 }
-  if($(this).get(0).tagName=="INPUT"){
-    var tipo=($(this).prop('type'));
-    switch(tipo){
-      case "text":
-      case "email":
-      case "date":
-      case "radio":
+
+
+
+
+function addrespuesta(){
+
+  $(".form-row").each(function(){
+
+var dentrorow=$(this).children();
+$.each(dentrorow,function(index,value){
+
+  if($(this).get(0).tagName=="DIV"){
+    var columna=$(this).children();
+    $.each(columna,function(index,value){
+      var that=$(this);
+
+    var tipocontrol=$(this).get(0).tagName;
+  
+   
+switch(tipocontrol){
+case "INPUT":
+case "SELECT":
+  var elem2 = document.createElement('label');
+    elem2.style.color="red";
+  var tipo=($(this).prop('type'));
 var valor=$(this).val();
+
+
 elem2.innerHTML = valor; 
       that.append(elem2);
-      break;
-    }
+break;
+}
+    })
+
 
 
 
   }
-});
-    
-
-    
-        //traigo todos los radio button
-});
+  
+})
 
 
-
-}
-
-
-function valueInput(){
-  $("form#form1 :input[type=text]").each(function(){
-   var input= $(this);
- var inputid = input.attr('id');
- if(inputid.includes("rbgroup")){
-var grupo=inputid.split("_");
-var valorseleccioando=$("input[name=" + grupo[1] + "]:checked").val();
-input.val(valorseleccioando);
-input.removeAttr('hidden');
- } 
 });
 }
 
-  function generateword(){
-    addrespuesta();
-invisibleradio();
-       var header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' "+
-            "xmlns:w='urn:schemas-microsoft-com:office:word' "+
-            "xmlns='http://www.w3.org/TR/REC-html40'>"+
-            "<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScript</title></head><body>";
-       var footer = "</body></html>";
-       var sourceHTML = header+document.body.innerHTML+footer;
-       
-       var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
-       var fileDownload = document.createElement("a");
-       document.body.appendChild(fileDownload);
-       fileDownload.href = source;
-       fileDownload.download = 'document.doc';
-       fileDownload.click();
-       document.body.removeChild(fileDownload);
-    }
+
+
+
+  </script>
+<script>
+
+$(document).ready(function(){
+    $("select").change(function(){
+        var selected = $(this).children("option:selected").val();
+        
+        if(selected=="Otro:"){
+         $(this).closest('div').find("input").attr("hidden",false); 
+         $(this).closest('div').find("input").val("");
+
+         
+        }else{
+
+          $(this).closest('div').find("input").attr("hidden",true); 
+          $(this).closest('div').find("input").val(selected);
+        }
+
+
+    });
+});
+
+</script>
+<script>
+
+$('#txtnombre').val('<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>');
+$('#txtcorreo').val('<?php echo $_SESSION['user']; ?>');
+document.getElementById("botonenviar").addEventListener ("click", Ongeneratepdf, false);
+
 
 
 
 
 
   function Ongeneratepdf(){
-    addrespuesta();
-invisibleradio();
-var doc = new jsPDF();
+    if(verificarvacio()==true){
+      addrespuesta();
+      var doc = new jsPDF();
 var elementHTML = document.body;
 var specialElementHandlers = {
     '#elementH': function (element, renderer) {
@@ -458,75 +411,19 @@ $.ajax({
             }						
 					});
     
-//     window.scrollTo(0,0);     
-// html2canvas(document.getElementById("pag1")).then(function(canvas){
-//   var imgData = canvas.toDataURL('image/png');
-//    var imgWidth = 210; 
-//    var imgHeight = canvas.height * imgWidth / canvas.width; 
-//  var position = 10;
-//  var doc = new jsPDF('p', 'mm');
-//   doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-//   doc.save( 'file.pdf');
-// })
-//     var container = document.body; // full page 
-// 			html2canvas(container).then(function(canvas) {
-//         var imgData = canvas.toDataURL('image/png');
-// var imgWidth = 210; 
-// var pageHeight = 295;  
-// var imgHeight = canvas.height * imgWidth / canvas.width;
+    }else{
+      alertify.alert('Por favor llenar todos los campos obligatorios').set('onok', function(closeEvent){ 
+                   
 
-// var heightLeft = imgHeight;
-// debugger
-// var doc = new jsPDF('p', 'mm');
-// var position = 10; // give some top padding to first page
-
-// doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-// heightLeft -= pageHeight;
-
-// while (heightLeft >= 0) {
-//   position += heightLeft - imgHeight; // top padding for other pages
-//   doc.addPage();
-//   doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-//   heightLeft -= pageHeight;
-// }
-// doc.save( 'file.pdf');
-//             });
-
-
-
-
-
-
-
-
-
-//     var container = document.body; // full page 
-// 			html2canvas(container).then(function(canvas) {
-//         var imgData = canvas.toDataURL('image/png');
-// var imgWidth = 210; 
-// var pageHeight = 295;  
-// var imgHeight = canvas.height * imgWidth / canvas.width;
-
-// var heightLeft = imgHeight;
-// debugger
-// var doc = new jsPDF('p', 'mm');
-// var position = 10; // give some top padding to first page
-
-// doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-// heightLeft -= pageHeight;
-
-// while (heightLeft >= 0) {
-//   position += heightLeft - imgHeight; // top padding for other pages
-//   doc.addPage();
-//   doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-//   heightLeft -= pageHeight;
-// }
-// doc.save( 'file.pdf');
-//             });
-
+									} ).setHeader('<em>  </em> '); 
+    }
 
   }
-  </script>
+
+</script>
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="../js/html2canvas.min.js"></script>
   <script src="../js/jspdf.debug.js"></script>

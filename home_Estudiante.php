@@ -50,7 +50,17 @@
 
 
       <li><a>Inicio</a><li>
-      <li><a href="#">Sobre CEIDEUL</a></li>
+     
+      <ul class="nav__list">
+         <li>
+              <input id="group-1er" type="checkbox" hidden />
+              <label for="group-1er"><span class="fa fa-angle-right"></span>Sobre CEIDEUL</label>
+              <ul class="group-list">
+              <li style="background-color:#353535;"><a href="Editar_Perfil.php">opkpok</a></li>
+                <li><a href="index.php" style="background-color:#353535;">opkipokpo</a></li>
+                <li>
+                </li>
+              </ul>
       <li><a href="ver_comentarios.php">Notificaciones</a></li>
          <ul class="nav__list">
          <li>
@@ -64,10 +74,7 @@
               </ul>
             </li>
 
-
-             
-            
-  
+               
             <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
             <ul class="group-list">
               <li>
