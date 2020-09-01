@@ -49,8 +49,24 @@
       <nav id="sidebar">
         
          <ul class="nav__list">
-         <li><a>Inicio</a><li>
-      <li><a href="#">Sobre CEIDEUL</a></li>
+         <li><a onclick="volverinicio()" style="cursor:pointer;">Inicio</a></li>
+      <ul class="nav__list">
+         <li>
+              <input id="group-1er" type="checkbox" hidden />
+              <label for="group-1er"><span class="fa fa-angle-right"></span>Sobre CEIDEUL</label>
+              <ul class="group-list">
+              <li style="background-color:#353535;"><a href="sc_catedra_emprendimieto.php">Cátedra de emprendimiento</a></li>
+              <li style="background-color:#353535;"><a href="sc_elevator_pitch.php">Elevator Pitch</a></li>
+              <li style="background-color:#353535;"><a href="sc_feria_empresarial.php">Feria empresarial</a></li>
+              <li style="background-color:#353535;"><a href="sc_opcion_grado.php">Opción de grado creación de empresa</a></li>
+              <li style="background-color:#353535;"><a href="sc_proyeccion_social.php">Proyección social</a></li>
+              <li style="background-color:#353535;"><a href="sc_consultorio.php">Consultorio</a></li>
+              <li style="background-color:#353535;"><a href="sc_asesoria.php">Asesoría</a></li>
+              <li style="background-color:#353535;"><a href="sc_extension.php">Extensión</a></li>
+              <li style="background-color:#353535;"><a href="sc_cluster.php">Clúster Fami-Pyme</a></li>
+                <li>
+                </li>
+              </ul>
       <li><a href="Admin_forms.php">Ver registros</a></li>
          <ul class="nav__list">
          <li>
@@ -207,7 +223,7 @@
                <div class="row">
                   <div class="col-sm-6">
                      <div class="logo_main">
-                        <a href="index.html"><img src="images/ceideul_logo.png" style="width: 310px; height: 130px;" /></a>
+                        <a onclick="volverinicio()" style="cursor:pointer;"><img src="images/ceideul_logo.png" style="width: 310px; height: 130px;" /></a>
                      </div>
                   </div>
 
@@ -713,7 +729,9 @@ function volverinicio(){
       window.location="home_Egresado.php";
    }else if(tipo=="Docente"){
       window.location="home_Docente.php";
-   }      
+   }else if(tipo=="Externo"){
+      window.location="home_Externo.php";
+}
 }
  </script>  
    </body>

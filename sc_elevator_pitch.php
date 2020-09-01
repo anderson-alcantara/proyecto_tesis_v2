@@ -81,57 +81,7 @@
             </li>
 
                
-            <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
-            <ul class="group-list">
-              <li>
-              <li><a href="#">1st level item</a></li>
-              <li><a href="#">1st level item</a></li>
-              <input id="sub-group-3" type="checkbox" hidden />
-              <label for="sub-group-3"><span class="fa fa-angle-right"></span> Second level</label>
-              <ul class="sub-group-list">
-                <li><a href="#">2nd level nav item</a></li>
-                <li><a href="#">2nd level nav item</a></li>
-                <li><a href="#">2nd level nav item</a></li>
-                <li>
-                  <input id="sub-sub-group-3" type="checkbox" hidden />
-                  <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span> Third level</label>
-                  <ul class="sub-sub-group-list">
-                    <li><a href="#">3rd level nav item</a></li>
-                    <li><a href="#">3rd level nav item</a></li>
-                    <li><a href="#">3rd level nav item</a></li>
-                  </ul>
-                </li>
-              </ul>
-              </li>
-            </ul>
-            </li>
-            <li>
-            <input id="group-4" type="checkbox" hidden />
-            <label for="group-4"><span class="fa fa-angle-right"></span> Elevator Pitch</label>
-            <ul class="group-list">
-              <li>
-              <li><a href="#">1st level item</a></li>
-              <input id="sub-group-4" type="checkbox" hidden />
-              <label for="sub-group-4"><span class="fa fa-angle-right"></span> Second level</label>
-              <ul class="sub-group-list">
-                <li><a href="#">2nd level nav item</a></li>
-                <li><a href="#">2nd level nav item</a></li>
-              </ul>
-              </li>
-            </ul>
-            </li>
-            <ul class="group-list">
-               <li>
-               <li><a href="#">1st level item</a></li>
-               <input id="sub-group-4" type="checkbox" hidden />
-               <label for="sub-group-4"><span class="fa fa-angle-right"></span> Second level</label>
-               <ul class="sub-group-list">
-                 <li><a href="#">2nd level nav item</a></li>
-                 <li><a href="#">2nd level nav item</a></li>
-               </ul>
-               </li>
-             </ul>
-          </ul> -->
+    
           <li>
             <input id="group-2" type="checkbox" hidden  />
             <label for="group-2"><span class="fa fa-angle-right"></span>Formularios</label>
@@ -296,119 +246,8 @@
          </header>
          <!-- End header -->
          <!-- Start Banner -->
-         <div class="ulockd-home-slider">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="pogoSlider" id="js-main-slider">
-                     <div class="pogoSlider-slide" style="background-image:url(images/slider_4.png);">
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <div class="slide_text" style="margin-top: 200px;" >
-                                    <h6 style="font-size: 20px; color: #aa1a1a;" >Centro de Emprendimiento, Innovación y Desarrollo Empresarial</h6>
-                                    <h3 style="color: #aa1a1a;">CEIDEUL</h3>
-                                    <h4 style="color: #aa1a1a;">Universidad Libre</h4>
-                                    <br>
-                                    <a class="readmore_btred" href="http://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/1759-gaceta-empresarial" target="_blank">Gaceta Empresarial</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="pogoSlider-slide" style="background-image:url(images/slider_5.png);">
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <div class="slide_text" style="margin-top: 200px;" >
-                                    <h6 style="font-size: 20px; color: #aa1a1a;" >Centro de Emprendimiento, Innovación y Desarrollo Empresarial</h6>
-                                    <h3 style="color: #aa1a1a;">CEIDEUL</h3>
-                                    <h4 style="color: #aa1a1a;">Universidad Libre</h4>
-                                    <br>
-                                    <a class="readmore_btred" href="http://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/1759-gaceta-empresarial" target="_blank">Gaceta Empresarial</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  
-                  </div>
-                  <!-- .pogoSlider -->
-               </div>
-            </div>
-         </div>
+         
          <!-- End Banner -->
-         <!-- section -->
-         <!-- <div class="section about_section layout_padding dash_bg">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center">
-                           <h2>What We Do</h2>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_1.png" alt="#" />
-                            <img class="default-none" src="images/icon_1w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>Link Building</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_2.png" alt="#" />
-                            <img class="default-none" src="images/icon_2w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>Monthly SEO Task</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_3.png" alt="#" />
-                            <img class="default-none" src="images/icon_3w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>On Page SEO</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                     <div class="full feature_box">
-                         <div class="full icon">
-                            <img class="default-block" src="images/icon_4.png" alt="#" />
-                            <img class="default-none" src="images/icon_4w.png" alt="#" />
-                         </div>
-                         <div class="full">
-                            <h4>Online marketing</h4>
-                         </div>
-                         <div class="full">
-                           <p>It is a long established fact that a reader will be distracted by the readable content..</p>
-                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
          <!-- end section -->
          <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
@@ -425,18 +264,12 @@
                <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                      <div class="full">
-                        <div class="heading_small">
-                          <h4>¿QUIÉNES SOMOS?</h4>
+                        
                         </div>
-                        <p style="text-align: justify;
-                        text-justify: inter-word;">CEIDEUL es el Centro de Emprendimiento, Innovación y Desarrollo Empresarial de la Universidad Libre. Este órgano, se encarga de acompañar, fomentar y asesorar el intraemprendimiento en la comunidad unilibrista, estudiantes, egresados y comunidad en general con miras a apoyar proyectos creativos e innovadores, generando ideas y modelos de negocio, con el fin de implementar recursos que permitan patrocinar los proyectos de emprendimiento e innovación por medio de la incubadora de empresa, spin off, capital semilla, capital de riesgo o ángel inversionista</p>
-                      </div>
 
                   </div>
                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full text_align_center">
-                        <img style="margin-top:90px;" class="img-responsive" src="images/Docentes CEIDEUL.png" alt="#" />   
-                      </div>
+                     
                   </div>
                </div>
 
@@ -458,32 +291,12 @@
                </div>
                <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full">
-  
-                        <img style=" border-radius: 100px; margin-top: 130px;" class="img-responsive" src="images/vision.jpg" alt="#" />   
-                      </div>
+                    
                   </div>
                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                      <div class="full">
-                        <div class="heading_small" style="right: 90px;">
-                          <h4 style="margin-bottom: 100px; text-align: right;">VISIÓN</h4>
-                        </div>
-                     <div class="full text_align_center">
-                        <p style="text-align: justify;
-                        text-justify: inter-word;
-                        margin-top: -40px;">Ser un Centro de proyección económica y 
-	social, en el que participa la comunidad de 
-	la Universidad Libre en el emprendimiento 
-	y el empresarismo, con el fin de desarrollar 
-	proyectos tecnológicos e innovadores, así 
-	como asesorar las mipymes del país, 
-	extendiendo sus servicios dentro de su 
-	entorno, promoviendo la creación de 
-	Empresa y Proyectos sustentables con la 
-	comunidad, que respondan a las 
-	necesidades de la población con miras a 
-	mejorar la calidad de vida.</p>
-                      </div>
+                        
+                     
                      
                       </div>
                   </div>
@@ -501,32 +314,22 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>MISIÓN</h2>
+                           <h2><br>Elevator Pitch</h2>
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-10 offset-lg-1">
                      <div class="full text_align_center">
                          <p style="text-align: justify;
-                         text-justify: inter-word;">Ser un Centro de proyección económica y 
-                           social, en el que participa la comunidad de 
-                           la Universidad Libre en el emprendimiento 
-                           y el empresarismo, con el fin de desarrollar 
-                           proyectos tecnológicos e innovadores, así 
-                           como asesorar las mipymes del país, 
-                           extendiendo sus servicios dentro de su 
-                           entorno, promoviendo la creación de 
-                           Empresa y Proyectos sustentables con la 
-                           comunidad, que respondan a las 
-                           necesidades de la población con miras a 
-                           mejorar la calidad de vida.</p>
+                         text-justify: inter-word;">Es la culminación del proceso de la Cátedra de Emprendimiento donde se evalúan y se valoran las diferentes ideas de negocio que se han ido creando en el transcurso de la cátedra.</p>
                      </div>
                   </div>
                </div>
+               <br>
                <div class="row">
                   <div class="col-md-12">
                      <div class="full text_align_center">
-                       <img class="img-responsive" style="border-radius: 40px;" src="images/mision.png" alt="#" />
+                       <img class="img-responsive" style="border-radius: 40px; width: 500px; height: 500px;" src="images/space-5000696_1280.png" alt="#" />
                      </div>
 
                   </div>
@@ -535,149 +338,6 @@
          </div>
          <!-- end section -->
          <!-- section -->
-         <!-- <div class="section dark_blue_layout white_fonts layout_padding">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12 col-lg-4">
-                     <div class="full">
-                        <div class="heading_main text_align_left" style="margin-bottom: 0;">
-                           <h2><strong class="small">Get your  free quote</strong><br>Today</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-12 col-lg-8">
-                     <div class="full">
-                         <div class="form_section">
-                            <form class="news_submit_form">
-                              <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter url" name="#" required />
-                                    <button>Submit</button>
-                                 </div>
-                              </fieldset>
-                            </form>
-                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
-         <!-- end section -->
-         <!-- section -->
-         <!-- <div class="section about_section layout_padding">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><strong class="small theme_color">We’ve done lot’s of work, Let’s</strong><br>Check some from here</h2>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-              <div class="row">
-
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                   <div class="work_blog margin-top_30">
-                      <img class="img-responsive" src="images/blog1.jpg" alt="#" />
-                      <div class="hover_workblog">
-                          <img src="images/search_icon.png" alt="#" />
-                      </div>
-                   </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                   <div class="work_blog margin-top_30">
-                      <img class="img-responsive" src="images/blog2.jpg" alt="#" />
-                      <div class="hover_workblog">
-                          <img src="images/search_icon.png" alt="#" />
-                      </div>
-                   </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                   <div class="work_blog margin-top_30">
-                      <img class="img-responsive" src="images/blog3.jpg" alt="#" />
-                      <div class="hover_workblog">
-                          <img src="images/search_icon.png" alt="#" />
-                      </div>
-                   </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                   <div class="work_blog margin-top_30">
-                      <img class="img-responsive" src="images/blog4.jpg" alt="#" />
-                      <div class="hover_workblog">
-                          <img src="images/search_icon.png" alt="#" />
-                      </div>
-                   </div>
-                </div>
-
-              </div>
-            </div>
-         </div> -->
-         <!-- end section -->
-         <!-- section -->
-         <!-- <div class="section about_section layout_padding padding_top_0">
-            <div class="row">
-                  <div class="col-md-12">
-                     <div class="full">
-                        <div class="heading_main text_align_center margin-bottom_30">
-                           <h2>Get in touch</h2>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-         </div> -->
-         <!-- section -->
-         <!-- <div class="section contact_section">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-6 theme_color_bg fc3726 padding_0">
-                     <div class="full">
-                        <div class="row">
-                           <div class="col-sm-12 col-md-10 offset-lg-1">
-                              <div class="full contact_form">
-                                 <form class="contact_form_inner" action="#">
-                                    <fieldset>
-                                       <div class="field">
-                                          <input type="text" name="name" placeholder="Your name" />
-                                       </div>
-                                       <div class="field">
-                                          <input type="email" name="email" placeholder="Email" />
-                                       </div>
-                                       <div class="field">
-                                          <input type="text" name="phone_no" placeholder="Phone number" />
-                                       </div>
-                                       <div class="field">
-                                          <textarea placeholder="Message"></textarea>
-                                       </div>
-                                       <div class="field center">
-                                          <button class="margin-top_30">SEND</button>
-                                       </div>
-                                    </fieldset>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6 padding_0">
-                     <div class="full">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <div class="full map_section">
-                                 <div id="map">
-                                    <div id="googleMap" style="width:100%;height:440px;"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
          <!-- end section -->
          <!-- Start Footer -->
          <footer class="footer-box" >
@@ -790,6 +450,7 @@ function volverinicio(){
       window.location="home_Externo.php";
 }
 }
+
  </script>  
    </body>
 </html>

@@ -212,10 +212,6 @@
 
 
 
-
-
-
-
   <!--botón enviar-->
   <div class="form__item">
     <button class="btn btn-success" type="button" id="botonenviar">Enviar</button>
