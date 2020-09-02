@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/styleform.css">
-  <title>Document</title>
+  <title>CEIDEUL</title>
 </head>
 <body>
 <form class="form" action="./" method="POST">
@@ -31,34 +31,7 @@
 </div>
 <hr>
 
-<div class="form__item">
-  <label for="givennames" class="form__label">RAZÓN SOCIAL DE LA EMPRESA</label>
-  <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
-  <span class="form__error">A sample error message</span>
-  <br>
-</div>
-<hr>
-<div class="form__item">
-  <label for="givennames" class="form__label">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
-  <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
-  <span class="form__error">A sample error message</span>
-  <br>
-</div>
-<hr>
-<div class="form__item">
-  <label for="givennames" class="form__label">DIRECCIÓN EMPRESA</label>
-  <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
-  <span class="form__error">A sample error message</span>
-  <br>
-</div>
-<hr>
-<div class="form__item">
-  <label for="givennames" class="form__label">LOCALIDAD - BARRIO</label>
-  <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
-  <span class="form__error">A sample error message</span>
-  <br>
-</div>
-<hr>
+
 <div class="form__item">
   <label for="givennames" class="form__label">CONTACTO DIRECTO PARA LA ASESORÍA (NOMBRE) </label>
   <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
@@ -249,7 +222,7 @@ v
 </div>
 <hr>
 <div class="form__item">
-  <label for="givennames" class="form__label">OBSERVACIONES (B)</label>
+  <label for="givennames" class="form__label">OBSERVACIONES (A)</label>
   <input type="text" class="form__input" name="" id="" placeholder="Tu respuesta" autocomplete="off">
   <span class="form__error">A sample error message</span>
   <br>

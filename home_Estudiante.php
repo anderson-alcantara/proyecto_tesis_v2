@@ -146,7 +146,7 @@
                     <input id="sub-sub-group-2" type="checkbox" hidden />
                     <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span>asesoría y consultoría empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="forms/f_diagAsesoria.html" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
+                      <li><a href="forms/f_diagAsesoria.php" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
                       <li><a href="forms/f_inicioAsesoriaEmp.html" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
                       <li><a href="forms/f_EntregaAsesoria.html" target="_blank">Formato De Entrega De Asesoría</a></li>
                     </ul>

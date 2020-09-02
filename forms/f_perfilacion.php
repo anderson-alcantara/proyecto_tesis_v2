@@ -8,7 +8,12 @@
 ?>
 <html lang="es">
 <head>
-
+<style>
+  .required:after {
+    content:" *";
+    color: red;
+  }
+</style>
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/themes/default.css">
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
 <script src="../js/bootstrap.min.js"></script>
@@ -30,7 +35,7 @@
 <hr style="color:red; background-color:red;">
 <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="txtnombre">Nombre</label>
+      <label for="txtnombre" class="required">Nombre</label>
       <input type="text" class="form-control" id="txtnombre" placeholder="Email" required disabled>
     </div>
     <div class="form-group col-md-6">
@@ -43,7 +48,7 @@
   <!--label&textarea-->
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4">Fecha</label>
+      <label for="inputEmail4" required>*Fecha</label>
       <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
@@ -376,7 +381,7 @@ var pdf =doc.output();
 var nombres='<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
 var correo='<?php echo $_SESSION['user']?>'
 var tipousuario='<?php echo $_SESSION['tipo_usuario']?>';
-var nombreform="f-perfilacion";
+var nombreform=filenamesinpunto;
 var nombreform_completo=$("#nombre_form").text();
 var d=new Date();
 var mes=d.getMonth()+1
@@ -417,8 +422,15 @@ $.ajax({
   }
 
 </script>
+<script>
+var loc = window.location.pathname;
 
 
+var index = loc.lastIndexOf("/") + 1;
+var filename = loc.slice(index);
+var filenamesinpunto= filename.substr(0, filename.indexOf('.')); 
+
+</script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="../js/html2canvas.min.js"></script>
