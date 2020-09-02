@@ -69,8 +69,8 @@
               <li style="background-color:#353535;"><a href="sc_proyeccion_social.php">Proyección social</a></li>
               <li style="background-color:#353535;"><a href="sc_consultorio.php">Consultorio</a></li>
               <li style="background-color:#353535;"><a href="sc_asesoria.php">Asesoría</a></li>
-              <li style="background-color:#353535;"><a href="sc_extension.php">Extensión</a></li>
-              <li style="background-color:#353535;"><a href="sc_cluster.php">Clúster Fami-Pyme</a></li>
+              <!--Extensión-->
+              <!--Clúster Fami-Pyme-->
                 <li>
                 </li>
               </ul>
