@@ -1353,10 +1353,6 @@ elem2.innerHTML = valor;
 break;
 }
     })
-
-
-
-
   }
   
 })
