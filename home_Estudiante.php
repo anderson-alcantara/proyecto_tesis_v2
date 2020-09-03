@@ -63,6 +63,7 @@
               <li style="background-color:#353535;"><a href="sc_proyeccion_social.php">Proyección social</a></li>
               <li style="background-color:#353535;"><a href="sc_consultorio.php">Consultorio</a></li>
               <li style="background-color:#353535;"><a href="sc_asesoria.php">Asesoría</a></li>
+              <li style="background-color:#353535;"><a href="sc_innovacion.php">Innovación</a></li>
               <!--Extensión-->
               <!--Clúster Fami-Pyme-->
                 <li>
@@ -148,8 +149,8 @@
                     <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span>asesoría y consultoría empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
                       <li><a href="forms/f_diagAsesoria.php" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
-                      <li><a href="forms/f_inicioAsesoriaEmp.html" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
-                      <li><a href="forms/f_EntregaAsesoria.html" target="_blank">Formato De Entrega De Asesoría</a></li>
+                      <li><a href="forms/f_inicioAsesoriaEmp.php" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
+                      <li><a href="forms/f_EntregaAsesoria.php" target="_blank">Formato De Entrega De Asesoría</a></li>
                     </ul>
                   </li>
                   <li>
@@ -157,8 +158,8 @@
                      <input id="sub-sub-group-3" type="checkbox" hidden />
                      <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span>herramientas para la asesoría y consultoría empresarial</label>
                   <ul class="sub-sub-group-list" style="font-size: 12px;">
-                       <li><a href="forms/f_DiagAppOfimatica.html" target="_blank">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
-                       <li><a href="forms/f_AnalisisDisePtrabajo.html" target="_blank">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
+                       <li><a href="forms/f_DiagAppOfimatica.php" target="_blank">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
+                       <li><a href="forms/f_AnalisisDisePtrabajo.php" target="_blank">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
                        <li><a href="forms/f_perfilacion.php" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
                        <li><a href="forms/f_analisis" target="_blank">Formato De análisis Del Entorno</a></li>
                        <li><a href="forms/f_balance.html" target="_blank">Formato De Balance Scorecard</a></li>

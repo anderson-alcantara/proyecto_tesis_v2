@@ -11,7 +11,6 @@ $nombrearchivo=($_POST['nombrearchivo']);
 $seccional=($_POST['seccional']);
 $fecha=$_POST['fecha'];
 $conexion=conexion();
-
 if(buscaRepetido($correo,$nombreform_completo,$conexion)==1){
     echo 2;
 }
@@ -32,12 +31,7 @@ if(buscaRepetido($correo,$nombreform_completo,$conexion)==1){
         }
 
 
-
     }
-
-
-
-
 function buscaRepetido($correo,$nombreform_completo,$conexion){
     $sql="SELECT * from tb_formularios 
         where correo='$correo' and formulario='$nombreform_completo'";

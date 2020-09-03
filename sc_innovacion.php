@@ -9,7 +9,6 @@
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <!-- Site Metas -->
       <title>CEIDEUL</title>
-<link rel="shortcut icon" href="images/ulibre_logo.png" />
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -48,9 +47,10 @@
       <!-- END LOADER -->
       <div class="wrapper">
       <nav id="sidebar">
-        
-         <ul class="nav__list">
-         <li><a onclick="volverinicio()" style="cursor:pointer;">Inicio</a></li>
+
+
+      <li><a onclick="volverinicio()" style="cursor:pointer;">Inicio</a></li>
+     
       <ul class="nav__list">
          <li>
               <input id="group-1er" type="checkbox" hidden />
@@ -64,11 +64,12 @@
               <li style="background-color:#353535;"><a href="sc_consultorio.php">Consultorio</a></li>
               <li style="background-color:#353535;"><a href="sc_asesoria.php">Asesoría</a></li>
               <li style="background-color:#353535;"><a href="sc_innovacion.php">Innovación</a></li>
+              
               <!--Extensión-->
               <!--Clúster Fami-Pyme-->
-                <li>
                 </li>
               </ul>
+      <li><a href="ver_comentarios.php">Notificaciones</a></li>
          <ul class="nav__list">
          <li>
               <input id="group-1" type="checkbox" hidden />
@@ -80,7 +81,8 @@
                 </li>
               </ul>
             </li>
-  
+
+               
             <!-- <label for="group-3"><span class="fa fa-angle-right"></span> First level</label>
             <ul class="group-list">
               <li>
@@ -146,7 +148,7 @@
                     <input id="sub-sub-group-2" type="checkbox" hidden />
                     <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span>asesoría y consultoría empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="forms/f_diagAsesoria.php" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
+                      <li><a href="forms/f_diagAsesoria.html" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
                       <li><a href="forms/f_inicioAsesoriaEmp.html" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
                       <li><a href="forms/f_EntregaAsesoria.html" target="_blank">Formato De Entrega De Asesoría</a></li>
                     </ul>
@@ -159,10 +161,10 @@
                        <li><a href="forms/f_DiagAppOfimatica.html" target="_blank">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
                        <li><a href="forms/f_AnalisisDisePtrabajo.html" target="_blank">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
                        <li><a href="forms/f_perfilacion.php" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
-                       <li><a href="forms/f_analisis">Formato De análisis Del Entorno</a></li>
-                       <li><a href="forms/f_balance.html">Formato De Balance Scorecard</a></li>
-                       <li><a href="#">Formato De Identificación De Mercado</a></li>
-                       <li><a href="forms/f_ishikawa.html">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
+                       <li><a href="forms/f_analisis" target="_blank">Formato De análisis Del Entorno</a></li>
+                       <li><a href="forms/f_balance.html" target="_blank">Formato De Balance Scorecard</a></li>
+                       <li><a href="">Formato De Identificación De Mercado</a></li>
+                       <li><a href="forms/f_ishikawa.html" target="_blank">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
                        <li><a href="#">Formato De Caracterización De Procesos</a></li>
                        <li><a href="#">Formato De Evaluación De Marco Estratégico</a></li>
                        <li><a href="#">Formato De Diagnostico Interno</a></li>
@@ -173,6 +175,61 @@
                      </ul>
                    </li>
                 </ul>
+
+                
+
+
+                <input id="sub-group-3" type="checkbox" hidden onclick="onhandleformularios('sub-group-3')" />
+                <label for="sub-group-3" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Opción de Grado</label>
+                <ul class="sub-group-list">
+
+                  <li>
+                     
+                    <input id="sub-sub-group-4" type="checkbox" hidden />
+                    <label for="sub-sub-group-4"><span class="fa fa-angle-right"></span>Opciones De Grado CEIDEUL</label>
+                    <ul class="sub-sub-group-list" style="font-size: 12px;">
+                      <li><a href="#">Formato De Inscripción Para Opción De Grado Creación De Empresa</a></li>
+                      <li><a href="#">Formato De Recurso Estudiante / Externo</a></li>
+       
+                    </ul>
+                    <input id="sub-sub-group-5" type="checkbox" hidden />
+                    <label for="sub-sub-group-5"><span class="fa fa-angle-right"></span>Opciones De Grado Creación De Empresa</label>
+                    <ul class="sub-sub-group-list" style="font-size: 12px;">
+                      <li><a href="#">Formato De Asignación De Tutor Para Proyecto De Grado</a></li>
+                      <li><a href="#">Formato De Evaluación Proyecto De Grado “creación De Empresa”</a></li>
+
+                    </ul>
+                  </li>
+                </ul>
+
+
+                <input id="sub-group-6" type="checkbox" hidden onclick="onhandleformularios('sub-group-6')" />
+                <label for="sub-group-6" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Cátedra De emprendimiento</label>
+                <ul class="sub-group-list">
+                  <li style="margin-bottom: 10px;"><a href="forms/f_compromiso">Formato De Compromiso a La Catedra De Emprendimiento</a></li>
+
+                  
+
+
+
+                  
+                  <input id="sub-sub-group-8" type="checkbox" hidden />
+                  <label for="sub-sub-group-8"><span class="fa fa-angle-right"></span>Ideas De Negocio</label>
+                  <ul class="sub-sub-group-list" style="font-size: 12px;">
+                    <li><a href="#">Formato Cátedra De Emprendimiento- Ideas De Negocio</a></li>
+                  </ul>
+                     
+                  <input id="sub-sub-group-7" type="checkbox" hidden />
+                  <label for="sub-sub-group-7"><span class="fa fa-angle-right"></span>Elevator Pitch</label>
+                  <ul class="sub-sub-group-list" style="font-size: 12px;">
+                    <li><a href="#">Formato De Banco De Ideas De Negocio</a></li>
+                  </ul>
+
+                </ul>
+
+                
+
+
 
                 <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
                 <label for="sub-group-8" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Feria Empresarial</label>
@@ -193,7 +250,18 @@
 
 
 
-         
+                <input id="sub-group-10" type="checkbox" hidden onclick="onhandleformularios('sub-group-10')"/>
+                <label for="sub-group-10" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Práctica Empresarial</label>
+                <ul class="sub-group-list">
+                  <li><a href="#">Formato De Inicio De Practica Empresarial</a></li>
+                  <li><a href="#">Formato De Concepto Docente Experto Disciplinar Práctica Empresarial</a></li>
+                  <li><a href="#">Formato De Entrega Final De Trabajo De Práctica Empresarial</a></li>
+                  <li><a href="#">Formato De Evaluación Entrega Final Practica Empresarial</a></li>
+
+                </ul>
+
+
+
 
 
 
@@ -230,46 +298,7 @@
          </header>
          <!-- End header -->
          <!-- Start Banner -->
-         <div class="ulockd-home-slider">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="pogoSlider" id="js-main-slider">
-                     <div class="pogoSlider-slide" style="background-image:url(images/slider_4.png);">
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <div class="slide_text" style="margin-top: 200px;" >
-                                    <h6 style="font-size: 20px; color: #aa1a1a;" >Centro de Emprendimiento, Innovación y Desarrollo Empresarial</h6>
-                                    <h3 style="color: #aa1a1a;">CEIDEUL</h3>
-                                    <h4 style="color: #aa1a1a;">Universidad Libre</h4>
-                                    <br>
-                                    <a class="readmore_btred" href="http://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/1759-gaceta-empresarial" target="_blank">Gaceta Empresarial</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="pogoSlider-slide" style="background-image:url(images/slider_5.png);">
-                        <div class="container">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <div class="slide_text" style="margin-top: 200px;" >
-                                    <h6 style="font-size: 20px; color: #aa1a1a;" >Centro de Emprendimiento, Innovación y Desarrollo Empresarial</h6>
-                                    <h3 style="color: #aa1a1a;">CEIDEUL</h3>
-                                    <h4 style="color: #aa1a1a;">Universidad Libre</h4>
-                                    <br>
-                                    <a class="readmore_btred" href="http://www.unilibre.edu.co/bogota/ul/noticias/noticias-universitarias/1759-gaceta-empresarial" target="_blank">Gaceta Empresarial</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  
-                  </div>
-                  <!-- .pogoSlider -->
-               </div>
-            </div>
-         </div>
+         
          <!-- End Banner -->
          <!-- section -->
          <!-- <div class="section about_section layout_padding dash_bg">
@@ -359,18 +388,12 @@
                <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                      <div class="full">
-                        <div class="heading_small">
-                          <h4>¿QUIÉNES SOMOS?</h4>
+                        
                         </div>
-                        <p style="text-align: justify;
-                        text-justify: inter-word;">CEIDEUL es el Centro de Emprendimiento, Innovación y Desarrollo Empresarial de la Universidad Libre. Este órgano, se encarga de acompañar, fomentar y asesorar el intraemprendimiento en la comunidad unilibrista, estudiantes, egresados y comunidad en general con miras a apoyar proyectos creativos e innovadores, generando ideas y modelos de negocio, con el fin de implementar recursos que permitan patrocinar los proyectos de emprendimiento e innovación por medio de la incubadora de empresa, spin off, capital semilla, capital de riesgo o ángel inversionista</p>
-                      </div>
 
                   </div>
                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full text_align_center">
-                        <img style="margin-top:90px;" class="img-responsive" src="images/Docentes CEIDEUL.png" alt="#" />   
-                      </div>
+                     
                   </div>
                </div>
 
@@ -392,32 +415,12 @@
                </div>
                <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                     <div class="full">
-  
-                        <img style=" border-radius: 100px; margin-top: 130px;" class="img-responsive" src="images/vision.jpg" alt="#" />   
-                      </div>
+                    
                   </div>
                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                      <div class="full">
-                        <div class="heading_small" style="right: 90px;">
-                          <h4 style="margin-bottom: 100px; text-align: right;">VISIÓN</h4>
-                        </div>
-                     <div class="full text_align_center">
-                        <p style="text-align: justify;
-                        text-justify: inter-word;
-                        margin-top: -40px;">Ser un Centro de proyección económica y 
-	social, en el que participa la comunidad de 
-	la Universidad Libre en el emprendimiento 
-	y el empresarismo, con el fin de desarrollar 
-	proyectos tecnológicos e innovadores, así 
-	como asesorar las mipymes del país, 
-	extendiendo sus servicios dentro de su 
-	entorno, promoviendo la creación de 
-	Empresa y Proyectos sustentables con la 
-	comunidad, que respondan a las 
-	necesidades de la población con miras a 
-	mejorar la calidad de vida.</p>
-                      </div>
+                        
+                     
                      
                       </div>
                   </div>
@@ -435,32 +438,22 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>MISIÓN</h2>
+                           <h2><br>PROYECTOS DE INNOVACION</h2>
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-10 offset-lg-1">
                      <div class="full text_align_center">
                          <p style="text-align: justify;
-                         text-justify: inter-word;">Ser un Centro de proyección económica y 
-                           social, en el que participa la comunidad de 
-                           la Universidad Libre en el emprendimiento 
-                           y el empresarismo, con el fin de desarrollar 
-                           proyectos tecnológicos e innovadores, así 
-                           como asesorar las mipymes del país, 
-                           extendiendo sus servicios dentro de su 
-                           entorno, promoviendo la creación de 
-                           Empresa y Proyectos sustentables con la 
-                           comunidad, que respondan a las 
-                           necesidades de la población con miras a 
-                           mejorar la calidad de vida.</p>
+                         text-justify: inter-word;">Ya establecida la proyección social en la Universidad Libre se busca crear una línea de investigación en innovación y u laboratorio de Innovación social con la participación del Banco de alimentos. Se pretende crear ese puente entre universidad estado y comunidad con el fin generar programas que busquen soluciones a los diferentes programas que presenta la sociedad con alcance en inclusión social y sostenibilidad en las organizaciones para lograr un mayor crecimiento, competitividad y desarrollo en nuestro país Colombia.</p>
                      </div>
                   </div>
                </div>
+               <br>
                <div class="row">
                   <div class="col-md-12">
                      <div class="full text_align_center">
-                       <img class="img-responsive" style="border-radius: 40px;" src="images/mision.png" alt="#" />
+                       <img class="img-responsive" style="border-radius: 40px; width: 700px; height: 500px;" src="images/light-bulb-4514505_1920.jpg" alt="#" />
                      </div>
 
                   </div>
@@ -712,7 +705,6 @@
       </script>
 <script>
 document.getElementById("txtnombre").innerHTML = '<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-
 function volverinicio(){
    var tipo='<?php echo $_SESSION['tipo_usuario']?>';
    if(tipo=="Estudiante"){
@@ -725,9 +717,6 @@ function volverinicio(){
       window.location="home_Externo.php";
 }
 }
-
-
-
  </script>  
    </body>
 </html>
