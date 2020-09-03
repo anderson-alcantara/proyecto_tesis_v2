@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <!-- Site Metas -->
       <title>CEIDEUL</title>
+<link rel="shortcut icon" href="images/ulibre_logo.png" />
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -77,7 +78,7 @@
               <label for="group-1"><span class="fa fa-angle-right"></span>Mi perfil</label>
               <ul class="group-list">
                 <li style="background-color:#353535;"><a href="Editar_Perfil.php">Editar Perfil</a></li>
-                <li><a href="index.php" style="background-color:#353535;">Cerrar sesión</a></li>
+                <li><a href="index_Admin.php" style="background-color:#353535;">Cerrar sesión</a></li>
                 <li>
                 </li>
               </ul>

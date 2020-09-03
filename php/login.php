@@ -38,8 +38,10 @@
 				$clave=$row['clave'];
 				$_SESSION['tipo_usuario']=$tipo_usuario;
 				$_SESSION['nombres']=$nombres;
+				$_SESSION['seccional']=$row['seccional'];
 				$_SESSION['apellidos']=$apellidos;
 				$_SESSION['clave']=$clave;
+
 
 			}
 		}

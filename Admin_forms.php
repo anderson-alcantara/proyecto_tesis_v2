@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <!-- Site Metas -->
       <title>CEIDEUL</title>
+<link rel="shortcut icon" href="images/ulibre_logo.png" />
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -176,6 +177,7 @@
         <thead class="thead-dark">  
           <tr>  
             <th data-order='desc'>fecha</th>  
+            <th>Seccional</th>
             <th>nombre</th>
             <th>correo electrónico</th>  
             <th>tipo de usuario</th>  
@@ -202,6 +204,7 @@
             <script></script>
             <tr>
                 <td class="tdfecha"><?php echo $fecha3?></td>
+                <td class="tdfecha"><?php echo ($row['seccional']); ?></td>
                 <td class="tdnombre"><?php echo ($row['nombre']); ?></td>
                 <td class="tdcorreo"><?php echo ($row['correo']); ?></td>
                 <td class="tipo_usuario"><?php echo ($row['tipo_usuario']); ?></td>

@@ -14,6 +14,7 @@
     color: red;
   }
 </style>
+<link rel="shortcut icon" href="../images/ulibre_logo.png" />
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/themes/default.css">
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
 <script src="../js/bootstrap.min.js"></script>
@@ -21,7 +22,7 @@
 <script src="../js/alertifyjs/alertify.js"></script>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/styleform2.css">
-  <title>Document</title>
+  <title>CEIDEUL</title>
 </head>
 <body>
 <p></p>
@@ -39,7 +40,7 @@
       <input type="text" class="form-control" id="txtnombre" placeholder="Email" required disabled>
     </div>
     <div class="form-group col-md-6">
-      <label for="txtcorreo">Email</label>
+      <label for="txtcorreo" class="required">Email</label>
       <input type="text" class="form-control" id="txtcorreo" placeholder="" required disabled>
     </div>
   </div>
@@ -48,11 +49,11 @@
   <!--label&textarea-->
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" required>*Fecha</label>
+      <label for="inputEmail4" required>Fecha</label>
       <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">RAZÓN SOCIAL DE LA EMPRESA</label>
+      <label for="inputEmail4" class="required">RAZÓN SOCIAL DE LA EMPRESA</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -62,11 +63,11 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
+      <label for="inputEmail4" class="required">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">DIRECCIÓN EMPRESA</label>
+      <label for="inputEmail4" class="required">DIRECCIÓN EMPRESA</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -75,11 +76,11 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4">LOCALIDAD - BARRIO</label>
+      <label for="inputEmail4" class="required">LOCALIDAD - BARRIO</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">TELÉFONO DE CONTACTO</label>
+      <label for="inputEmail4" class="required">TELÉFONO DE CONTACTO</label>
       <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -88,11 +89,11 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4">No. DE CONTRATO DE LA ASESORÍA</label>
+      <label for="inputEmail4" class="required">No. DE CONTRATO DE LA ASESORÍA</label>
       <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">PUESTO DE TRABAJO</label>
+      <label for="inputEmail4" class="required">PUESTO DE TRABAJO</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -101,7 +102,7 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1">DENOMINACIÓN DEL PUESTO DE TRABAJO</label>
+      <label for="exampleFormControlSelect1" class="required">DENOMINACIÓN DEL PUESTO DE TRABAJO</label>
       <select class="form-control" id="exampleFormControlSelect1" required>
       <option></option>
       <option>DIRECTIVO</option>
@@ -114,7 +115,7 @@
       <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
     </div>
     <div class="form-group col-md-6">
-      <label for="selectconotro1">FUNCIONES DEL PUESTO DE TRABAJO</label>
+      <label for="selectconotro1" class="required">FUNCIONES DEL PUESTO DE TRABAJO</label>
       <select class="form-control" id="selectconotro1" required>
       <option></option>
       <option>ADMINISTRACIÓN</option>
@@ -143,7 +144,7 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1">ENUMERE LAS RESPONSABILIDADES DEL PUESTO DE TRABAJO</label>
+    <label for="exampleFormControlSelect1" class="required">ENUMERE LAS RESPONSABILIDADES DEL PUESTO DE TRABAJO</label>
     <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
@@ -160,11 +161,11 @@
 
 <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">SUBORDINACIÓN (Indique si este puesto de trabajo tiene subordinados y cuáles)</label>
+      <label for="inputEmail4" class="required">SUBORDINACIÓN (Indique si este puesto de trabajo tiene subordinados y cuáles)</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">SUPERVISIÓN (Indique si este puesto esta bajo supervisión y de qué cargos)</label>
+      <label for="inputEmail4" class="required">SUPERVISIÓN (Indique si este puesto esta bajo supervisión y de qué cargos)</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -173,7 +174,7 @@
 
 <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">COMUNICACIONES COLATERALES (Indique los pares con los cuales debe manejar comunicación directa)</label>
+      <label for="inputEmail4" class="required">COMUNICACIONES COLATERALES (Indique los pares con los cuales debe manejar comunicación directa)</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
 
@@ -193,11 +194,11 @@
 
 <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">HORAS MENSUALES</label>
+      <label for="inputEmail4" class="required">HORAS MENSUALES</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">HORAS SEMANALES</label>
+      <label for="inputEmail4" class="required">HORAS SEMANALES</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -205,11 +206,11 @@
 
 <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">HORAS DIARIAS</label>
+      <label for="inputEmail4" class="required">HORAS DIARIAS</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4">HORARIO LABORAL</label>
+      <label for="inputEmail4" class="required">HORARIO LABORAL</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -379,7 +380,7 @@ doc.fromHTML(elementHTML, 15, 15, {
 // Save the PDF
 var pdf =doc.output();
 var nombres='<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-var correo='<?php echo $_SESSION['user']?>'
+var correo='<?php echo $_SESSION['user']?>';
 var tipousuario='<?php echo $_SESSION['tipo_usuario']?>';
 var nombreform=filenamesinpunto;
 var nombreform_completo=$("#nombre_form").text();
@@ -387,6 +388,7 @@ var d=new Date();
 var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
+var seccional='<?php echo $_SESSION['seccional']?>';
 cadena="pdf=" + pdf +
 					"&nombres=" + nombres +
 					"&correo=" + correo+
@@ -394,7 +396,9 @@ cadena="pdf=" + pdf +
           "&nombreform=" +nombreform+
           "&nombreform_completo=" +nombreform_completo+
           "&nombrearchivo=" +nombrearchivo+
-					"&fecha=" +fecha;
+					"&fecha=" +fecha+
+          "&seccional=" +seccional;
+console.log(cadena);
 $.ajax({
 						type:"POST",
 						url:"../php/subir_form.php",
@@ -406,8 +410,10 @@ $.ajax({
 
 									} ).setHeader('<em>  </em> '); 
 
-                }else{
-                  alert("error");
+                }else if(r==2){
+                  alertify.alert('Este formulario ya fué registrado por el usuario').setHeader('<em>  </em> '); 
+                }else if(r==3){
+                  alertify.alert('error en conexión').setHeader('<em>  </em> '); 
                 }
             }						
 					});

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+<title>Login</title>
+<link rel="shortcut icon" href="images/ulibre_logo.png" />
 
 	<?php require_once "scripts.php"; ?>
 </head>

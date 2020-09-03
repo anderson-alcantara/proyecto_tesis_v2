@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <!-- Site Metas -->
       <title>CEIDEUL</title>
+<link rel="shortcut icon" href="images/ulibre_logo.png" />
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -458,7 +459,7 @@ $(document).ready(function(){
 				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
 				return false;
 			}
-alert("hola");
+
 			var cadena="correo_electronico=" + '<?php echo $_SESSION['user']; ?>' + 
 					"&nombres=" + $('#txtnombreperfil').val()+"&apellidos="
 					+ $('#txtapellidosperfil').val()+"&clave="+ $('#txtpass1').val();

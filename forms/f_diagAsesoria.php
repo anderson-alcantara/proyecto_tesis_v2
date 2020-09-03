@@ -14,6 +14,7 @@
     color: red;
   }
 </style>
+<link rel="shortcut icon" href="../images/ulibre_logo.png" />
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/themes/default.css">
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
 <script src="../js/bootstrap.min.js"></script>

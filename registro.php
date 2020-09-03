@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Registro</title>
+<link rel="shortcut icon" href="images/ulibre_logo.png" />
 	<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="js/alertifyjs/css/themes/default.css">

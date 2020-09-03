@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <!-- Site Metas -->
       <title>CEIDEUL</title>
+<link rel="shortcut icon" href="images/ulibre_logo.png" />
       <meta name="description" content="Bootstrap.">  
       <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">

@@ -5,9 +5,7 @@
 
 
 }
-label.required:before {
-  content: "* ";
-}
+
 .form {
   position: absolute;
   top: 0%;
