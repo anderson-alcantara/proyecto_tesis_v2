@@ -30,8 +30,8 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE ANÁLISIS PARA EL DISEÑO DE PUESTOS DE TRABAJO</a></div>
-<p style="color: red;">FOR-AC-005</p>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE EVALUACIÓN DE MARCO ESTRATÉGICO</a></div>
+<p style="color: red;">FOR-AC-012</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -47,9 +47,10 @@
 
 <hr>
   <!--label&textarea-->
+
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" required>Fecha</label>
+      <label for="inputEmail4" class="required">FECHA</label>
       <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
@@ -60,9 +61,8 @@
 
 <hr>
 
-
-<div class="form-row">
-<div class="form-group col-md-6">
+  <div class="form-row">
+  <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
@@ -73,6 +73,7 @@
   </div>
 
 <hr>
+
 
 <div class="form-row">
 <div class="form-group col-md-6">
@@ -89,221 +90,51 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">No. DE CONTRATO DE LA ASESORÍA</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" >
+      <label for="inputEmail4" class="required">No. DE CONTRATO DE LA ASESORÍA</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">PUESTO DE TRABAJO</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+      <label for="inputEmail4" class=""></label>
     </div>
   </div>
 
 <hr>
 
-<h5>DEBERES Y RESPONSABILIDADES DEL PUESTO DE TRABAJO</h5>
-<h6>A continuación, describa las tareas y objetivos del puesto de trabajo. Califique de 1 a 3 la frecuencia de las tareas/ actividades, siendo 1 el de menor frecuencia y el 5 el de más frecuencia.
-  
+<h5>APLICACIONES OFIMÁTICAS</h5>
+<h6>Conjunto de técnicas, aplicaciones y programas informáticos que se utilizan en funciones de oficina para optimizar, automatizar y mejorar los procedimientos y tareas relacionados. Esas herramientas suelen presentarse en paquetes de programas conocidos como “suites de oficina u ofimática.
+
+</h6>
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">INDIQUE LAS APLICACIONES, CON SU RESPECTIVO VALOR, SOFTWARE-LICENCIA, UTILIZACIÓN Y No. USUARIOS.</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="">OBSERVACIONES ADICIONALES</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
+    </div>
+  </div>
+
+<hr>
+
+<h5>APLICACIONES INFORMÁTICAS</h5>
+<h6>Herramientas que ayuden a la gestión de la empresa de forma inteligente y eficiente, permitiendo la toma de decisiones sobre análisis y reflexiones, a partir de la gestión de los datos y de la información.
+
 </h6>
 <hr>
 <div class="form-row">
 <div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1" class="required">ENUMERE LAS TAREAS RELACIONADAS CON EL CARGO CON SU RESPECTIVA DESCRIPCIÓN</label>
-    <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    <label for="exampleFormControlSelect1" class="required">INDIQUE LAS APLICACIONES, CON SU RESPECTIVA FUNCIÓN, VALOR, UTILIZACIÓN Y No. USUARIOS.</label>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
     </div>
     <div class="form-group col-md-6">
-    <label></label>
-
+    <label for="exampleFormControlSelect1" class="">OBSERVACIONES ADICIONALES</label>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
     </div>
   </div>
 
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">TAREA No. 1 </label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 2 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 3 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 4 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 5 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 6 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 7 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 8 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 9 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="">TAREA No. 10 </label>
-      <select class="form-control" id="exampleFormControlSelect1" >
-      <option></option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-<div class="form-row">
-<div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1" class="required">AMBIENTE DE TRABAJO ¿En dónde se realizan las tareas del puesto?</label>
-    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-    <label> </label>
-
-    </div>
-  </div>
-
-<hr>
-
-<h5 style="">OBJETIVOS DEL PUESTO DE TRABAJO</h5>
-
-<hr>
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">OBJETIVO (Describa el objetivo del puesto en el desarrollo de la empresa)</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">OBJETIVOS (Enumere los objetivos específicos del puesto de trabajo) </label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows=3 style="white-space: pre-wrap;" required></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">COMUNICACIONES COLATERALES (Indique los pares con los cuales debe manejar comunicación directa)</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-
-    <div class="form-group col-md-6">
-<label></label>
-    </div>
-
-
-  </div>
 <hr>
 
 
@@ -498,7 +329,6 @@ $.ajax({
 						url:"../php/subir_form.php",
 						data:cadena,
 						success:function(r){
-              debugger
                 if(r==1){
                   alertify.alert('Formulario enviado con éxito').set('onok', function(closeEvent){ 
                     window.close();

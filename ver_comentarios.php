@@ -178,11 +178,11 @@
         <thead class="thead-dark">  
           <tr>  
           <th hidden>id</th>  
-          <th>fecha de envío</th>  
-            <th data-order='desc'>nombreformato</th>  
-            <th>ruta</th>
+          <th>Fecha de envío</th>  
+            <th data-order='desc'>Nombre del formato</th>  
+            <th>Archivo</th>
             <th>enviado por</th>  
-            <th>comentario</th>  
+            <th>Comentario</th>  
            
             <th hidden>ruta</th>  
           </tr>  
@@ -211,7 +211,7 @@
                <td class="tdarchivo"><a target="_blank"href="<?php echo ($row['ruta'])?>">Abrir</a></td> 
                 <td class="tdfecha"><?php echo ($row['nombre_comentador']); ?></td>
                 <td class="tdcomentario"><a class="vercomentario" style="cursor:pointer;">Ver</a></td>
-                <td class="tdcomentario2" style="white-space: pre-wrap;" hidden><?php echo ($row['comentario']); ?></td>
+                <td class="tdcomentario2" style="white-space: pre-wrap;" hidden><textarea id="txtcomment" rows="1"><?php echo ($row['comentario']); ?></textarea></td>
                              
 
                 
@@ -407,8 +407,10 @@ console.log(cadena);
 });
 $(".vercomentario").click(function() {
    var row = $(this).closest("tr"); 
-   var comentario = row.find(".tdcomentario2").text();
-   alertify.alert(comentario).setHeader('<em> Comentario </em> '); ;
+   var comentario = row.find("#txtcomment").val();
+   var c="<p>Aquí confirmamos algo.<br><br><b>ENTER</b> y <b>ESC</b> corresponden a <b>Aceptar</b> o <b>Cancelar</b></p>";
+
+   alertify.alert(comentario).setHeader('<em>  </em> '); 
    //  var row = $(this).closest("tr");    // Find the row
    //  var correo = row.find(".tdcorreo").text(); 
    //  var fecha = row.find(".tdfecha").text();// Find the text

@@ -109,11 +109,11 @@
 <div class="form-row">
 <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">INDIQUE LAS APLICACIONES, CON SU RESPECTIVO VALOR, SOFTWARE-LICENCIA, UTILIZACIÓN Y No. USUARIOS.</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
     </div>
     <div class="form-group col-md-6">
       <label for="inputEmail4" class="">OBSERVACIONES ADICIONALES</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" >
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
     </div>
   </div>
 
@@ -127,11 +127,11 @@
 <div class="form-row">
 <div class="form-group col-md-6">
     <label for="exampleFormControlSelect1" class="required">INDIQUE LAS APLICACIONES, CON SU RESPECTIVA FUNCIÓN, VALOR, UTILIZACIÓN Y No. USUARIOS.</label>
-    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
     </div>
     <div class="form-group col-md-6">
     <label for="exampleFormControlSelect1" class="">OBSERVACIONES ADICIONALES</label>
-    <input type="text" class="form-control" id="inputEmail4" placeholder="" >
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
     </div>
   </div>
 
@@ -179,7 +179,7 @@ $.each(dentrorow,function(index,value){
 switch(tipocontrol){
 case "INPUT":
 case "SELECT":
-
+case "TEXTAREA":
 var valor=$(this).val();
 if(valor=="" && $(this).is(":visible") && $(this).prop('required')){
   $(this).css({"border": "2px solid red", "border-radius": "4px"});
@@ -223,15 +223,17 @@ $.each(dentrorow,function(index,value){
   
    
 switch(tipocontrol){
-case "INPUT":
-case "SELECT":
+ case "INPUT":
+ case "SELECT":
+case "TEXTAREA":
+debugger
   var elem2 = document.createElement('label');
     elem2.style.color="red";
+    elem2.style.whiteSpace="pre-wrap";
   var tipo=($(this).prop('type'));
 var valor=$(this).val();
-
-
-elem2.innerHTML = valor; 
+ var valorspace= valor.replace(/(\r\n|\n|\r)/gm, "<br />");
+elem2.innerHTML = valorspace; 
       that.append(elem2);
 break;
 }

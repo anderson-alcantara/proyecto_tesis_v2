@@ -31,7 +31,7 @@
   <!--Titulo princiapl-->
   <div style="">
 <div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE DIAGNOSTICO PARA ASESORIA EMPRESARIAL</a></div>
-<p style="color: red;">FOR-AC-006</p>
+<p style="color: red;">FOR-AC-001</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -1278,7 +1278,7 @@
 
 
 
- function verificarvacio(){
+function verificarvacio(){
 
 var retorno=true;
   $(".form-row").each(function(){
@@ -1297,7 +1297,7 @@ $.each(dentrorow,function(index,value){
 switch(tipocontrol){
 case "INPUT":
 case "SELECT":
-
+case "TEXTAREA":
 var valor=$(this).val();
 if(valor=="" && $(this).is(":visible") && $(this).prop('required')){
   $(this).css({"border": "2px solid red", "border-radius": "4px"});
@@ -1321,6 +1321,7 @@ break;
 });
 return retorno;
 }
+
 
 
 

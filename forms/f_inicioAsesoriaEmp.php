@@ -182,7 +182,7 @@
 
 
 
- function verificarvacio(){
+function verificarvacio(){
 
 var retorno=true;
   $(".form-row").each(function(){
@@ -201,7 +201,7 @@ $.each(dentrorow,function(index,value){
 switch(tipocontrol){
 case "INPUT":
 case "SELECT":
-
+case "TEXTAREA":
 var valor=$(this).val();
 if(valor=="" && $(this).is(":visible") && $(this).prop('required')){
   $(this).css({"border": "2px solid red", "border-radius": "4px"});
@@ -229,6 +229,7 @@ return retorno;
 
 
 
+
 function addrespuesta(){
 
   $(".form-row").each(function(){
@@ -245,15 +246,17 @@ $.each(dentrorow,function(index,value){
   
    
 switch(tipocontrol){
-case "INPUT":
-case "SELECT":
+ case "INPUT":
+ case "SELECT":
+case "TEXTAREA":
+debugger
   var elem2 = document.createElement('label');
     elem2.style.color="red";
+    elem2.style.whiteSpace="pre-wrap";
   var tipo=($(this).prop('type'));
 var valor=$(this).val();
-
-
-elem2.innerHTML = valor; 
+ var valorspace= valor.replace(/(\r\n|\n|\r)/gm, "<br />");
+elem2.innerHTML = valorspace; 
       that.append(elem2);
 break;
 }

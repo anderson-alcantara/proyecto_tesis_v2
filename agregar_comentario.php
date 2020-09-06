@@ -177,7 +177,7 @@
             <h2>Añadir Comentario</h2>
             <h4 id="txtpara"></h4>
             <h4 id="textformulario">Formualrio</h4>
-            <textarea class="form-control" id="txtcomentario" rows="3" style="white-space: pre-wrap;"></textarea>
+            <textarea class="form-control" id="txtcomentario" rows="6" style="white-space: pre-wrap;"></textarea>
             <!-- <input type="file" class="form-control" id="exampleFormControlFile1"> -->
             <button type="button" onclick="sendcomentario()" class="btn btn-success">Enviar</button>
             </div>
@@ -321,13 +321,14 @@ $("#textformulario").text("Formato: "+ nombreformato);
 function sendcomentario(){
    
    var comentario = $('#txtcomentario').val();
+   var commentspace=comentario.replace(/(\r\n|\n|\r)/gm, "<br />");
    cadena="nombreformato=" + nombreformato+ 
 					"&nombre_remit=" + nombre_remit+
                "&ruta=" + ruta+
                "&correo=" + correo+
                "&nombre_comentador=" + nombre_comentador+
                "&fecha=" + fecha+
-               "&comentario=" + comentario;
+               "&comentario=" + commentspace;
    $.ajax({
 						type:"POST",
 						url:"php/send_comentario.php",

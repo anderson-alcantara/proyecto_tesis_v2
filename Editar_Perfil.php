@@ -456,6 +456,10 @@ $(document).ready(function(){
 				alertify.alert("Debes agregar una contraseña").setHeader('<em>  </em> '); 
 				return false;
 			}
+         else if($('#txtpass1').val().length< 8){
+				alertify.alert("La contraseña debe tener mínimo 8 caracteres").setHeader('<em>  </em> '); 
+				return false;
+         }
 			else if(($('#txtpass1').val()!==$('#txtpass2').val()) &&($("#lblpass2").css("visibility")!=='hidden')){
 				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
 				return false;

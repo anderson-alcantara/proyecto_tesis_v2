@@ -84,6 +84,10 @@
 			else if($('#password').val()==""){
 				alertify.alert("Debes agregar la contraseña").setHeader('<em>  </em> '); 
 				return false;
+			}
+			else if($('#password').val().length< 8){
+				alertify.alert("La contraseña debe tener mínimo 8 caracteres").setHeader('<em>  </em> '); 
+				return false;
 			}else if($('#password').val()!==$('#password2').val()){
 				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
 				return false;
