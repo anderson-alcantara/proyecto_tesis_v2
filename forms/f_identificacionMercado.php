@@ -30,7 +30,7 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DIAGNOSTICO DE APLICACIONES OFIMÁTICAS E INFORMÁTICAS</a></div>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE IDENTIFICACIÓN DE MERCADO </a></div>
 <p style="color: red;">FOR-AC-009</p>
 </div>
 <hr style="color:red; background-color:red;">
@@ -197,27 +197,33 @@
 
 <hr>
 
-<h5>RESULTADOS DE LOS CUESTIONARIOS</h5>
-<h6>Diligencie la hoja No. 3 del FOR-AC-009 e indique
-
-</h6>
-<hr>
-
 
 <div class="form-row">
 <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">CANTIDAD DE ENCUESTAS APLICADAS</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required ></textarea>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">CARACTERÍSTICAS ENCONTRADAS DEL MERCADO OBJETIVO</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
 
 <hr>
 
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4" class="">CANTIDAD DE ENCUESTAS APLICADAS</label>
 
+      <input type="file" name="yourfieldnamehere" class="form-control" id="inputfile" placeholder="" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required"></label>
+    
+    </div>
+  </div>
+
+<hr>
 
 
   <!--botón enviar-->
@@ -287,7 +293,6 @@ return retorno;
 
 
 function addrespuesta(){
-
   $(".form-row").each(function(){
 
 var dentrorow=$(this).children();
@@ -305,15 +310,18 @@ switch(tipocontrol){
  case "INPUT":
  case "SELECT":
 case "TEXTAREA":
-debugger
   var elem2 = document.createElement('label');
     elem2.style.color="red";
     elem2.style.whiteSpace="pre-wrap";
   var tipo=($(this).prop('type'));
-var valor=$(this).val();
+  console.log(tipo);
+  if(tipo!=="file"){
+    var valor=$(this).val();
  var valorspace= valor.replace(/(\r\n|\n|\r)/gm, "<br />");
 elem2.innerHTML = valorspace; 
-      that.append(elem2);
+that.append(elem2);
+  }
+
 break;
 }
     })
@@ -393,20 +401,32 @@ var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
 var seccional='<?php echo $_SESSION['seccional']?>';
-cadena="pdf=" + pdf +
-					"&nombres=" + nombres +
-					"&correo=" + correo+
-					"&tipousuario=" +tipousuario+
-          "&nombreform=" +nombreform+
-          "&nombreform_completo=" +nombreform_completo+
-          "&nombrearchivo=" +nombrearchivo+
-					"&fecha=" +fecha+
-          "&seccional=" +seccional;
-console.log(cadena);
+
+var file = document.getElementById("inputfile").files[0];
+var filename = document.getElementById("inputfile").files[0].name;
+ var formData = new FormData();
+  formData.append("file", file);
+  formData.append("nombres", nombres);
+  formData.append("correo", correo);
+  formData.append("nombreform", nombreform);
+  formData.append("tipousuario", tipousuario);
+  formData.append("nombreform_completo", nombreform_completo);
+  formData.append("nombrearchivo", nombrearchivo);
+  formData.append("fecha", fecha);
+  formData.append("pdf", pdf);
+  formData.append("seccional", seccional);
+  formData.append("file", file);
+  formData.append("filename", filename);
+
+
+
 $.ajax({
 						type:"POST",
 						url:"../php/subir_form.php",
-						data:cadena,
+						data: formData,
+            contentType: false,
+						processData: false,
+						cache: false, 
 						success:function(r){
                 if(r==1){
                   alertify.alert('Formulario enviado con éxito').set('onok', function(closeEvent){ 
@@ -448,4 +468,16 @@ var filenamesinpunto= filename.substr(0, filename.indexOf('.'));
   <script src="../js/docx.js"></script>
 
   <script src="../js/canvas2image.min.js"></script>
+
+
+<script>
+var uploadField = document.getElementById("inputfile");
+uploadField.onchange = function() {
+    if(this.files[0].size > 2000000 ){
+       alert("archivo debe pesar máximo 2 mb");
+       this.value = "";
+    };
+};
+</script>
+  
 </html>

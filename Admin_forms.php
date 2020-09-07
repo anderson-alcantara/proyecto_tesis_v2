@@ -184,8 +184,10 @@
             <th>tipo de usuario</th>  
             <th>nombre del formulario</th>  
             <th>archivo</th>  
+            <th>archivo adicional</th>  
             <th>acciones</th>  
             <th hidden>ruta</th>  
+            <th hidden>rutaAdicional</th>  
           </tr>  
         </thead>  
         <tbody id="mytbody">  
@@ -201,6 +203,9 @@
                $fecha=str_replace(" ", "/", $row['fecha']);
                $fecha2=str_replace("_", " ", $fecha);
                $fecha3=str_replace("-", ":", $fecha2);
+
+               $path = $row['archivo_adicional'];
+               $nombrefile = basename($path);   
             ?>
             <script></script>
             <tr>
@@ -211,6 +216,7 @@
                 <td class="tipo_usuario"><?php echo ($row['tipo_usuario']); ?></td>
                 <td class="tdformulario"><?php echo ($row['formulario']); ?></td>
                 <td class="tdarchivo"><a target="_blank"href="<?php echo ($row['archivo'])?>">Abrir</a></td> 
+                <td class="tdarchivoadicional"><a target="_blank"href="<?php echo ($row['archivo_adicional'])?>"><?php echo $nombrefile; ?></a></td> 
                 <td class="tdarchivo"><button style="background-color: #4CAF50; 
   border: none;
   color: white;

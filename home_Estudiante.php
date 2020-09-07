@@ -163,7 +163,7 @@
                        <li><a href="forms/f_perfilacion.php" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
                        <li><a href="forms/f_analisisEntorno.php" target="_blank">Formato De análisis Del Entorno</a></li>
                        <li><a href="forms/f_BalanceScoreCard.php" target="_blank">Formato De Balance Scorecard</a></li>
-                       <li><a href="forms/f_identificacionMercado.php">Formato De Identificación De Mercado</a></li>
+                       <li><a href="forms/f_identificacionMercado.php" target="_blank">Formato De Identificación De Mercado</a></li>
                        <li><a href="forms/f_ishikawa.php" target="_blank">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
                        <li><a href="forms/f_CaracterizacionProcesos.php">Formato De Caracterización De Procesos</a></li>
                        <li><a href="#">Formato De Evaluación De Marco Estratégico</a></li>

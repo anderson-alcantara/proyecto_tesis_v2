@@ -30,8 +30,8 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE PERFILACIÓN DE PUESTOS DE TRABAJO</a></div>
-<p style="color: red;">FOR-AC-006</p>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DIAGNOSTICO DE APLICACIONES OFIMÁTICAS E INFORMÁTICAS</a></div>
+<p style="color: red;">FOR-AC-004</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -47,9 +47,10 @@
 
 <hr>
   <!--label&textarea-->
+
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" required>Fecha</label>
+      <label for="inputEmail4" class="required">FECHA</label>
       <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
@@ -60,9 +61,8 @@
 
 <hr>
 
-
-<div class="form-row">
-<div class="form-group col-md-6">
+  <div class="form-row">
+  <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
@@ -73,6 +73,7 @@
   </div>
 
 <hr>
+
 
 <div class="form-row">
 <div class="form-group col-md-6">
@@ -93,128 +94,50 @@
       <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">PUESTO DE TRABAJO</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+      <label for="inputEmail4" class=""></label>
     </div>
   </div>
 
+<hr>
+
+<h5>APLICACIONES OFIMÁTICAS</h5>
+<h6>Conjunto de técnicas, aplicaciones y programas informáticos que se utilizan en funciones de oficina para optimizar, automatizar y mejorar los procedimientos y tareas relacionados. Esas herramientas suelen presentarse en paquetes de programas conocidos como “suites de oficina u ofimática.
+
+</h6>
 <hr>
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">DENOMINACIÓN DEL PUESTO DE TRABAJO</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>DIRECTIVO</option>
-      <option>JURIDICO</option>
-      <option>PROFESIONAL</option>
-      <option>TÉCNICO</option>
-      <option>ASISTENCIAL</option>
-      <option>OPERARIO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+      <label for="inputEmail4" class="required">INDIQUE LAS APLICACIONES, CON SU RESPECTIVO VALOR, SOFTWARE-LICENCIA, UTILIZACIÓN Y No. USUARIOS.</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="selectconotro1" class="required">FUNCIONES DEL PUESTO DE TRABAJO</label>
-      <select class="form-control" id="selectconotro1" required>
-      <option></option>
-      <option>ADMINISTRACIÓN</option>
-      <option>COMERCIAL / SERVICIO AL CLIENTE</option>
-      <option>CALIDAD</option>
-      <option>LOGÍSTICA</option>
-      <option>PRODUCCIÓN</option>
-      <option>MERCADEO</option>
-      <option>CONTABILIDAD</option>
-      <option>RRHH</option>
-      <option>MANTENIMIENTO</option>
-      <option>COMPRAS</option>
-      <option>TECNOLOGÍA</option>
-      <option>Otro:</option>
-      
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+      <label for="inputEmail4" class="">OBSERVACIONES ADICIONALES</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" >
     </div>
   </div>
 
 <hr>
 
+<h5>APLICACIONES INFORMÁTICAS</h5>
+<h6>Herramientas que ayuden a la gestión de la empresa de forma inteligente y eficiente, permitiendo la toma de decisiones sobre análisis y reflexiones, a partir de la gestión de los datos y de la información.
 
-
-
-
-
+</h6>
+<hr>
 <div class="form-row">
 <div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1" class="required">ENUMERE LAS RESPONSABILIDADES DEL PUESTO DE TRABAJO</label>
-    <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    <label for="exampleFormControlSelect1" class="required">INDIQUE LAS APLICACIONES, CON SU RESPECTIVA FUNCIÓN, VALOR, UTILIZACIÓN Y No. USUARIOS.</label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-    <label></label>
-
+    <label for="exampleFormControlSelect1" class="">OBSERVACIONES ADICIONALES</label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="" >
     </div>
   </div>
 
 <hr>
 
-<h3 style="text-align:center;">POSICIÓN DEL PUESTO EN EL ORGANIGRAMA</h3>
 
-<hr>
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">SUBORDINACIÓN (Indique si este puesto de trabajo tiene subordinados y cuáles)</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">SUPERVISIÓN (Indique si este puesto esta bajo supervisión y de qué cargos)</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">COMUNICACIONES COLATERALES (Indique los pares con los cuales debe manejar comunicación directa)</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-
-    <div class="form-group col-md-6">
-<label></label>
-    </div>
-
-
-  </div>
-<hr>
-
-<hr>
-
-<h3 style="text-align:center;">CONDICIONALES DEL PUESTO</h3>
-
-<hr>
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">HORAS MENSUALES</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">HORAS SEMANALES</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-  </div>
-<hr>
-
-<div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">HORAS DIARIAS</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">HORARIO LABORAL</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-  </div>
-<hr>
 
 
 
