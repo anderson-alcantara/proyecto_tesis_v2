@@ -40,8 +40,8 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE INSCRIPCIÓN PARA OPCIÓN DE GRADO CREACIÓN DE EMPRESA</a></div>
-<p style="color: red;">FOR-EP-001</p>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE EVALUACIÓN FERIA EMPRESARIAL</a></div>
+<p style="color: red;">FOR-EP-007</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -56,11 +56,41 @@
   </div>
 
 <hr>
+
+  <div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">FECHA DE DILIGENCIAMIENTO</label>
+      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class=""></label>
+    </div>
+  </div>
+<hr>
+
+
+<h5>PARÁMETROS DE LA FERIA</h5>
+<h6>Diligencie según la información que recibió del CEIDEUL</h6>
+<hr>
+
   <!--label&textarea-->
 
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">FECHA</label>
+      <label for="inputEmail4" class="required">No. EDICIÓN DE LA FERIA EMPRESARIAL</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">FECHA DE INICIO</label>
+      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">FECHA DE FINALIZACIÓN</label>
       <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
@@ -70,24 +100,17 @@
 
 <hr>
 
-<h5>INFORMACIÓN DE LOS INTEGRANTES DEL EQUIPO</h5>
-
+<h5>INFORMACIÓN DEL PARTICIPANTE</h5>
 <hr>
-
 
 <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NOMBRE DEL ESTUDIANTE / CÓDIGO</label>
+      <label for="inputEmail4" class="required">EMPRESA</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="selectconotro1" class="required">PROGRAMA ACADÉMICO</label>
-      <select class="form-control" id="selectconotro1" required>
-      <option></option>
-      <option>ADMINISTRACIÓN DE EMPRESAS</option>
-      <option>CONTADURÍA PUBLICA</option>
-      <option>Otro:</option>
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+      <label for="inputEmail4" class="">No. STAND</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" >
     </div>
   </div>
 
@@ -95,56 +118,12 @@
 
 <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NOMBRE DEL SEGUNDO ESTUDIANTE / CÓDIGO </label>
+      <label for="inputEmail4" class="required">NOMBRE PARTICIPANTE</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="selectconotro1" class="required">PROGRAMA ACADÉMICO</label>
-      <select class="form-control" id="selectconotro1" required>
-      <option></option>
-      <option>ADMINISTRACIÓN DE EMPRESAS</option>
-      <option>CONTADURÍA PUBLICA</option>
-      <option>Otro:</option>
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
-    </div>
-  </div>
-
-<hr>
- 
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">SEMESTRE PRIMER ESTUDIANTE</label>
+      <label for="inputEmail4" class="required">NOMBRE DEL JURADO EVALUADOR</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NÚMERO DE CONTACTO</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">SEMESTRE SEGUNDO ESTUDIANTE</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NÚMERO DE CONTACTO</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NOMBRE TENTATIVO DE LA EMPRESA</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">DESCRIPCIÓN DE LA ACTIVIDAD ECONÓMICA</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" >
     </div>
   </div>
 
@@ -152,42 +131,131 @@
 
 <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">POSIBLE FECHA DE INICIO</label>
-      <input type="date" class="form-control" id="inputEmail4" placeholder="" >
+      <label for="inputEmail4" class="required">OCUPACIÓN / ÁREA</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
       <label for="inputEmail4" class=""></label>
     </div>
   </div>
-<hr>
-
-<h5>Realice un ensayo de su idea de negocio, en donde se evidencien los siguientes parámetros:</h5>
 
 <hr>
 
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">Seleccione los criterios con los que cumple</label>
-     
-    </div>
+<h5>EVALUACIÓN FERIA EMPRESARIAL</h5>
+<p style="text-align:justify;">Apreciado jurado, le solicitamos diligenciar el siguiente formato, con el fin de otorgar los premios correspondientes. Marque con una “X” en el espacio que corresponda, teniendo en cuenta: </p>
+<p>5 = Excelente; 4 = Bueno; 3 = Aceptable; 2 = Regular; 1= Deficiente.</p>
+<hr>
 
+<h6>PRESENTACIÓN</h6>
 <hr>
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Escudo de la Universidad Libre / Nombre de la Empresa / Nombres de los integrantes del grupo</label>
+      <label for="exampleFormControlSelect1" class="required">Stand</label>
       <select class="form-control" id="exampleFormControlSelect1" required>
       <option></option>
-      <option>SI</option>
-      <option>NO</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
       </select>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
     </div>
     <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Describir de forma clara y concisa en qué consiste la idea de negocio. (Max. 130 palabras)</label>
+      <label for="exampleFormControlSelect1" class="required">Expositores</label>
       <select class="form-control" id="exampleFormControlSelect1" required>
       <option></option>
-      <option>SI</option>
-      <option>NO</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    </div>
+  </div>
+
+<hr>
+
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="exampleFormControlSelect1" class="required">Productos / Servicios</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class=""></label>
+    </div>
+  </div>
+
+<hr>
+
+<h5>SERVICIO</h5>
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="exampleFormControlSelect1" class="required">Atención al publico</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="exampleFormControlSelect1" class="required">Disponibilidad</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    </div>
+  </div>
+
+<hr>
+
+<h5>PROPUESTA</h5>
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="exampleFormControlSelect1" class="required">Calidad</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="exampleFormControlSelect1" class="required">Innovación</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
+      <option></option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
       </select>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
     </div>
@@ -197,108 +265,17 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Cuáles son los objetivos desde el punto de vista social, económico, ambiental y aquellos que considere de relevancia. (Max. 170 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    <label for="exampleFormControlSelect1" class="">OBSERVACIONES FINALES.</label>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;"></textarea>
     </div>
     <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Cuáles son las razones que fundamentan el desarrollo del proyecto. (Max. 120 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
+    <label for="exampleFormControlSelect1" class=""></label>
     </div>
   </div>
 
 <hr>
 
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Qué antecedentes tiene el proyecto a realizar (Max. 180 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Cuál es el mercado al que va dirigida la idea de negocio y en donde se encuentra ubicado (Max. 100 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Indicar qué ventajas tiene la iniciativa frente a otras propuestas, en cuanto a la satisfacción de las necesida-des de los clientes potenciales. (Max. 120 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Quienes son y en donde se encuentran ubicados sus competidores. (Max. 100 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Qué tipo de capacitación han tenido o investigado para pensar que la idea de negocio puede ser exitosa.</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="exampleFormControlSelect1" class="required">Quienes son y en donde se encuentran ubicados sus competidores. (Max. 100 palabras)</label>
-      <select class="form-control" id="exampleFormControlSelect1" required>
-      <option></option>
-      <option>SI</option>
-      <option>NO</option>
-      </select>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">Cargue el archivo de su ensayo para ser revisado. </label>
-
-      <input type="file" name="yourfieldnamehere" class="form-control" id="inputfile" placeholder="" required >
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required"></label>
-    
-    </div>
-  </div>
-
+<h5>¡MUCHAS GRACIAS POR SU PARTICIPACIÓN!</h5>
 <hr>
 
   <!--botón enviar-->

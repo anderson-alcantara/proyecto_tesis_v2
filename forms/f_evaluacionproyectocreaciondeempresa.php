@@ -68,50 +68,59 @@
   <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">NOMBRE DEL ESTUDIANTE / CÓDIGO</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-      <br>
-      <label for="inputEmail4" class="">NOMBRE DEL ESTUDIANTE / CÓDIGO (OPCIONAL)</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="">
     </div>
     <div class="form-group col-md-6">
       <label for="selectconotro1" class="required">PROGRAMA ACADÉMICO</label>
-      <select class="form-control" id="selectconotro1" required >
-      <option></option>
-      <option>ADMINISTRACIÓN DE EMPRESAS</option>
-      <option>CONTADURÍA PUBLICA</option>
-      <option>Otro:</option>
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
-      <br>
-      <label for="selectconotro1" class="">PROGRAMA ACADÉMICO (OPCIONAL)</label>
-      <select class="form-control" id="selectconotro1">
+      <select class="form-control" id="selectconotro1" required>
       <option></option>
       <option>ADMINISTRACIÓN DE EMPRESAS</option>
       <option>CONTADURÍA PUBLICA</option>
       <option>Otro:</option>
       <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
     </div>
+  </div>
 
+<hr>
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">NOMBRE DEL SEGUNDO ESTUDIANTE / CÓDIGO </label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="selectconotro1" class="required">PROGRAMA ACADÉMICO</label>
+      <select class="form-control" id="selectconotro1" required>
+      <option></option>
+      <option>ADMINISTRACIÓN DE EMPRESAS</option>
+      <option>CONTADURÍA PUBLICA</option>
+      <option>Otro:</option>
+      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+    </div>
+  </div>
+
+<hr>
+ 
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">SEMESTRE PRIMER ESTUDIANTE</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">NÚMERO DE CONTACTO</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
   </div>
 
 <hr>
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">SEMESTRE</label>
+      <label for="inputEmail4" class="required">SEMESTRE SEGUNDO ESTUDIANTE</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
-    <br>
     <div class="form-group col-md-6">
       <label for="inputEmail4" class="required">NÚMERO DE CONTACTO</label>
       <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">SEMESTRE (OPCIONAL)</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="">
-    </div>
-    <br>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">NÚMERO DE CONTACTO (OPCIONAL)</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="">
     </div>
   </div>
 

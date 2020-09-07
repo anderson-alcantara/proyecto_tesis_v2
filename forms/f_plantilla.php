@@ -144,6 +144,21 @@
 
 <hr>
 
+<!--input file-->
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4" class="">CANTIDAD DE ENCUESTAS APLICADAS</label>
+
+      <input type="file" name="yourfieldnamehere" class="form-control" id="inputfile" placeholder="" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required"></label>
+    
+    </div>
+  </div>
+
+<hr>
+
 <!--botón enviar-->
 <div class="form__item">
     <button class="btn btn-success" type="button" id="botonenviar">Enviar</button>
