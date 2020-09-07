@@ -19,7 +19,17 @@
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
 <script src="../js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/mdb.min.css" />
 <script src="../js/alertifyjs/alertify.js"></script>
+<script src="../js/alertifyjs/mdb.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/styleform2.css">
   <title>CEIDEUL</title>
@@ -30,8 +40,8 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE IDENTIFICACIÓN DE MERCADO </a></div>
-<p style="color: red;">FOR-AC-009</p>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE ATENCIÓN A ESTUDIANTES Y EXTERNOS (TUTORIA Y/O ASESORIA EMPRESARIAL)</a></div>
+<p style="color: red;">FOR-GE-001</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -49,148 +59,118 @@
   <!--label&textarea-->
 
   <div class="form-row">
+
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">FECHA</label>
-      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">RAZÓN SOCIAL DE LA EMPRESA</label>
+      <label for="inputEmail4" class="required">DOCENTE / ASESOR</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
-  </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">ÁREA</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
 
-<hr>
+  </div>
 
   <div class="form-row">
+
+<div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">FECHA ASESORÍA / TUTORÍA </label>
+    <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">DIRECCIÓN EMPRESA</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
+    <label for="inputEmail4" class="required">HORA ASESORÍA / TUTORÍA</label>
+    <input type="time" class="form-control" id="inputEmail4" placeholder="" required>
   </div>
+
+</div>
+
+<hr>
+
+
+<div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">NOMBRE COMPLETO (ESTUDIANTE / EXTERNO) </label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">CÓDIGO / IDENTIFICACIÓN</label>
+    <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
+
+</div>
+
+<hr>
+
+<div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">PROGRAMA / EMPRESA </label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">TELÉFONO DE CONTACTO</label>
+    <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
+
+</div>
+
+<hr>
+
+<h5>ASESORÍA / TUTORÍA</h5>
 
 <hr>
 
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">LOCALIDAD - BARRIO</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">TELÉFONO DE CONTACTO</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">No. DE CONTRATO DE LA ASESORÍA</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class=""></label>
-    </div>
-  </div>
-
-<hr>
-
-<h5>IDENTIFICACIÓN DE MERCADO</h5>
-<h6>Describa los tipos de clientes hacia los cuales esta dirigida la empresa (minorista, mayorista, consumidor final...) y en donde se localiza.</h6>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">TIPO DE CLIENTE (A)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">CIUDAD / MUNICIPIO (A)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">LOCALIDAD / BARRIO (A)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="selectconotro1" class="required">ALCANCE (A)</label>
+      <label for="selectconotro1" class="required">ASUNTO</label>
       <select class="form-control" id="selectconotro1" required>
       <option></option>
-      <option>NACIONAL</option>
-      <option>INTERNACIONAL</option>   
+      <option>CREACIÓN DE EMPRESA</option>
+      <option>CÁTEDRA DE EMPRENDIMIENTO</option>
+      <option>ELEVATOR PITCH</option>
+      <option>FERIA EMPRESARIAL</option>
+      <option>PRÁCTICA EMPRESARIAL</option>
+      <option>Otro:</option>
       <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
     </div>
+    <div class="form-group col-md-6">
+    <label for="exampleFormControlSelect1" class="">SI CORRESPONDE CON SU RESPUESTA ANTERIOR, INDIQUE CUAL ES SU IDEA DE NEGOCIO</label>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
+    </div>
   </div>
 
 <hr>
 
 
 <div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">TIPO DE CLIENTE (B)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
+    <div class="form-group col-md-6">
+    <label for="exampleFormControlSelect1" class="required">DESCRIBA EL MOTIVO DE LA CONSULTA</label>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">CIUDAD / MUNICIPIO (B)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">LOCALIDAD / BARRIO (B)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="selectconotro1" class="">ALCANCE (B)</label>
-      <select class="form-control" id="selectconotro1" >
+      <label for="exampleFormControlSelect1" class="required">¿El estudiante o externo quedo satisfecho con la asesoría?</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
       <option></option>
-      <option>NACIONAL</option>
-      <option>INTERNACIONAL</option>   
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+      <option>SI</option>
+      <option>NO</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
     </div>
   </div>
 
 <hr>
 
 <div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">TIPO DE CLIENTE (C)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
+    <div class="form-group col-md-6">
+    <label for="exampleFormControlSelect1" class="">¿Por qué?</label>
+    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">CIUDAD / MUNICIPIO (C)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">LOCALIDAD / BARRIO (C)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="selectconotro1" class="">ALCANCE (C)</label>
-      <select class="form-control" id="selectconotro1" >
+      <label for="exampleFormControlSelect1" class="required">¿Se concretó una próxima cita?</label>
+      <select class="form-control" id="exampleFormControlSelect1" required>
       <option></option>
-      <option>NACIONAL</option>
-      <option>INTERNACIONAL</option>   
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+      <option>SI</option>
+      <option>NO</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
     </div>
   </div>
 
@@ -199,26 +179,31 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">CANTIDAD DE ENCUESTAS APLICADAS</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+      <label for="txtcorreo" class="">FECHA PRÓXIMA CITA</label>
+      <input type="date" class="form-control" id="txtcorreo" placeholder="" >
     </div>
     <div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1" class="required">CARACTERÍSTICAS ENCONTRADAS DEL MERCADO OBJETIVO</label>
-    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required ></textarea>
+      <label for="txtcorreo" class="">HORA PRÓXIMA CITA</label>
+      <input type="time" class="form-control" id="txtcorreo" placeholder="" >
     </div>
   </div>
 
 <hr>
 
+
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">TABULACIÓN DE RESPUESTAS</label>
-
-      <input type="file" name="yourfieldnamehere" class="form-control" id="inputfile" placeholder="" >
+      <label for="exampleFormControlSelect1" class="">EL TEMA CONSULTADO SE ENCUENTRA</label>
+      <select class="form-control" id="exampleFormControlSelect1" >
+      <option></option>
+      <option>EN PROCESO</option>
+      <option>SOLUCIONADO</option>
+      </select>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" hidden required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class=""></label>
-    
+      <label for="txtcorreo" class="">No. CONSECUTIVO DEL PROCESO</label>
+      <input type="time" class="form-control" id="txtcorreo" placeholder="" >
     </div>
   </div>
 
@@ -400,9 +385,9 @@ var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
 var seccional='<?php echo $_SESSION['seccional']?>';
-var filelength=document.getElementById("inputfile").files.length;
 
-
+var file = document.getElementById("inputfile").files[0];
+var filename = document.getElementById("inputfile").files[0].name;
  var formData = new FormData();
   formData.append("file", file);
   formData.append("nombres", nombres);
@@ -414,14 +399,8 @@ var filelength=document.getElementById("inputfile").files.length;
   formData.append("fecha", fecha);
   formData.append("pdf", pdf);
   formData.append("seccional", seccional);
-
-if(filelength>0){
-  var file = document.getElementById("inputfile").files[0];
-var filename = document.getElementById("inputfile").files[0].name;
   formData.append("file", file);
   formData.append("filename", filename);
-
-}
 
 
 

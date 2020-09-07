@@ -40,6 +40,7 @@
 				$_SESSION['nombres']=$nombres;
 				$_SESSION['seccional']=$row['seccional'];
 				$_SESSION['apellidos']=$apellidos;
+				$_SESSION['documento']=$row['documento'];
 				$_SESSION['clave']=$clave;
 
 

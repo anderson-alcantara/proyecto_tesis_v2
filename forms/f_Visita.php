@@ -19,7 +19,17 @@
 <link rel="stylesheet" type="text/css" href="../js/alertifyjs/css/alertify.css">
 <script src="../js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/mdb.min.css" />
 <script src="../js/alertifyjs/alertify.js"></script>
+<script src="../js/alertifyjs/mdb.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/styleform2.css">
   <title>CEIDEUL</title>
@@ -30,8 +40,8 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE IDENTIFICACIÓN DE MERCADO </a></div>
-<p style="color: red;">FOR-AC-009</p>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE VISITA</a></div>
+<p style="color: red;">FOR-GE-002</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -49,180 +59,58 @@
   <!--label&textarea-->
 
   <div class="form-row">
+
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">FECHA</label>
-      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">RAZÓN SOCIAL DE LA EMPRESA</label>
+      <label for="inputEmail4" class="required">NOMBRE DE QUIEN VISITA</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">CARGO / ÁREA</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+
   </div>
-
-<hr>
-
   <div class="form-row">
+  <hr>
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NOMBRE DEL EMPRESARIO / REPRESENTANTE LEGAL</label>
+      <label for="inputEmail4" class="required">EMPRESA VISITADA</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">DIRECCIÓN EMPRESA</label>
+      <label for="inputEmail4" class="required">NIT</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
+
   </div>
+  <hr>
+  <div class="form-row">
 
-<hr>
-
-
-<div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">LOCALIDAD - BARRIO</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">TELÉFONO DE CONTACTO</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
+    <label for="inputEmail4" class="required">EMPRESARIO / REPRESENTANTE LEGAL </label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
   </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">FECHA DE LA VISITA</label>
+    <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
+
+</div>
 
 <hr>
 
-<div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">No. DE CONTRATO DE LA ASESORÍA</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class=""></label>
-    </div>
+    <label for="inputEmail4" class="required">HORA DE LA VISITA </label>
+    <input type="time" class="form-control" id="inputEmail4" placeholder="" required>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4" class="required">OBSERVACIONES </label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
   </div>
 
-<hr>
-
-<h5>IDENTIFICACIÓN DE MERCADO</h5>
-<h6>Describa los tipos de clientes hacia los cuales esta dirigida la empresa (minorista, mayorista, consumidor final...) y en donde se localiza.</h6>
+</div>
 
 <hr>
 
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">TIPO DE CLIENTE (A)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">CIUDAD / MUNICIPIO (A)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">LOCALIDAD / BARRIO (A)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="selectconotro1" class="required">ALCANCE (A)</label>
-      <select class="form-control" id="selectconotro1" required>
-      <option></option>
-      <option>NACIONAL</option>
-      <option>INTERNACIONAL</option>   
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
-    </div>
-  </div>
-
-<hr>
-
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">TIPO DE CLIENTE (B)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">CIUDAD / MUNICIPIO (B)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">LOCALIDAD / BARRIO (B)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="selectconotro1" class="">ALCANCE (B)</label>
-      <select class="form-control" id="selectconotro1" >
-      <option></option>
-      <option>NACIONAL</option>
-      <option>INTERNACIONAL</option>   
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">TIPO DE CLIENTE (C)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">CIUDAD / MUNICIPIO (C)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">LOCALIDAD / BARRIO (C)</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="selectconotro1" class="">ALCANCE (C)</label>
-      <select class="form-control" id="selectconotro1" >
-      <option></option>
-      <option>NACIONAL</option>
-      <option>INTERNACIONAL</option>   
-      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
-    </div>
-  </div>
-
-<hr>
-
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">CANTIDAD DE ENCUESTAS APLICADAS</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-    <label for="exampleFormControlSelect1" class="required">CARACTERÍSTICAS ENCONTRADAS DEL MERCADO OBJETIVO</label>
-    <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required ></textarea>
-    </div>
-  </div>
-
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="inputEmail4" class="">TABULACIÓN DE RESPUESTAS</label>
-
-      <input type="file" name="yourfieldnamehere" class="form-control" id="inputfile" placeholder="" >
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class=""></label>
-    
-    </div>
-  </div>
-
-<hr>
 
 
   <!--botón enviar-->
@@ -400,9 +288,9 @@ var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
 var seccional='<?php echo $_SESSION['seccional']?>';
-var filelength=document.getElementById("inputfile").files.length;
 
-
+var file = document.getElementById("inputfile").files[0];
+var filename = document.getElementById("inputfile").files[0].name;
  var formData = new FormData();
   formData.append("file", file);
   formData.append("nombres", nombres);
@@ -414,14 +302,8 @@ var filelength=document.getElementById("inputfile").files.length;
   formData.append("fecha", fecha);
   formData.append("pdf", pdf);
   formData.append("seccional", seccional);
-
-if(filelength>0){
-  var file = document.getElementById("inputfile").files[0];
-var filename = document.getElementById("inputfile").files[0].name;
   formData.append("file", file);
   formData.append("filename", filename);
-
-}
 
 
 

@@ -277,7 +277,6 @@
 
 <h5>¡MUCHAS GRACIAS POR SU PARTICIPACIÓN!</h5>
 <hr>
-
   <!--botón enviar-->
   <div class="form__item">
     <button class="btn btn-success" type="button" id="botonenviar">Enviar</button>
@@ -297,7 +296,7 @@
 
 
 
- function verificarvacio(){
+function verificarvacio(){
 
 var retorno=true;
   $(".form-row").each(function(){
@@ -344,7 +343,9 @@ return retorno;
 
 
 
+
 function addrespuesta(){
+
   $(".form-row").each(function(){
 
 var dentrorow=$(this).children();
@@ -362,18 +363,15 @@ switch(tipocontrol){
  case "INPUT":
  case "SELECT":
 case "TEXTAREA":
+debugger
   var elem2 = document.createElement('label');
     elem2.style.color="red";
     elem2.style.whiteSpace="pre-wrap";
   var tipo=($(this).prop('type'));
-  console.log(tipo);
-  if(tipo!=="file"){
-    var valor=$(this).val();
+var valor=$(this).val();
  var valorspace= valor.replace(/(\r\n|\n|\r)/gm, "<br />");
 elem2.innerHTML = valorspace; 
-that.append(elem2);
-  }
-
+      that.append(elem2);
 break;
 }
     })
@@ -453,32 +451,20 @@ var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
 var seccional='<?php echo $_SESSION['seccional']?>';
-
-var file = document.getElementById("inputfile").files[0];
-var filename = document.getElementById("inputfile").files[0].name;
- var formData = new FormData();
-  formData.append("file", file);
-  formData.append("nombres", nombres);
-  formData.append("correo", correo);
-  formData.append("nombreform", nombreform);
-  formData.append("tipousuario", tipousuario);
-  formData.append("nombreform_completo", nombreform_completo);
-  formData.append("nombrearchivo", nombrearchivo);
-  formData.append("fecha", fecha);
-  formData.append("pdf", pdf);
-  formData.append("seccional", seccional);
-  formData.append("file", file);
-  formData.append("filename", filename);
-
-
-
+cadena="pdf=" + pdf +
+					"&nombres=" + nombres +
+					"&correo=" + correo+
+					"&tipousuario=" +tipousuario+
+          "&nombreform=" +nombreform+
+          "&nombreform_completo=" +nombreform_completo+
+          "&nombrearchivo=" +nombrearchivo+
+					"&fecha=" +fecha+
+          "&seccional=" +seccional;
+console.log(cadena);
 $.ajax({
 						type:"POST",
 						url:"../php/subir_form.php",
-						data: formData,
-            contentType: false,
-						processData: false,
-						cache: false, 
+						data:cadena,
 						success:function(r){
                 if(r==1){
                   alertify.alert('Formulario enviado con éxito').set('onok', function(closeEvent){ 
@@ -520,16 +506,4 @@ var filenamesinpunto= filename.substr(0, filename.indexOf('.'));
   <script src="../js/docx.js"></script>
 
   <script src="../js/canvas2image.min.js"></script>
-
-
-<script>
-var uploadField = document.getElementById("inputfile");
-uploadField.onchange = function() {
-    if(this.files[0].size > 2000000 ){
-       alert("archivo debe pesar máximo 2 mb");
-       this.value = "";
-    };
-};
-</script>
-  
 </html>

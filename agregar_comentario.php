@@ -176,7 +176,7 @@
             <div class="container" style="width:100%; margin-top:200px;">
             <h2>Añadir Comentario</h2>
             <h4 id="txtpara"></h4>
-            <h4 id="textformulario">Formualrio</h4>
+            <h4 id="textformulario">Formulario</h4>
             <textarea class="form-control" id="txtcomentario" rows="6" style="white-space: pre-wrap;"></textarea>
             <!-- <input type="file" class="form-control" id="exampleFormControlFile1"> -->
             <button type="button" onclick="sendcomentario()" class="btn btn-success">Enviar</button>
@@ -303,6 +303,7 @@ if(document.location.toString().indexOf('?') !== -1) {
 
 var nombreformato=arreglo[0][1];
 var nombre_remit=arreglo[1][1];
+
 var ruta=arreglo[2][1];
 var correo=arreglo[3][1];
 var nombre_comentador='<?php echo $_SESSION['nombres'].' '. $_SESSION['apellidos']; ?>'
@@ -311,7 +312,6 @@ var d=new Date();
 var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear();
 
-console.log(comentario);
 
 $("#txtpara").text("Para: "+ nombre_remit);
 

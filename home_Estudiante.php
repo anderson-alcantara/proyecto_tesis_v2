@@ -165,12 +165,12 @@
                        <li><a href="forms/f_BalanceScoreCard.php" target="_blank">Formato De Balance Scorecard</a></li>
                        <li><a href="forms/f_identificacionMercado.php" target="_blank">Formato De Identificación De Mercado</a></li>
                        <li><a href="forms/f_ishikawa.php" target="_blank">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
-                       <li><a href="forms/f_CaracterizacionProcesos.php">Formato De Caracterización De Procesos</a></li>
-                       <li><a href="#">Formato De Evaluación De Marco Estratégico</a></li>
-                       <li><a href="#">Formato De Diagnostico Interno</a></li>
-                       <li><a href="#">Formato De Matriz Dofa</a></li>
-                       <li><a href="#">Formato De Cadena De Valor</a></li>
-                       <li><a href="#">Formato De Modelo Canvas</a></li>
+                       <li><a href="forms/f_CaracterizacionProcesos.php" target="_blank">Formato De Caracterización De Procesos</a></li>
+                       <li><a href="forms/f_EvaluacionMarcoEstrategico.php" target="_blank" >Formato De Evaluación De Marco Estratégico</a></li>
+                       <li><a href="forms/f_DiagInterno.php" target="_blank">Formato De Diagnostico Interno</a></li>
+                       <li><a href="forms/f_Dofa.php" target="_blank">Formato De Matriz Dofa</a></li>
+                       <li><a href="forms/f_CadenaValor.php" target="_blank">Formato De Cadena De Valor</a></li>
+                       <li><a href="forms/f_Canvas.php" target="_blank">Formato De Modelo Canvas</a></li>
                        <li><a href="#">Formato De Solicitud De Acciones Preventivas Y De Mejora</a></li>
                      </ul>
                    </li>
@@ -188,14 +188,14 @@
                     <input id="sub-sub-group-4" type="checkbox" hidden />
                     <label for="sub-sub-group-4"><span class="fa fa-angle-right"></span>Opciones De Grado CEIDEUL</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="#">Formato De Inscripción Para Opción De Grado Creación De Empresa</a></li>
+                      <li><a href="forms/f_inscripcionCreacionDeEmpresa.php" target="_blank">Formato De Inscripción Para Opción De Grado Creación De Empresa</a></li>
                       <li><a href="#">Formato De Recurso Estudiante / Externo</a></li>
        
                     </ul>
                     <input id="sub-sub-group-5" type="checkbox" hidden />
                     <label for="sub-sub-group-5"><span class="fa fa-angle-right"></span>Opciones De Grado Creación De Empresa</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="#">Formato De Asignación De Tutor Para Proyecto De Grado</a></li>
+                      <li><a href="forms/f_asignaciondetutorproyecto.php" target="_blank">Formato De Asignación De Tutor Para Proyecto De Grado</a></li>
                       <li><a href="#">Formato De Evaluación Proyecto De Grado “creación De Empresa”</a></li>
 
                     </ul>
