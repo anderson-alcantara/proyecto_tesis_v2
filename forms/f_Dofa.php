@@ -384,10 +384,7 @@ $.ajax({
 					});
     
     }else{
-      alertify.alert('Por favor llenar todos los campos obligatorios').set('onok', function(closeEvent){ 
-                   
-
-									} ).setHeader('<em>  </em> '); 
+      alert('Por favor llenar todos los campos obligatorios'); 
     }
 
   }

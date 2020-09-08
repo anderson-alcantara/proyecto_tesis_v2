@@ -32,7 +32,7 @@ if(mysqli_num_rows($resultado) > 0){
 
    while($row = $resultado->fetch_assoc()){
       $nombreformrow = $row['formulario'];
-      if($nombreformrow=="FORMATO DE EVALUACIÓN PROYECTO DE GRADO “CREACIÓN DE EMPRESA”"
+      if($nombreformrow=="FORMATO DE EVALUACIÓN PROYECTO DE GRADO CREACIÓN DE EMPRESA"
       || $nombreformrow=="FORMATO DE EVALUACIÓN FERIA EMPRESARIAL"
       || $nombreformrow=="FORMATO DE IDEAS DE NEGOCIO"
       || $nombreformrow=="FORMATO DE CONCEPTO DOCENTE EXPERTO DISCIPLINAR PRÁCTICA EMPRESARIAL"

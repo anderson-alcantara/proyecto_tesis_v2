@@ -30,7 +30,7 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE ASIGNACIÓN DE TUTOR PARA PROYECTO DE GRADO</a></div>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE EVALUACIÓN PROYECTO DE GRADO CREACIÓN DE EMPRESA</a></div>
 <p style="color: red;">FOR-EP-003</p>
 </div>
 <hr style="color:red; background-color:red;">
@@ -583,10 +583,7 @@ $.ajax({
 					});
     
     }else{
-      alertify.alert('Por favor llenar todos los campos obligatorios').set('onok', function(closeEvent){ 
-                   
-
-									} ).setHeader('<em>  </em> '); 
+      alert('Por favor llenar todos los campos obligatorios'); 
     }
 
   }

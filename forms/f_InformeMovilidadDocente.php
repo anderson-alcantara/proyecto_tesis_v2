@@ -40,8 +40,8 @@
 <div id="pag1">
   <!--Titulo princiapl-->
   <div style="">
-<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO PROTOCOLO EXPOSITORES</a></div>
-<p style="color: red;">FOR-EP-009</p>
+<div class="form__title" style="font-weight:bold; font-size:25px"><a id="nombre_form">FORMATO DE INFORME MOVILIDAD DOCENTE</a></div>
+<p style="color: red;">FOR-GE-007</p>
 </div>
 <hr style="color:red; background-color:red;">
 <div class="form-row">
@@ -56,27 +56,56 @@
   </div>
 
 <hr>
-
-  <div class="form-row">
-  <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">FECHA DE DILIGENCIAMIENTO</label>
-      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class=""></label>
-    </div>
-  </div>
-<hr>
-
   <!--label&textarea-->
 
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">No. EDICIÓN DE LA FERIA EMPRESARIAL</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+      <label for="inputEmail4" class="required">NOMBRE DEL DOCENTE</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">FECHA DE INICIO DE LA FERIA</label>
+      <label for="inputEmail4" class="required">FACULTAD</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
+<hr>
+
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">NOMBRE DEL EVENTO</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">TIPO DE EVENTO</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
+<hr>
+
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">PAÍS / CIUDAD:</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">INSTITUCIÓN DONDE REALIZO LA MOVILIDAD</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+
+<hr>
+ 
+<div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">FECHA DE INICIO DE LA MOVILIDAD</label>
+      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">FECHA DE CULMINACIÓN DE LA MOVILIDAD</label>
       <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
   </div>
@@ -85,91 +114,115 @@
 
 <div class="form-row">
 <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">FECHA DE FINALIZACIÓN DE LA FERIA</label>
-      <input type="date" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class=""></label>
-    </div>
-  </div>
-
-<hr>
-
-<h5>PROTOCOLO PARA PARTICIPANTE</h5>
-<p>1.—Ingreso a la dirección Av. (Carrera) 70 (Av. Rojas)#53-40</p>
-<p>2. –En el sitio de la Feria encontraran personal con chalecos negros de “Logística” y a ellos se deben de acercar para
-pedirles la correspondiente escarapela que los identificará como expositores.</p>
-<p>3.- Una vez con la contraseña dirigiese al stand correspondiente, el cual tendrá el nombre de su empresa.</p>
-<p>4.- Una vez en el stand proceder a colocar la publicidad, productos o servicios.</p>
-<p>Nota: Se les recuerda a los expositores que los stands son de 2X2 metros con una mesa, dos sillas, toma eléctrica y su
-iluminación.</p>
-<p>En el stand pueden colgar con adhesivos lo que necesiten, no se puede usar puntillas ni grapas.</p>
-<hr>
-
-<div class="form-row">
-<div class="form-group col-md-6">
-      <label for="selectconotro1" class="required">¿La información es clara?</label>
-      <select class="form-control" id="selectconotro1" required >
+      <label for="selectconotro1" class="required">TIPO DE PARTICIPACIÓN</label>
+      <select class="form-control" id="selectconotro1" required>
       <option></option>
-      <option>SI</option>
-      <option>NO</option>   
+      <option>Panelista</option>
+      <option>Investigador</option>
+      <option>Invitado/Asistente</option>
+      <option>Conferencista</option>
+      <option>Ponente</option>
+      <option>Organizador</option>
+      <option>Otro:</option>
       <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
     </div>
     <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">ACTIVIDADES REALIZADAS</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
+    </div>
+  </div>
+
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="selectconotro1" class="required">PRODUCTOS ESPERADOS DE LA MOVILIDAD</label>
+      <select class="form-control" id="selectconotro1" required>
+      <option></option>
+      <option>Proyecto de Investigación</option>
+      <option>Articulo</option>
+      <option>Libro</option>
+      <option>Difusión/Sustentación</option>
+      <option>Otro:</option>
+      <input type="text" class="form-control" id="inputEmail4" name="otro" hidden required >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">DESCRIPCIÓN DE LOS ELEMENTOS ASOCIADOS AL DESARROLLO DE LA MOVILIDAD</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
+    </div>
+  </div>
+
+<hr>
+
+<div class="form-row">
+<div class="form-group col-md-6">
+      <label for="inputEmail4" class="">EVIDENCIA </label>
+
+      <input type="file" name="yourfieldnamehere" class="form-control" id="inputfile" placeholder=""  >
+    </div>
+    <div class="form-group col-md-6">
       <label for="inputEmail4" class=""></label>
     </div>
   </div>
 
 <hr>
 
-<h5>INFORMACIÓN DEL PARTICIPANTE</h5>
+<h5>BENEFICIOS E IMPACTOS</h5>
+<h6>A continuación indique que beneficios e impacto tendrán los productos resultado de su movilidad para cada grupo de interés. </h6>
 <hr>
 
 <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">EMPRESA</label>
+      <label for="inputEmail4" class="required">Cuerpo académico</label>
       <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">No. STAND</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="">
+      <label for="inputEmail4" class="required">Estudiantes</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
     </div>
   </div>
+<hr>
 
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">Facultad</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">Institución</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+    </div>
+  </div>
+<hr>
+
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+      <label for="inputEmail4" class="">Otros beneficiarios ¿Quienes, de qué forma y con qué impacto?</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;"></textarea>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" class="required">COMPROMISOS ACADÉMICOS ADQUIRIDOS DERIVADOS DE LA MOVILIDAD</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" required></textarea>
+    </div>
+  </div>
 <hr>
 
 <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">NOMBRE PARTICIPANTE</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
+      <label for="inputEmail4" class="">OBSERVACIONES ADICIONALES</label>
+      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;"></textarea>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">CÓDIGO / IDENTIFICACIÓN</label>
-      <input type="number" class="form-control" id="inputEmail4" placeholder="" required>
+      <label for="inputEmail4" class=""></label>
     </div>
   </div>
-
-<hr>
-
-<div class="form-row">
-  <div class="form-group col-md-6">
-      <label for="inputEmail4" class="required">TELÉFONO DE CONTACTO</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4" class="">¿Tiene alguna duda, sugerencia, queja, petición a cerca de la feria?</label>
-      <textarea class="form-control" id="inputEmail4" rows="3" style="white-space: pre-wrap;" ></textarea>
-    </div>
-  </div>
-
 <hr>
 
 
-<h5>¡MUCHAS GRACIAS POR SU PARTICIPACIÓN!</h5>
-<hr>
-
-  <!--botón enviar-->
-  <div class="form__item">
+   <!--botón enviar-->
+   <div class="form__item">
     <button class="btn btn-success" type="button" id="botonenviar">Enviar</button>
   </div>
 </form>
@@ -343,9 +396,9 @@ var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
 var seccional='<?php echo $_SESSION['seccional']?>';
+var filelength=document.getElementById("inputfile").files.length;
 
-var file = document.getElementById("inputfile").files[0];
-var filename = document.getElementById("inputfile").files[0].name;
+
  var formData = new FormData();
   formData.append("file", file);
   formData.append("nombres", nombres);
@@ -357,8 +410,14 @@ var filename = document.getElementById("inputfile").files[0].name;
   formData.append("fecha", fecha);
   formData.append("pdf", pdf);
   formData.append("seccional", seccional);
+
+if(filelength>0){
+  var file = document.getElementById("inputfile").files[0];
+var filename = document.getElementById("inputfile").files[0].name;
   formData.append("file", file);
   formData.append("filename", filename);
+
+}
 
 
 

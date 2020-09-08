@@ -301,8 +301,8 @@
 
 <hr>
 
-  <!--botón enviar-->
-  <div class="form__item">
+   <!--botón enviar-->
+   <div class="form__item">
     <button class="btn btn-success" type="button" id="botonenviar">Enviar</button>
   </div>
 </form>
@@ -476,9 +476,9 @@ var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
 var seccional='<?php echo $_SESSION['seccional']?>';
+var filelength=document.getElementById("inputfile").files.length;
 
-var file = document.getElementById("inputfile").files[0];
-var filename = document.getElementById("inputfile").files[0].name;
+
  var formData = new FormData();
   formData.append("file", file);
   formData.append("nombres", nombres);
@@ -490,8 +490,14 @@ var filename = document.getElementById("inputfile").files[0].name;
   formData.append("fecha", fecha);
   formData.append("pdf", pdf);
   formData.append("seccional", seccional);
+
+if(filelength>0){
+  var file = document.getElementById("inputfile").files[0];
+var filename = document.getElementById("inputfile").files[0].name;
   formData.append("file", file);
   formData.append("filename", filename);
+
+}
 
 
 
@@ -518,10 +524,7 @@ $.ajax({
 					});
     
     }else{
-      alertify.alert('Por favor llenar todos los campos obligatorios').set('onok', function(closeEvent){ 
-                   
-
-									} ).setHeader('<em>  </em> '); 
+      alert('Por favor llenar todos los campos obligatorios'); 
     }
 
   }
