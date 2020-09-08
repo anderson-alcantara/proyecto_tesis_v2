@@ -148,31 +148,21 @@
       <div id="content">
 
          <!-- Start header -->
-         <header class="top-header" style="background-color: white;">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-6">
-                     <div class="logo_main">
-                        <a onclick="volverinicio()" style="cursor:pointer;"><img src="images/ceideul_logo.png" style="width: 310px; height: 130px;" /></a>
-                     </div>
-                  </div>
-
-                  
-                  <div class="col-sm-6">
-                     <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" style="margin-top: 80px;"><img src="images/menu_icon.png"></button>
-                     <p style="margin-top: 80px; font-weight: bold; color: #aa1a1a;" id="txtnombre"></p>
-                  </div>
-
-               </div>
-               
-            </div>
-         </header>
+         <div class="header">
+            <div class="aclass">
+            <p onclick="volverinicio()" style="cursor:pointer;"><img src="images/ceideul_logo.png" style="width: 310px; height: 130px; margin-top:-10px;" /></p>
+         </div>         
+  <div class="header-right">
+    <p id="txtnombre" style="padding: 12px;"></p>
+    <a style="font-size:45px; cursor:pointer; color:white;" id="sidebarCollapse">≡</a>
+  </div>
+</div>
          <!-- End header -->
         
          <!-- End Banner -->
          <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
-            <div class="container" style="width:100%; margin-top:200px;">
+            <div class="container" style="width:100%;">
          
             <table id="myTable" class="table table-bordered table-dark" style="width=100%;">  
         <thead class="thead-dark">  
