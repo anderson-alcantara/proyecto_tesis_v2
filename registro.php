@@ -28,7 +28,6 @@
                   <option value="value1" selected>Tipo de Usuario</option>
                   <option value="value2">Estudiante</option>
 				  <option value="value3">Egresado</option>
-				  <option value="value3">Docente</option>
 				  <option value="value3">Externo</option>
 
 				</select>

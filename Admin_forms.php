@@ -41,7 +41,7 @@
    </head>
    <?php
  session_start();
- if(!isset($_SESSION['user']) || $_SESSION['tipo_usuario']!=="Docente"){
+ if(!isset($_SESSION['user'])){
 	 header("Location:index.php");
 	 exit(); 
  }
@@ -146,9 +146,8 @@
 
       </nav>
       <div id="content">
-
-         <!-- Start header -->
-         <div class="header">
+ <!-- Start header -->
+ <div class="header">
             <div class="aclass">
             <p onclick="volverinicio()" style="cursor:pointer;"><img src="images/ceideul_logo.png" style="width: 310px; height: 130px; margin-top:-10px;" /></p>
          </div>         
@@ -164,7 +163,7 @@
          <div class="section about_section layout_padding padding_top_0">
             <div class="container" style="width:100%;">
          
-            <table id="myTable" class="table table-bordered table-dark" style="width=100%;">  
+            <table id="myTable" class="table table-bordered table-dark" style="width=100%;" >  
         <thead class="thead-dark">  
           <tr>  
             <th data-order='desc'>fecha</th>  
@@ -173,11 +172,11 @@
             <th>correo electrónico</th>  
             <th>tipo de usuario</th>  
             <th>nombre del formulario</th>  
-            <th>archivo</th>  
-            <th>archivos adicionales</th>  
+            <th>archivo del formato</th>  
+            <th>archivos adicionales</th> 
+            <th hidden>archivos adicionales</th> 
             <th>acciones</th>  
             <th hidden>ruta</th>  
-            <th hidden>rutaAdicional</th>  
           </tr>  
         </thead>  
         <tbody id="mytbody">  
@@ -199,6 +198,9 @@
                
                $path2 = $row['archivo_adicional2'];
                $nombrefile2 = basename($path2);   
+
+
+
             ?>
             <script></script>
             <tr>
@@ -210,7 +212,8 @@
                 <td class="tdformulario"><?php echo ($row['formulario']); ?></td>
                 <td class="tdarchivo"><a target="_blank"href="<?php echo ($row['archivo'])?>">Abrir</a></td> 
                 <td class="tdarchivoadicional"><a target="_blank"href="<?php echo ($row['archivo_adicional'])?>"><?php echo $nombrefile; ?></a>
-                <a target="_blank"href="<?php echo ($row['archivo_adicional2'])?>"><?php echo $nombrefile2; ?></a></td> 
+                <a target="_blank"href="<?php echo ($row['archivo_adicional2'])?>"><?php echo $nombrefile2; ?></a></td>
+                <th hidden></th> 
                 <td class="tdarchivo"><button style="background-color: #4CAF50; 
   border: none;
   color: white;
