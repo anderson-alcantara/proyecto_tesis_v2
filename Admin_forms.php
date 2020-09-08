@@ -41,7 +41,7 @@
    </head>
    <?php
  session_start();
- if(!isset($_SESSION['user'])){
+ if(!isset($_SESSION['user']) || $_SESSION['tipo_usuario']!=="Docente"){
 	 header("Location:index.php");
 	 exit(); 
  }
