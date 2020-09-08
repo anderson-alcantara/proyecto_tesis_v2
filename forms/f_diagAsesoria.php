@@ -1227,7 +1227,7 @@
 
   <div class="form-row">
   <div class="form-group col-md-6">
-      <label for="selectconotro1">LUGAR</label>
+      <label for="selectconotro1" class="required">LUGAR</label>
       <select class="form-control" id="selectconotro1" required>
       <option></option>
       <option>UNIVERSIDAD LIBRE - SEDE BOSQUE POPULAR</option>
@@ -1278,7 +1278,7 @@
 
 
 
-function verificarvacio(){
+ function verificarvacio(){
 
 var retorno=true;
   $(".form-row").each(function(){
@@ -1325,7 +1325,6 @@ return retorno;
 
 
 
-
 function addrespuesta(){
 
   $(".form-row").each(function(){
@@ -1342,19 +1341,25 @@ $.each(dentrorow,function(index,value){
   
    
 switch(tipocontrol){
-case "INPUT":
-case "SELECT":
+ case "INPUT":
+ case "SELECT":
+case "TEXTAREA":
+debugger
   var elem2 = document.createElement('label');
     elem2.style.color="red";
+    elem2.style.whiteSpace="pre-wrap";
   var tipo=($(this).prop('type'));
 var valor=$(this).val();
-
-
-elem2.innerHTML = valor; 
+ var valorspace= valor.replace(/(\r\n|\n|\r)/gm, "<br />");
+elem2.innerHTML = valorspace; 
       that.append(elem2);
 break;
 }
     })
+
+
+
+
   }
   
 })
@@ -1418,7 +1423,7 @@ doc.fromHTML(elementHTML, 15, 15, {
 // Save the PDF
 var pdf =doc.output();
 var nombres='<?php echo $_SESSION['nombres'].' '.$_SESSION['apellidos']; ?>';
-var correo='<?php echo $_SESSION['user']?>'
+var correo='<?php echo $_SESSION['user']?>';
 var tipousuario='<?php echo $_SESSION['tipo_usuario']?>';
 var nombreform=filenamesinpunto;
 var nombreform_completo=$("#nombre_form").text();
@@ -1426,6 +1431,7 @@ var d=new Date();
 var mes=d.getMonth()+1
 var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
 var nombrearchivo=fecha+"_"+nombres+"_"+nombreform;
+var seccional='<?php echo $_SESSION['seccional']?>';
 cadena="pdf=" + pdf +
 					"&nombres=" + nombres +
 					"&correo=" + correo+
@@ -1433,7 +1439,9 @@ cadena="pdf=" + pdf +
           "&nombreform=" +nombreform+
           "&nombreform_completo=" +nombreform_completo+
           "&nombrearchivo=" +nombrearchivo+
-					"&fecha=" +fecha;
+					"&fecha=" +fecha+
+          "&seccional=" +seccional;
+console.log(cadena);
 $.ajax({
 						type:"POST",
 						url:"../php/subir_form.php",
@@ -1445,8 +1453,10 @@ $.ajax({
 
 									} ).setHeader('<em>  </em> '); 
 
-                }else{
-                  alert("error");
+                }else if(r==2){
+                  alertify.alert('Este formulario ya fué registrado por el usuario').setHeader('<em>  </em> '); 
+                }else if(r==3){
+                  alertify.alert('error en conexión').setHeader('<em>  </em> '); 
                 }
             }						
 					});

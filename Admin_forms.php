@@ -174,7 +174,7 @@
             <th>tipo de usuario</th>  
             <th>nombre del formulario</th>  
             <th>archivo</th>  
-            <th>archivo adicional</th>  
+            <th>archivos adicionales</th>  
             <th>acciones</th>  
             <th hidden>ruta</th>  
             <th hidden>rutaAdicional</th>  
@@ -195,7 +195,10 @@
                $fecha3=str_replace("-", ":", $fecha2);
 
                $path = $row['archivo_adicional'];
-               $nombrefile = basename($path);   
+               $nombrefile = basename($path);  
+               
+               $path2 = $row['archivo_adicional2'];
+               $nombrefile2 = basename($path2);   
             ?>
             <script></script>
             <tr>
@@ -206,7 +209,8 @@
                 <td class="tipo_usuario"><?php echo ($row['tipo_usuario']); ?></td>
                 <td class="tdformulario"><?php echo ($row['formulario']); ?></td>
                 <td class="tdarchivo"><a target="_blank"href="<?php echo ($row['archivo'])?>">Abrir</a></td> 
-                <td class="tdarchivoadicional"><a target="_blank"href="<?php echo ($row['archivo_adicional'])?>"><?php echo $nombrefile; ?></a></td> 
+                <td class="tdarchivoadicional"><a target="_blank"href="<?php echo ($row['archivo_adicional'])?>"><?php echo $nombrefile; ?></a>
+                <a target="_blank"href="<?php echo ($row['archivo_adicional2'])?>"><?php echo $nombrefile2; ?></a></td> 
                 <td class="tdarchivo"><button style="background-color: #4CAF50; 
   border: none;
   color: white;

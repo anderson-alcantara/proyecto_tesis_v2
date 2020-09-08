@@ -5,6 +5,21 @@ require_once "conexion.php";
 $pdf=($_POST['pdf']);
 $nombres=($_POST['nombres']);
 $fecha=$_POST['fecha'];
+$correo=($_POST['correo']);
+$tipousuario=$_POST['tipousuario'];
+$nombreform=($_POST['nombreform']);
+$nombrearchivo=($_POST['nombrearchivo']);
+$nombreform_completo=($_POST['nombreform_completo']);
+$seccional=($_POST['seccional']);
+$conexion=conexion();
+
+
+
+
+
+
+
+
 if(isset($_FILES['file'])){
    $documento=$_SESSION['documento'];
    $archivoadicional=$_FILES['file'];
@@ -12,17 +27,16 @@ if(isset($_FILES['file'])){
    $fileNameadicional=$documento.'_'.$fecha.'_'.$nombreAdicional;
 
 }
-$correo=($_POST['correo']);
-$nombres=($_POST['nombres']);
-$tipousuario=$_POST['tipousuario'];
-$nombreform=($_POST['nombreform']);
-$nombrearchivo=($_POST['nombrearchivo']);
-$nombreform_completo=($_POST['nombreform_completo']);
-$seccional=($_POST['seccional']);
 
 
-$conexion=conexion();
+if(isset($_FILES['file2'])){
+   $archivoadicional2=$_FILES['file2'];
+   $nombreAdicional2=($_POST['filename2']);
+   $fileNameadicional2=$documento.'_'.$fecha.'_'.$nombreAdicional2;
+   $rutan2="archivosextra/" .$fileNameadicional2;
 
+
+}
 
 $sql1="SELECT * from tb_formularios 
 where correo='$correo' and formulario='$nombreform_completo'";
@@ -47,10 +61,6 @@ if(mysqli_num_rows($resultado) > 0){
       }
 
    }
-
-
-
-
 }else{
 $retorno=1;
 }
@@ -63,8 +73,12 @@ if($retorno==1){
 
 if(isset($archivoadicional)){
    $rutan="archivosextra/" .$fileNameadicional;
-   $sql="INSERT into tb_formularios (archivo,nombre,tipo_usuario,formulario,fecha,correo,seccional,archivo_adicional)
-   values ('$ruta','$nombres','$tipousuario','$nombreform_completo','$fecha','$correo','$seccional','$rutan')";
+
+   if(!isset($rutan2)){
+      $rutan2="";
+   }
+   $sql="INSERT into tb_formularios (archivo,nombre,tipo_usuario,formulario,fecha,correo,seccional,archivo_adicional,archivo_adicional2)
+   values ('$ruta','$nombres','$tipousuario','$nombreform_completo','$fecha','$correo','$seccional','$rutan','$rutan2')";
 }else{
    $sql="INSERT into tb_formularios (archivo,nombre,tipo_usuario,formulario,fecha,correo,seccional)
    values ('$ruta','$nombres','$tipousuario','$nombreform_completo','$fecha','$correo','$seccional')";
@@ -85,6 +99,13 @@ if(isset($archivoadicional)){
      if(!empty($_FILES['file'])){
       $rutan="../archivosextra/".$fileNameadicional;
       move_uploaded_file( $_FILES['file']['tmp_name'], $rutan);
+
+      
+   }
+
+   if(!empty($_FILES['file2'])){
+      $rutanu2="../archivosextra/".$fileNameadicional2;
+      move_uploaded_file( $_FILES['file2']['tmp_name'], $rutanu2);
 
       
    }
