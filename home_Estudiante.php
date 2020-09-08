@@ -137,7 +137,7 @@
           <li>
             <input id="group-2" type="checkbox" hidden  />
             <label for="group-2"><span class="fa fa-angle-right"></span>Formularios</label>
-            <ul class="group-list" > 
+            <ul class="group-list">
               <li>
                 <input id="sub-group-2" type="checkbox" hidden onclick="onhandleformularios('sub-group-2')" />
                 <label for="sub-group-2" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Asesoría y Consultoría</label>
@@ -171,7 +171,7 @@
                        <li><a href="forms/f_Dofa.php" target="_blank">Formato De Matriz Dofa</a></li>
                        <li><a href="forms/f_CadenaValor.php" target="_blank">Formato De Cadena De Valor</a></li>
                        <li><a href="forms/f_Canvas.php" target="_blank">Formato De Modelo Canvas</a></li>
-                       <li><a href="#">Formato De Solicitud De Acciones Preventivas Y De Mejora</a></li>
+                       <li><a href="forms/f_SolicitudAccionesPreventivas.php">Formato De Solicitud De Acciones Preventivas Y De Mejora</a></li>
                      </ul>
                    </li>
                 </ul>
@@ -189,14 +189,14 @@
                     <label for="sub-sub-group-4"><span class="fa fa-angle-right"></span>Opciones De Grado CEIDEUL</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
                       <li><a href="forms/f_inscripcionCreacionDeEmpresa.php" target="_blank">Formato De Inscripción Para Opción De Grado Creación De Empresa</a></li>
-                      <li><a href="#">Formato De Recurso Estudiante / Externo</a></li>
+                      <li><a href="forms/f_RecursoEstudianteExt.php">Formato De Recurso Estudiante / Externo</a></li>
        
                     </ul>
                     <input id="sub-sub-group-5" type="checkbox" hidden />
                     <label for="sub-sub-group-5"><span class="fa fa-angle-right"></span>Opciones De Grado Creación De Empresa</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
                       <li><a href="forms/f_asignaciondetutorproyecto.php" target="_blank">Formato De Asignación De Tutor Para Proyecto De Grado</a></li>
-                      <li><a href="#">Formato De Evaluación Proyecto De Grado “creación De Empresa”</a></li>
+                      <li><a href="forms/home_Estudiante.php">Formato De Evaluación Proyecto De Grado “creación De Empresa”</a></li>
 
                     </ul>
                   </li>
@@ -206,7 +206,7 @@
                 <input id="sub-group-6" type="checkbox" hidden onclick="onhandleformularios('sub-group-6')" />
                 <label for="sub-group-6" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Cátedra De emprendimiento</label>
                 <ul class="sub-group-list">
-                  <li style="margin-bottom: 10px;"><a href="forms/f_compromiso">Formato De Compromiso a La Catedra De Emprendimiento</a></li>
+                  <li style="margin-bottom: 10px;"><a href="forms/f_compromisocatedraemprendimiento.php">Formato De Compromiso a La Catedra De Emprendimiento</a></li>
 
                   
 
@@ -234,16 +234,16 @@
                 <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
                 <label for="sub-group-8" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Feria Empresarial</label>
                 <ul class="sub-group-list">
-                  <li><a href="#">Formato Inscripción Feria Empresarial</a></li>
-                  <li><a href="#">Formato Protocolo Expositores Feria Empresarial</a></li>
-                  <li><a href="#">Formato De Inventario Feria Empresarial</a></li>
+                  <li><a href="forms/f_inscripcionFeriaEmpresarial.php">Formato Inscripción Feria Empresarial</a></li>
+                  <li><a href="forms/f_ProtocoloExpositores.php">Formato Protocolo Expositores Feria Empresarial</a></li>
+                  <li><a href="forms/f_formatoInventarioFeriaEmpresarial.php">Formato De Inventario Feria Empresarial</a></li>
                   <li>
                      
                     <input id="sub-sub-group-9" type="checkbox" hidden />
                     <label for="sub-sub-group-9"><span class="fa fa-angle-right"></span>Evaluación Empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="#">Formato De Evaluación Feria Empresarial</a></li>
-                      <li><a href="#">Formato De Satisfacción Del Expositor</a></li>
+                      <li><a href="forms/f_evaluacionFeriaEmpresarial.php">Formato De Evaluación Feria Empresarial</a></li>
+                      <li><a href="f_satisfaccionDelExpositor.php">Formato De Satisfacción Del Expositor</a></li>
                     </ul>
                   </li>
                 </ul>
