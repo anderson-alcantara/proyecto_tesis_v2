@@ -137,7 +137,7 @@
           <li>
             <input id="group-2" type="checkbox" hidden  />
             <label for="group-2"><span class="fa fa-angle-right"></span>Formularios</label>
-            <ul class="group-list">
+            <ul class="group-list" > 
               <li>
                 <input id="sub-group-2" type="checkbox" hidden onclick="onhandleformularios('sub-group-2')" />
                 <label for="sub-group-2" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Asesoría y Consultoría</label>
