@@ -428,7 +428,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>Asesoría en servicios administrativos</h2>
+                           <h2><br>Asesoria en servicios administrativos</h2>
                         </div>
                      </div>
                   </div>
@@ -468,7 +468,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>Asesoría en servicios contables</h2>
+                           <h2><br>Asesoria en servicios contables</h2>
                         </div>
                      </div>
                   </div>

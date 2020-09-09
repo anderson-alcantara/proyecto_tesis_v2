@@ -480,7 +480,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>Opción de grado "Creación de empresa"</h2>
+                           <h2><br>Opcion de grado "Creacion de empresa"</h2>
                         </div>
                      </div>
                   </div>

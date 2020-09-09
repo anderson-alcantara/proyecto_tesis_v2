@@ -479,7 +479,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2><br>Cátedra de emprendimiento</h2>
+                           <h2><br>Catedra de emprendimiento</h2>
                         </div>
                      </div>
                   </div>

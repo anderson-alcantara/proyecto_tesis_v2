@@ -480,7 +480,7 @@
                   <div class="col-md-12">
                      <div class="full">
                         <div class="heading_main text_align_center margin-bottom_30">
-                           <h2>Area de consultoría de servicios</h2>
+                           <h2>Area de consultoria de servicios</h2>
                         </div>
                         <div class="heading_main text_align_center margin-bottom_30">
                            <h2 style="font-size:30px;">consultorio Economico-Empresarial</h2>
