@@ -141,59 +141,68 @@
                 <label for="sub-group-2" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Asesoría y Consultoría</label>
                 <ul class="sub-group-list">
 
-                  <li>
+                <li>
                      
-                    <input id="sub-sub-group-2" type="checkbox" hidden />
-                    <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span>asesoría y consultoría empresarial</label>
-                    <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="forms/f_diagAsesoria.php" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
-                      <li><a href="forms/f_inicioAsesoriaEmp.html" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
-                      <li><a href="forms/f_EntregaAsesoria.html" target="_blank">Formato De Entrega De Asesoría</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                     
-                     <input id="sub-sub-group-3" type="checkbox" hidden />
-                     <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span>herramientas para la asesoría y consultoría empresarial</label>
-                  <ul class="sub-sub-group-list" style="font-size: 12px;">
-                       <li><a href="forms/f_DiagAppOfimatica.html" target="_blank">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
-                       <li><a href="forms/f_AnalisisDisePtrabajo.html" target="_blank">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
-                       <li><a href="forms/f_perfilacion.php" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
-                       <li><a href="forms/f_analisis">Formato De análisis Del Entorno</a></li>
-                       <li><a href="forms/f_balance.html">Formato De Balance Scorecard</a></li>
-                       <li><a href="#">Formato De Identificación De Mercado</a></li>
-                       <li><a href="forms/f_ishikawa.html">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
-                       <li><a href="#">Formato De Caracterización De Procesos</a></li>
-                       <li><a href="#">Formato De Evaluación De Marco Estratégico</a></li>
-                       <li><a href="#">Formato De Diagnostico Interno</a></li>
-                       <li><a href="#">Formato De Matriz Dofa</a></li>
-                       <li><a href="#">Formato De Cadena De Valor</a></li>
-                       <li><a href="#">Formato De Modelo Canvas</a></li>
-                       <li><a href="#">Formato De Solicitud De Acciones Preventivas Y De Mejora</a></li>
+                     <input id="sub-sub-group-2" type="checkbox" hidden />
+                     <label for="sub-sub-group-2"><span class="fa fa-angle-right"></span>asesoría y consultoría empresarial</label>
+                     <ul class="sub-sub-group-list" style="font-size: 12px;">
+                       <li><a href="forms/f_diagAsesoria.php" target="_blank">Formato De Diagnostico Para Asesoría Empresarial</a></li>
+                       <li><a href="forms/f_inicioAsesoriaEmp.php" target="_blank">Formato De Inicio De Asesoría Empresarial</a></li>
+                       <li><a href="forms/f_EntregaAsesoria.php" target="_blank">Formato De Entrega De Asesoría</a></li>
                      </ul>
                    </li>
-                </ul>
+                   <li>
+                      
+                      <input id="sub-sub-group-3" type="checkbox" hidden />
+                      <label for="sub-sub-group-3"><span class="fa fa-angle-right"></span>herramientas para la asesoría y consultoría empresarial</label>
+                   <ul class="sub-sub-group-list" style="font-size: 12px;">
+                        <li><a href="forms/f_DiagAppOfimatica.php" target="_blank">Formato De Diagnostico De Aplicaciones Ofimaticas E Informatica</a></li>
+                        <li><a href="forms/f_AnalisisDisePtrabajo.php" target="_blank">Formato De Análisis Para El Diseño De Puestos De Trabajo</a></li>
+                        <li><a href="forms/f_perfilacion.php" target="_blank">Formato De Perfilación De Puestos De Trabajo</a></li>
+                        <li><a href="forms/f_analisisEntorno.php" target="_blank">Formato De análisis Del Entorno</a></li>
+                        <li><a href="forms/f_BalanceScoreCard.php" target="_blank">Formato De Balance Scorecard</a></li>
+                        <li><a href="forms/f_identificacionMercado.php" target="_blank">Formato De Identificación De Mercado</a></li>
+                        <li><a href="forms/f_ishikawa.php" target="_blank">Formato De Diagrama De Ishikawa / Espina De Pescado</a></li>
+                        <li><a href="forms/f_CaracterizacionProcesos.php" target="_blank">Formato De Caracterización De Procesos</a></li>
+                        <li><a href="forms/f_EvaluacionMarcoEstrategico.php" target="_blank" >Formato De Evaluación De Marco Estratégico</a></li>
+                        <li><a href="forms/f_DiagInterno.php" target="_blank">Formato De Diagnostico Interno</a></li>
+                        <li><a href="forms/f_Dofa.php" target="_blank">Formato De Matriz Dofa</a></li>
+                        <li><a href="forms/f_CadenaValor.php" target="_blank">Formato De Cadena De Valor</a></li>
+                        <li><a href="forms/f_Canvas.php" target="_blank">Formato De Modelo Canvas</a></li>
+                        <li><a href="forms/f_SolicitudAccionesPreventivas.php">Formato De Solicitud De Acciones Preventivas Y De Mejora</a></li>
+                      </ul>
+                    </li>
+                 </ul>
+ 
+                 
 
-                <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
+
+               
+
+               
+
+                 <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
                 <label for="sub-group-8" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Feria Empresarial</label>
                 <ul class="sub-group-list">
-                  <li><a href="#">Formato Inscripción Feria Empresarial</a></li>
-                  <li><a href="#">Formato Protocolo Expositores Feria Empresarial</a></li>
-                  <li><a href="#">Formato De Inventario Feria Empresarial</a></li>
+                  <li><a href="forms/f_inscripcionFeriaEmpresarial.php">Formato Inscripción Feria Empresarial</a></li>
+                  <li><a href="forms/f_ProtocoloExpositores.php">Formato Protocolo Expositores Feria Empresarial</a></li>
+                  <li><a href="forms/f_formatoInventarioFeriaEmpresarial.php">Formato De Inventario Feria Empresarial</a></li>
                   <li>
                      
                     <input id="sub-sub-group-9" type="checkbox" hidden />
                     <label for="sub-sub-group-9"><span class="fa fa-angle-right"></span>Evaluación Empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="#">Formato De Evaluación Feria Empresarial</a></li>
-                      <li><a href="#">Formato De Satisfacción Del Expositor</a></li>
+                      <li><a href="forms/f_evaluacionFeriaEmpresarial.php">Formato De Evaluación Feria Empresarial</a></li>
+                      <li><a href="f_satisfaccionDelExpositor.php">Formato De Satisfacción Del Expositor</a></li>
                     </ul>
                   </li>
                 </ul>
 
 
 
-         
+
+           
+
 
 
 
