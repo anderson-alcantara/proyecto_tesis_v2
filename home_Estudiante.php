@@ -178,7 +178,6 @@
 
                 
 
-
                 <input id="sub-group-3" type="checkbox" hidden onclick="onhandleformularios('sub-group-3')" />
                 <label for="sub-group-3" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Opción de Grado</label>
                 <ul class="sub-group-list">
@@ -216,21 +215,9 @@
                   <input id="sub-sub-group-8" type="checkbox" hidden />
                   <label for="sub-sub-group-8"><span class="fa fa-angle-right"></span>Ideas De Negocio</label>
                   <ul class="sub-sub-group-list" style="font-size: 12px;">
-                    <li><a href="#">Formato Cátedra De Emprendimiento- Ideas De Negocio</a></li>
+                    <li><a href="forms/f_BancoDeIdeas.php">Formato Cátedra De Emprendimiento- Ideas De Negocio</a></li>
                   </ul>
-                     
-                  <input id="sub-sub-group-7" type="checkbox" hidden />
-                  <label for="sub-sub-group-7"><span class="fa fa-angle-right"></span>Elevator Pitch</label>
-                  <ul class="sub-sub-group-list" style="font-size: 12px;">
-                    <li><a href="#">Formato De Banco De Ideas De Negocio</a></li>
-                  </ul>
-
                 </ul>
-
-                
-
-
-
                 <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
                 <label for="sub-group-8" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Feria Empresarial</label>
                 <ul class="sub-group-list">
