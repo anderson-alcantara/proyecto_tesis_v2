@@ -116,7 +116,7 @@
   </div>
 
 <hr>
-<!---->
+<!--nn-->
 <h6 style="color:red;">A. PARÁMETROS BÁSICOS PARA SELECCIONAR LA IDEA DE NEGOCIO.</h6>
 <hr>
 
