@@ -184,16 +184,16 @@
                  <input id="sub-group-8" type="checkbox" hidden onclick="onhandleformularios('sub-group-8')"/>
                 <label for="sub-group-8" style="background-color: #aa1a1a6c;"><span class="fa fa-angle-right"></span> Feria Empresarial</label>
                 <ul class="sub-group-list">
-                  <li><a href="forms/f_inscripcionFeriaEmpresarial.php">Formato Inscripción Feria Empresarial</a></li>
-                  <li><a href="forms/f_ProtocoloExpositores.php">Formato Protocolo Expositores Feria Empresarial</a></li>
-                  <li><a href="forms/f_formatoInventarioFeriaEmpresarial.php">Formato De Inventario Feria Empresarial</a></li>
+                   <li><a href="forms/f_inscripcionFeriaEmpresarial.php" target="_blank">Formato Inscripción Feria Empresarial</a></li>
+                  <li><a href="forms/f_ProtocoloExpositores.php" target="_blank">Formato Protocolo Expositores Feria Empresarial</a></li>
+                  <li><a href="forms/f_formatoInventarioFeriaEmpresarial.php" target="_blank">Formato De Inventario Feria Empresarial</a></li>
                   <li>
                      
                     <input id="sub-sub-group-9" type="checkbox" hidden />
                     <label for="sub-sub-group-9"><span class="fa fa-angle-right"></span>Evaluación Empresarial</label>
                     <ul class="sub-sub-group-list" style="font-size: 12px;">
-                      <li><a href="forms/f_evaluacionFeriaEmpresarial.php">Formato De Evaluación Feria Empresarial</a></li>
-                      <li><a href="f_satisfaccionDelExpositor.php">Formato De Satisfacción Del Expositor</a></li>
+                      <li><a href="forms/f_evaluacionFeriaEmpresarial.php" target="_blank">Formato De Evaluación Feria Empresarial</a></li>
+                      <li><a href="f_satisfaccionDelExpositor.php" target="_blank">Formato De Satisfacción Del Expositor</a></li>
                     </ul>
                   </li>
                 </ul>
