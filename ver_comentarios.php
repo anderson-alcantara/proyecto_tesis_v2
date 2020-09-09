@@ -162,7 +162,7 @@
          <!-- End Banner -->
          <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
-            <div class="container" style="width:100%; margin-top:200px;">
+            <div class="container" style="width:100%;">
          
             <table id="myTable" class="table table-bordered table-dark" style="width=100%;">  
         <thead class="thead-dark">  
