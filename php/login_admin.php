@@ -32,6 +32,7 @@
 				$clave=$row['clave'];
 				
 				$_SESSION['nombres']=$nombres;
+				$_SESSION['tipo_usuario']="Admin";
 				$_SESSION['apellidos']=$apellidos;
 				$_SESSION['clave']=$clave;
 

@@ -39,8 +39,8 @@
    </head>
    <?php
  session_start();
- if(!isset($_SESSION['user'])){
-	 header("Location:index.php");
+ if(!isset($_SESSION['user']) || $_SESSION['tipo_usuario']!=="Admin"){
+	 header("Location:index_admin.php");
 	 exit(); 
  }
 ?>
@@ -162,7 +162,7 @@
          <!-- End Banner -->
          <!-- section -->
          <div class="section about_section layout_padding padding_top_0">
-            <div class="container" style="width:100%; margin-top:200px;">
+            <div class="container" style="width:100%;">
             <form class="w3-container w3-card-4 w3-light-grey" id="form1">
             <h2>Agregar Docente</h2>
   <p><label>Nombres</label>
@@ -196,6 +196,10 @@
 
   <p><label>Repetir Contraseña</label>
   <input class="w3-input w3-border" name="last" id="txtpass2" type="password"></p>
+  <p><label>Hoja de vida del docente:</label>
+  <a href="formato_HojaVidaDocente/FORMATO ÚNICO HOJA DE VIDA.xlsx" target="_blank" style="color:blue;">Haz click aquí para descargar el formato</a>
+  <input type="file" name="yourfieldnamehere" class="w3-input w3-border" id="inputfile" placeholder=""  >
+
   <button class="btn btn-primary" type="button" id="btn_confirm">Guardar Cambios</button></p>
 </form>
             </div>
@@ -478,23 +482,49 @@ $(document).ready(function(){
 				alertify.alert("Debes agregar una contraseña").setHeader('<em>  </em> '); 
 				return false;
 			}
+
+         else if($('#txtpass1').val().length<8""){
+				alertify.alert("La contraseña debe tener al menos 8 carácteres").setHeader('<em>  </em> '); 
+				return false;
+			}
 			else if(($('#txtpass1').val()!==$('#txtpass2').val()) &&($("#lblpass2").css("visibility")!=='hidden')){
 				alertify.alert("las contraseñas no coinciden").setHeader('<em>  </em> '); 
 				return false;
 			}
 
-			cadena="correo_electronico=" + $('#txtcorreo').val() +
-					"&password=" + $('#txtpass1').val() +
-					"&tipousuario=" + 'Docente'+
-					"&nombres=" + $('#txtnombreperfil').val()+
-					"&documento=" + $('#txtcedula').val()+
-					"&seccional=" + $("#txtseccional option:selected").text()+
-					"&apellidos=" + $('#txtapellidosperfil').val();
-				console.log(cadena);
+
+         var filelength=document.getElementById("inputfile").files.length;
+         var d=new Date();
+var mes=d.getMonth()+1
+var fecha=d.getDate()+" "+mes+" "+d.getFullYear()+"_"+d.getHours()+"-"+d.getMinutes()+"-"+d.getSeconds();
+
+
+         var formData = new FormData();
+  formData.append("correo_electronico", $('#txtcorreo').val());
+  formData.append("password", $('#txtpass1').val());
+  formData.append("tipousuario", 'Docente');
+  formData.append("nombres",  $('#txtnombreperfil').val());
+  formData.append("documento", $('#txtcedula').val());
+  formData.append("seccional", $("#txtseccional option:selected").text());
+  formData.append("apellidos", $('#txtapellidosperfil').val());
+  formData.append("fecha", fecha);
+
+
+if(filelength>0){
+  var file = document.getElementById("inputfile").files[0];
+var filename = document.getElementById("inputfile").files[0].name;
+  formData.append("file", file);
+  formData.append("filename", filename);
+}
+
+
 					$.ajax({
 						type:"POST",
 						url:"php/registro.php",
-						data:cadena,
+                  data: formData,
+            contentType: false,
+						processData: false,
+						cache: false, 
 						success:function(r){
 							console.log(r)
 							if(r==2){
@@ -520,5 +550,15 @@ $(document).ready(function(){
 
 
  </script>  
+
+<script>
+var uploadField = document.getElementById("inputfile");
+uploadField.onchange = function() {
+    if(this.files[0].size > 2000000 ){
+       alert("archivo debe pesar máximo 2 mb");
+       this.value = "";
+    };
+};
+</script>
    </body>
 </html>

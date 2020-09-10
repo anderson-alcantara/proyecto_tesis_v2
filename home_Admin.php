@@ -34,10 +34,10 @@
    </head>
    <?php
  session_start();
- if(!isset($_SESSION['user'])){
-	 header("Location:index.php");
-	 exit(); 
- }
+ if(!isset($_SESSION['user']) || $_SESSION['tipo_usuario']!=="Admin"){
+   header("Location:index_admin.php");
+   exit(); 
+}
 ?>
    <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
       <!-- LOADER -->
@@ -71,6 +71,7 @@
                 </li>
               </ul>
       <li><a href="agregar_docente.php">Agregar Docente</a></li>
+      <li><a href="ver_docentes.php">Ver Lista de Docentes</a></li>
       <li><a href="index_Admin.php" style="background-color:#353535;">Cerrar sesión</a></li>
       
            
